@@ -1,0 +1,1096 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{modelanalysis\_01}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{import} \PY{n+nn}{seaborn} \PY{k}{as} \PY{n+nn}{sns}
+        \PY{k+kn}{import} \PY{n+nn}{pylab} \PY{k}{as} \PY{n+nn}{plt}
+        \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+        \PY{n}{plt}\PY{o}{.}\PY{n}{style}\PY{o}{.}\PY{n}{use}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{fivethirtyeight}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k+kn}{import} \PY{n+nn}{sys}
+        \PY{k+kn}{import} \PY{n+nn}{warnings}
+        
+        \PY{k}{if} \PY{o+ow}{not} \PY{n}{sys}\PY{o}{.}\PY{n}{warnoptions}\PY{p}{:}
+            \PY{n}{warnings}\PY{o}{.}\PY{n}{simplefilter}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ignore}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+        
+        \PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{Markdown}\PY{p}{,} \PY{n}{display}
+        \PY{k}{def} \PY{n+nf}{printmd}\PY{p}{(}\PY{n}{string}\PY{p}{)}\PY{p}{:}
+            \PY{n}{display}\PY{p}{(}\PY{n}{Markdown}\PY{p}{(}\PY{n}{string}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{mf}\PY{o}{=}\PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{model\PYZus{}u1.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        
+        \PY{n}{mf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{srcuid\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{x}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{o}{+}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}}\PY{l+s+s1}{\PYZsq{}} \PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n}{mf}\PY{o}{.}\PY{n}{src}\PY{p}{]}
+        \PY{n}{mf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgtuid\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{x}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{o}{+}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}}\PY{l+s+s1}{\PYZsq{}} \PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n}{mf}\PY{o}{.}\PY{n}{tgt}\PY{p}{]}
+        
+        \PY{n}{mf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{p}{[}\PY{n}{x}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n}{mf}\PY{o}{.}\PY{n}{src}\PY{p}{]}
+        \PY{n}{mf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgt\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{p}{[}\PY{n}{x}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n}{mf}\PY{o}{.}\PY{n}{tgt}\PY{p}{]}
+        \PY{n}{mf}\PY{o}{=}\PY{n}{mf}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgt\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{srcuid\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgtuid\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{delay}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{mass}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{mf}\PY{o}{=}\PY{n}{mf}\PY{p}{[}\PY{n}{mf}\PY{o}{.}\PY{n}{srcuid\PYZus{}}\PY{o}{==}\PY{n}{mf}\PY{o}{.}\PY{n}{tgtuid\PYZus{}}\PY{p}{]}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{VARNAMES}\PY{o}{=}\PY{n}{mf}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{values}
+        
+        \PY{n}{VARNAMES}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} array(['popFrac', 'visitors', 'singles', 'MeetFrac', 'meetingPairs',
+               'Dist', 'SiteTypeRecreationalSite', 'fracFriends',
+               'SiteTypeRestaurant', 'myFriends', 'myFriendsR'], dtype=object)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{}print(mf.src\PYZus{}.value\PYZus{}counts())}
+        \PY{n}{fig}\PY{o}{=}\PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{[}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{]}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{121}\PY{p}{)}
+        \PY{n}{mf}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{122}\PY{p}{)}
+        \PY{n}{mf}\PY{o}{.}\PY{n}{tgt\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgt}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}5}]:} Text(0.5, 1.0, 'tgt')
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_4_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \hypertarget{comment}{%
+\subsection{\#\# Comment}\label{comment}}
+
+\begin{quote}
+\texttt{popFrac,\ Dist,\ visitors,\ singles} are driving a large
+proportion of the dynamics
+\end{quote}
+
+    \hypertarget{uid-stratification}{%
+\section{UID Stratification}\label{uid-stratification}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{k}{def} \PY{n+nf}{readVarName}\PY{p}{(}\PY{n}{csvfile}\PY{p}{)}\PY{p}{:}
+            \PY{k}{return} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{csvfile}\PY{p}{)}\PY{o}{.}\PY{n}{varname}\PY{o}{.}\PY{n}{values}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{UVAR\PYZus{}lt}\PY{o}{=}\PY{n}{readVarName}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{left\PYZus{}town.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{UVAR\PYZus{}ls}\PY{o}{=}\PY{n}{readVarName}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{low\PYZus{}soc.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{UVAR\PYZus{}ms}\PY{o}{=}\PY{n}{readVarName}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{med\PYZus{}soc.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{UVAR\PYZus{}hs}\PY{o}{=}\PY{n}{readVarName}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hig\PYZus{}soc.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{mf\PYZus{}ls}\PY{o}{=}\PY{n}{mf}\PY{p}{[}\PY{n}{mf}\PY{o}{.}\PY{n}{srcuid\PYZus{}}\PY{o}{.}\PY{n}{isin}\PY{p}{(}\PY{n}{UVAR\PYZus{}ls}\PY{p}{)}\PY{p}{]}
+        \PY{n}{mf\PYZus{}ms}\PY{o}{=}\PY{n}{mf}\PY{p}{[}\PY{n}{mf}\PY{o}{.}\PY{n}{srcuid\PYZus{}}\PY{o}{.}\PY{n}{isin}\PY{p}{(}\PY{n}{UVAR\PYZus{}ms}\PY{p}{)}\PY{p}{]}
+        \PY{n}{mf\PYZus{}hs}\PY{o}{=}\PY{n}{mf}\PY{p}{[}\PY{n}{mf}\PY{o}{.}\PY{n}{srcuid\PYZus{}}\PY{o}{.}\PY{n}{isin}\PY{p}{(}\PY{n}{UVAR\PYZus{}hs}\PY{p}{)}\PY{p}{]}
+        \PY{n}{mf\PYZus{}lt}\PY{o}{=}\PY{n}{mf}\PY{p}{[}\PY{n}{mf}\PY{o}{.}\PY{n}{srcuid\PYZus{}}\PY{o}{.}\PY{n}{isin}\PY{p}{(}\PY{n}{UVAR\PYZus{}lt}\PY{p}{)}\PY{p}{]}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{fig}\PY{o}{=}\PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{[}\PY{l+m+mi}{18}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{]}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{141}\PY{p}{)}
+        \PY{n}{mf\PYZus{}ls}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src:low social}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{142}\PY{p}{)}
+        \PY{n}{mf\PYZus{}ms}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src: med social}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{143}\PY{p}{)}
+        \PY{n}{mf\PYZus{}hs}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src: high social}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{144}\PY{p}{)}
+        \PY{n}{mf\PYZus{}lt}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src: left}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}8}]:} Text(0.5, 1.0, 'src: left')
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_9_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{fig}\PY{o}{=}\PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{[}\PY{l+m+mi}{18}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{]}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{141}\PY{p}{)}
+        \PY{n}{mf\PYZus{}ls}\PY{o}{.}\PY{n}{tgt\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgt:low social}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{142}\PY{p}{)}
+        \PY{n}{mf\PYZus{}ms}\PY{o}{.}\PY{n}{tgt\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgt: med social}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{143}\PY{p}{)}
+        \PY{n}{mf\PYZus{}hs}\PY{o}{.}\PY{n}{tgt\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgt: high social}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{144}\PY{p}{)}
+        \PY{n}{mf\PYZus{}lt}\PY{o}{.}\PY{n}{tgt\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bar}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{gca}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tgt: left}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}9}]:} Text(0.5, 1.0, 'tgt: left')
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_10_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{k}{def} \PY{n+nf}{getRelationships}\PY{p}{(}\PY{n}{MF}\PY{p}{,}\PY{n}{VAR}\PY{p}{,}\PY{n}{HIGAMMA}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{7}\PY{p}{,}\PY{n}{D1}\PY{o}{=}\PY{l+m+mi}{26}\PY{p}{,}\PY{n}{D2}\PY{o}{=}\PY{l+m+mi}{52}\PY{p}{,}\PY{n}{D3}\PY{o}{=}\PY{l+m+mi}{100}\PY{p}{,}\PY{n}{SELF}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}\PY{p}{:}
+             \PY{n}{gf}\PY{o}{=}\PY{n}{MF}\PY{p}{[}\PY{p}{(}\PY{n}{MF}\PY{o}{.}\PY{n}{tgt\PYZus{}}\PY{o}{==}\PY{n}{VAR}\PY{p}{)} \PY{o}{\PYZam{}} \PY{p}{(}\PY{n}{mf}\PY{o}{.}\PY{n}{gamma}\PY{o}{\PYZgt{}}\PY{n}{HIGAMMA}\PY{p}{)} \PY{p}{]}
+             \PY{n}{D1}\PY{o}{=}\PY{l+m+mi}{26}
+             \PY{n}{D2}\PY{o}{=}\PY{l+m+mi}{52}
+             \PY{n}{D3}\PY{o}{=}\PY{l+m+mi}{100}
+             \PY{k}{if} \PY{o+ow}{not} \PY{n}{SELF}\PY{p}{:}
+                 \PY{n}{XX}\PY{o}{=}\PY{n}{VAR}
+             \PY{k}{else}\PY{p}{:}
+                 \PY{n}{XX}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{xx}\PY{l+s+s1}{\PYZsq{}}
+         
+             \PY{n}{sf}\PY{o}{=}\PY{n}{gf}\PY{p}{[}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{delay}\PY{o}{.}\PY{n}{between}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{n}{D1}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZam{}} \PY{o}{\PYZti{}}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{==}\PY{n}{XX}\PY{p}{)}\PY{p}{]}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{median}\PY{p}{(}\PY{p}{)}
+             \PY{n}{sf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{n}{gf}\PY{p}{[}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{delay}\PY{o}{.}\PY{n}{between}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{n}{D1}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZam{}} \PY{o}{\PYZti{}}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{==}\PY{n}{XX}\PY{p}{)}\PY{p}{]}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}
+             \PY{n}{display}\PY{p}{(}\PY{n}{sf}\PY{o}{.}\PY{n}{sort\PYZus{}values}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{ascending}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}\PY{o}{.}\PY{n}{style}\PY{o}{.}\PY{n}{applymap}\PY{p}{(}\PY{n}{color\PYZus{}negative\PYZus{}red}\PY{p}{)}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{n}{highlight\PYZus{}max}\PY{p}{)}\PY{p}{)}
+             \PY{c+c1}{\PYZsh{}print(gf[(gf.delay.between(0,D1)) \PYZam{} \PYZti{}(gf.src\PYZus{}==XX)].sort\PYZus{}values(\PYZsq{}src\PYZus{}\PYZsq{}))}
+         
+             \PY{n}{sf}\PY{o}{=}\PY{n}{gf}\PY{p}{[}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{delay}\PY{o}{.}\PY{n}{between}\PY{p}{(}\PY{n}{D1}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{D2}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZam{}} \PY{o}{\PYZti{}}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{==}\PY{n}{XX}\PY{p}{)}\PY{p}{]}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{median}\PY{p}{(}\PY{p}{)}
+             \PY{n}{sf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{n}{gf}\PY{p}{[}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{delay}\PY{o}{.}\PY{n}{between}\PY{p}{(}\PY{n}{D1}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{D2}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZam{}} \PY{o}{\PYZti{}}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{==}\PY{n}{XX}\PY{p}{)}\PY{p}{]}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}
+             \PY{n}{display}\PY{p}{(}\PY{n}{sf}\PY{o}{.}\PY{n}{sort\PYZus{}values}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{ascending}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}\PY{o}{.}\PY{n}{style}\PY{o}{.}\PY{n}{applymap}\PY{p}{(}\PY{n}{color\PYZus{}negative\PYZus{}red}\PY{p}{)}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{n}{highlight\PYZus{}max}\PY{p}{)}\PY{p}{)}
+             \PY{c+c1}{\PYZsh{}print(gf[(gf.delay.between(D1+1,D2)) \PYZam{} \PYZti{}(gf.src\PYZus{}==XX)].sort\PYZus{}values(\PYZsq{}src\PYZus{}\PYZsq{}))}
+         
+             \PY{n}{sf}\PY{o}{=}\PY{n}{gf}\PY{p}{[}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{delay}\PY{o}{.}\PY{n}{between}\PY{p}{(}\PY{n}{D2}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{D3}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZam{}} \PY{o}{\PYZti{}}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{==}\PY{n}{XX}\PY{p}{)}\PY{p}{]}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{src\PYZus{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{median}\PY{p}{(}\PY{p}{)}
+             \PY{n}{sf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Count}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{n}{gf}\PY{p}{[}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{delay}\PY{o}{.}\PY{n}{between}\PY{p}{(}\PY{n}{D2}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{D3}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZam{}} \PY{o}{\PYZti{}}\PY{p}{(}\PY{n}{gf}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{==}\PY{n}{XX}\PY{p}{)}\PY{p}{]}\PY{o}{.}\PY{n}{src\PYZus{}}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}
+             \PY{n}{display}\PY{p}{(}\PY{n}{sf}\PY{o}{.}\PY{n}{sort\PYZus{}values}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{ascending}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}\PY{o}{.}\PY{n}{style}\PY{o}{.}\PY{n}{applymap}\PY{p}{(}\PY{n}{color\PYZus{}negative\PYZus{}red}\PY{p}{)}\PY{o}{.}\PY{n}{apply}\PY{p}{(}\PY{n}{highlight\PYZus{}max}\PY{p}{)}\PY{p}{)}
+             \PY{c+c1}{\PYZsh{}print(gf[(gf.delay.between(D2+1,D3)) \PYZam{} \PYZti{}(gf.src\PYZus{}==XX)].sort\PYZus{}values(\PYZsq{}src\PYZus{}\PYZsq{}))}
+         
+             \PY{k}{return} 
+         \PY{k}{def} \PY{n+nf}{color\PYZus{}negative\PYZus{}red}\PY{p}{(}\PY{n}{val}\PY{p}{)}\PY{p}{:}
+             \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+         \PY{l+s+sd}{    Takes a scalar and returns a string with}
+         \PY{l+s+sd}{    the css property `\PYZsq{}color: red\PYZsq{}` for negative}
+         \PY{l+s+sd}{    strings, black otherwise.}
+         \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+             \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}} \PY{k}{if} \PY{n}{val} \PY{o}{\PYZlt{}} \PY{l+m+mi}{0} \PY{k}{else} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}
+             \PY{k}{return} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{color: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{color}
+         \PY{k}{def} \PY{n+nf}{highlight\PYZus{}max}\PY{p}{(}\PY{n}{s}\PY{p}{)}\PY{p}{:}
+             \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}}
+         \PY{l+s+sd}{    highlight the maximum in a Series yellow.}
+         \PY{l+s+sd}{    \PYZsq{}\PYZsq{}\PYZsq{}}
+             \PY{n}{is\PYZus{}max} \PY{o}{=} \PY{n}{s} \PY{o}{==} \PY{n}{s}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{return} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{background\PYZhy{}color: yellow}\PY{l+s+s1}{\PYZsq{}} \PY{k}{if} \PY{n}{v} \PY{k}{else} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}} \PY{k}{for} \PY{n}{v} \PY{o+ow}{in} \PY{n}{is\PYZus{}max}\PY{p}{]}
+         
+         \PY{k}{def} \PY{n+nf}{getDep}\PY{p}{(}\PY{n}{VAR}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SiteTypeRecreationalSite}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{GAMMA}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{:}
+             \PY{n}{printmd}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{} *}\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n}{VAR}\PY{o}{+}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{*}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         
+             \PY{n}{printmd}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}\PYZsh{} **Low Social**}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{n}{getRelationships}\PY{p}{(}\PY{n}{MF}\PY{o}{=}\PY{n}{mf\PYZus{}ls}\PY{p}{,}\PY{n}{VAR}\PY{o}{=}\PY{n}{VAR}\PY{p}{,}\PY{n}{HIGAMMA}\PY{o}{=}\PY{n}{GAMMA}\PY{p}{,}\PY{n}{SELF}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+             \PY{n}{printmd}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}\PYZsh{} **Medium Social**}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{n}{getRelationships}\PY{p}{(}\PY{n}{MF}\PY{o}{=}\PY{n}{mf\PYZus{}ms}\PY{p}{,}\PY{n}{VAR}\PY{o}{=}\PY{n}{VAR}\PY{p}{,}\PY{n}{HIGAMMA}\PY{o}{=}\PY{n}{GAMMA}\PY{p}{,}\PY{n}{SELF}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+             \PY{n}{printmd}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}\PYZsh{} **High Social**}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{n}{getRelationships}\PY{p}{(}\PY{n}{MF}\PY{o}{=}\PY{n}{mf\PYZus{}hs}\PY{p}{,}\PY{n}{VAR}\PY{o}{=}\PY{n}{VAR}\PY{p}{,}\PY{n}{HIGAMMA}\PY{o}{=}\PY{n}{GAMMA}\PY{p}{,}\PY{n}{SELF}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+             \PY{n}{printmd}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}\PYZsh{} **Leaving**}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{n}{getRelationships}\PY{p}{(}\PY{n}{MF}\PY{o}{=}\PY{n}{mf\PYZus{}lt}\PY{p}{,}\PY{n}{VAR}\PY{o}{=}\PY{n}{VAR}\PY{p}{,}\PY{n}{HIGAMMA}\PY{o}{=}\PY{n}{GAMMA}\PY{p}{,}\PY{n}{SELF}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+             \PY{k}{return}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{getDep}\PY{p}{(}\PY{n}{VAR}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SiteTypeRecreationalSite}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{GAMMA}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{sitetyperecreationalsite}{%
+\section{\texorpdfstring{\emph{SiteTypeRecreationalSite}}{SiteTypeRecreationalSite}}\label{sitetyperecreationalsite}}
+
+    
+    \hypertarget{low-social}{%
+\subsection{\texorpdfstring{\textbf{Low
+Social}}{Low Social}}\label{low-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa403891908>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d746080>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40ccd2240>
+    \end{verbatim}
+
+    
+    \hypertarget{medium-social}{%
+\subsection{\texorpdfstring{\textbf{Medium
+Social}}{Medium Social}}\label{medium-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b6d68>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15e908>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40ccd22b0>
+    \end{verbatim}
+
+    
+    \hypertarget{high-social}{%
+\subsection{\texorpdfstring{\textbf{High
+Social}}{High Social}}\label{high-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15e5c0>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b66d8>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b68d0>
+    \end{verbatim}
+
+    
+    \hypertarget{leaving}{%
+\subsection{\texorpdfstring{\textbf{Leaving}}{Leaving}}\label{leaving}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b6588>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15e320>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b67b8>
+    \end{verbatim}
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{getDep}\PY{p}{(}\PY{n}{VAR}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SiteTypeRestaurant}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{GAMMA}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{sitetyperestaurant}{%
+\section{\texorpdfstring{\emph{SiteTypeRestaurant}}{SiteTypeRestaurant}}\label{sitetyperestaurant}}
+
+    
+    \hypertarget{low-social}{%
+\subsection{\texorpdfstring{\textbf{Low
+Social}}{Low Social}}\label{low-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b6978>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15e1d0>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43eda0>
+    \end{verbatim}
+
+    
+    \hypertarget{medium-social}{%
+\subsection{\texorpdfstring{\textbf{Medium
+Social}}{Medium Social}}\label{medium-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b4748>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15ed68>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b4668>
+    \end{verbatim}
+
+    
+    \hypertarget{high-social}{%
+\subsection{\texorpdfstring{\textbf{High
+Social}}{High Social}}\label{high-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b6fd0>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b6e48>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43ebe0>
+    \end{verbatim}
+
+    
+    \hypertarget{leaving}{%
+\subsection{\texorpdfstring{\textbf{Leaving}}{Leaving}}\label{leaving}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43eda0>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15e128>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b4278>
+    \end{verbatim}
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{n}{getDep}\PY{p}{(}\PY{n}{VAR}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{myFriends}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{GAMMA}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{myfriends}{%
+\section{\texorpdfstring{\emph{myFriends}}{myFriends}}\label{myfriends}}
+
+    
+    \hypertarget{low-social}{%
+\subsection{\texorpdfstring{\textbf{Low
+Social}}{Low Social}}\label{low-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b6978>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43eb70>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43ebe0>
+    \end{verbatim}
+
+    
+    \hypertarget{medium-social}{%
+\subsection{\texorpdfstring{\textbf{Medium
+Social}}{Medium Social}}\label{medium-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43c5c0>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b44a8>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b4668>
+    \end{verbatim}
+
+    
+    \hypertarget{high-social}{%
+\subsection{\texorpdfstring{\textbf{High
+Social}}{High Social}}\label{high-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b6978>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43c630>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40a0a1710>
+    \end{verbatim}
+
+    
+    \hypertarget{leaving}{%
+\subsection{\texorpdfstring{\textbf{Leaving}}{Leaving}}\label{leaving}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40a0a1160>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b4160>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43c780>
+    \end{verbatim}
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{n}{getDep}\PY{p}{(}\PY{n}{VAR}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{popFrac}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{GAMMA}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{popfrac}{%
+\section{\texorpdfstring{\emph{popFrac}}{popFrac}}\label{popfrac}}
+
+    
+    \hypertarget{low-social}{%
+\subsection{\texorpdfstring{\textbf{Low
+Social}}{Low Social}}\label{low-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b4668>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15e710>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40a0a1208>
+    \end{verbatim}
+
+    
+    \hypertarget{medium-social}{%
+\subsection{\texorpdfstring{\textbf{Medium
+Social}}{Medium Social}}\label{medium-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15e5c0>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40a0a10f0>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43c438>
+    \end{verbatim}
+
+    
+    \hypertarget{high-social}{%
+\subsection{\texorpdfstring{\textbf{High
+Social}}{High Social}}\label{high-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15eeb8>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40a0a1128>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15ecc0>
+    \end{verbatim}
+
+    
+    \hypertarget{leaving}{%
+\subsection{\texorpdfstring{\textbf{Leaving}}{Leaving}}\label{leaving}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40cc3c860>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40cc3ceb8>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15ea90>
+    \end{verbatim}
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{n}{getDep}\PY{p}{(}\PY{n}{VAR}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{visitors}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{GAMMA}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{visitors}{%
+\section{\texorpdfstring{\emph{visitors}}{visitors}}\label{visitors}}
+
+    
+    \hypertarget{low-social}{%
+\subsection{\texorpdfstring{\textbf{Low
+Social}}{Low Social}}\label{low-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40cc3cf60>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40cc3cb38>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40cc3c780>
+    \end{verbatim}
+
+    
+    \hypertarget{medium-social}{%
+\subsection{\texorpdfstring{\textbf{Medium
+Social}}{Medium Social}}\label{medium-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40cc3c748>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43c4a8>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d933898>
+    \end{verbatim}
+
+    
+    \hypertarget{high-social}{%
+\subsection{\texorpdfstring{\textbf{High
+Social}}{High Social}}\label{high-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d933e10>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40cc3cd68>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d933748>
+    \end{verbatim}
+
+    
+    \hypertarget{leaving}{%
+\subsection{\texorpdfstring{\textbf{Leaving}}{Leaving}}\label{leaving}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d933e80>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d933518>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d9336a0>
+    \end{verbatim}
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{n}{getDep}\PY{p}{(}\PY{n}{VAR}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Dist}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{GAMMA}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{2}\PY{p}{)}
+\end{Verbatim}
+
+
+    \hypertarget{dist}{%
+\section{\texorpdfstring{\emph{Dist}}{Dist}}\label{dist}}
+
+    
+    \hypertarget{low-social}{%
+\subsection{\texorpdfstring{\textbf{Low
+Social}}{Low Social}}\label{low-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d933e80>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43ec50>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15e9e8>
+    \end{verbatim}
+
+    
+    \hypertarget{medium-social}{%
+\subsection{\texorpdfstring{\textbf{Medium
+Social}}{Medium Social}}\label{medium-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43c400>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d15ee10>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d933e80>
+    \end{verbatim}
+
+    
+    \hypertarget{high-social}{%
+\subsection{\texorpdfstring{\textbf{High
+Social}}{High Social}}\label{high-social}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b44a8>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d43c400>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d933780>
+    \end{verbatim}
+
+    
+    \hypertarget{leaving}{%
+\subsection{\texorpdfstring{\textbf{Leaving}}{Leaving}}\label{leaving}}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40d3b6518>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40a0a1080>
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+<pandas.io.formats.style.Styler at 0x7fa40cc3c780>
+    \end{verbatim}
+
+    
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
