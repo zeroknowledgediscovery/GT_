@@ -1,0 +1,34 @@
+TA1A:
+Z: Median: 2.0, Mean: 3.13488750127
+Absolute I : Median: 562.0, Mean: 1109.28
+Normalizer: 1095 * 100 = 109500
+Normalized I : Median: 0.0051, Mean: 0.01013
+
+Mean gamma for the 200 csvs whose target was 'myFriends','meetingPairs':0.028500444866452528
+<M> = 0.0285 x sqrt(1095 x 0.01) = 0.094308735 for normalized I complexity mean
+<M> = 0.0285 x sqrt(1095 x 0.005) = 0.0667 for normalized I complexity median
+
+
+CRIME 2014_2016_end60
+Z: Median: 3.0, Mean: 7.6831183268
+Absolute I : Median: 8220.5, Mean: 7921.70537125
+Normalizer: 6165 * 60 = 369900
+Normalized I: Median: 0.02222, Mean: 0.02146
+
+Mean gamma for 3826 csvs whose target was 'HOMICIDE-ASSAULT-BATTERY','BURGLARY-THEFT-MOTOR_VEHICLE_THEFT': 0.16534674863872612
+
+<M> = 0.165 x sqrt(6165 x 0.02146) = 1.897 for normalized I complexity mean
+<M> = 0.165 x sqrt(6165 x 0.02222) = 1.9303 for normalized I complexity median
+
+
+TERROR 2012_2016
+Z: Median: 1.0, Mean: 1.8889
+Absolute I : Median: 3748.5, Mean: 3932.23295455
+Normalizer: 916 * 90 = 82440
+Normalized I: Median: 0.0455, Mean: 0.0477
+
+Mean gamma for 3826 csvs whose target was: 'Bombing_Explosion-Facility_Infrastructure_Attack', 'Armed_Assault-Hostage_Taking_Barricade_Incident-Hijacking-Assassination-Hostage_Taking_Kidnapping_': 0.14222642713392844
+
+<M> = 0.1422 x sqrt(916 x 0.0455) = 0.918 for normalized I complexity mean
+<M> = 0.1422 x sqrt(6165 x 0.02222) = 0.94 for normalized I complexity median
+
