@@ -1,0 +1,130 @@
+\documentclass[onecolumn, compsoc,10pt]{IEEEtran}
+\let\labelindent\relax
+\usepackage{enumitem}
+\input{preamble.tex} 
+\usepackage{geometry}
+\geometry{a4paper, left=.7in,right=.75in,top=.8in,bottom=0.65in}
+\usepackage{textcomp}
+\usepackage{colortbl}
+% \usepackage{subfigure}
+\usepackage{array}
+\usepackage{courier}
+\usepackage{wrapfig}
+\usepackage{pifont} 
+\usepackage{subfig} 
+\usetikzlibrary{chains,backgrounds}
+\usetikzlibrary{intersections}
+\usepackage[super]{cite}  
+\usepackage{setspace} 
+\makeatletter \renewcommand{\@citess}[1]{\raisebox{1pt}{\textsuperscript{[#1]}}} \makeatother
+\usepackage{xstring}
+\usepackage{xspace}
+\captionsetup[subfigure]{labelformat=empty}
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+  {-2ex \@plus -1ex \@minus -.2ex}%
+  {1ex \@plus.1ex}%
+  {\LARGE\bfseries\scshape}}
+
+\def\thesectiondis{\thesection} \def\thesubsectiondis{\thesectiondis\alph{subsection}.} \def\thesubsubsectiondis{\thesubsectiondis\roman{subsubsection}.} %\def\theparagraphdis{\thesubsubsectiondis\arabic{paragraph}.}
+
+\makeatother
+\makeatletter
+\pgfdeclareradialshading[tikz@ball]{ball}{\pgfqpoint{-10bp}{10bp}}{%
+  color(0bp)=(tikz@ball!30!white);
+  color(9bp)=(tikz@ball!75!white);
+  color(18bp)=(tikz@ball!90!black);
+  color(25bp)=(tikz@ball!70!black);
+  color(50bp)=(black)}
+\makeatother
+\newcommand{\tball}[1][CadetBlue4]{${\color{#1}\Large\boldsymbol{\blacksquare}}$}
+\renewcommand{\baselinestretch}{1.1075}
+\renewcommand{\captionN}[1]{\caption{\color{CadetBlue4!80!black} \sffamily \fontsize{8}{9}\selectfont #1  }}
+\tikzexternaldisable 
+\parskip=7pt
+\parindent=0pt
+\newcommand{\Mark}[1]{\textsuperscript{#1}}
+% \lhead{\sf\footnotesize \color{DodgerBlue4!70!black}\today}
+\pagestyle{fancy} 
+\def\COLA{black}
+% ###################################
+\cfoot{}
+% \cfoot{}
+\lhead{\sffamily \scriptsize \color{DodgerBlue4!70!black} ACLF Data Science Program}
+\rhead{\scriptsize\bf\sffamily\thepage}
+\newcommand{\partxt}{\bf\sffamily\itshape}
+% ############################################################
+\newif\iftikzX
+\tikzXtrue 
+\tikzXfalse
+\tikzexternalenable
+\def\jobnameX{atd}
+\newcommand{\SPX}[1][50pt]{\vspace{#1}}
+% ############################################################
+\newcommand{\incomplete}{\colorbox{Red1!80}{\textbf{\footnotesize\color{white}(incomplete section)}}}
+\def\FWN{\textbf{\small FWN}\xspace}
+% ############################################################
+% ##################################
+% ##################################
+
+\def\TITLE{Discovering of Deep Structues in  Spatio-temporal  Social Dynamics \\ Via Deep Generalized Granger Nets: \\ Predicting Crime in Chicago}
+\author{}
+\date{June 2018}
+
+\begin{document}
+% 
+\chead{\bf\sffamily \footnotesize \color{DodgerBlue4!90!black} Project Summary}
+% 
+\xtitaut{\bf\sffamily \color{black!90!DodgerBlue1}  \fontsize{15}{16}\selectfont 
+\vskip 1em
+  {\TITLE
+    % \hrule 
+  }
+}{}
+\vspace{-15pt}   
+
+
+\section{PI and co-PI Information}
+\subsection{Principle Investigator(PI) Information} 
+\begin{itemize}
+\item PI: Chattopadhyay, Ishanu, Dr.
+\item Institution: University of Chicago
+\item Address: Room 10152, 900 East 57th Street, Chicago, IL 606037
+\item Email: \href{mailto:ishanu@uchicago.edu}{ishanu@uchicago.edu}
+\end{itemize}
+% \subsection{Co-Principle Investigator(co-PI) Information}
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+\section{Project Summary}
+\textcolor{red}{1/2page}
+\subsection{Executive Summary}
+
+\subsection{Benefits to Community}
+
+\subsection{Impact Statement}
+
+\subsection{Science/Software Framework Summary}
+
+\subsection{Application Summary}
+\subsubsection{Application Requirement}
+\subsubsection{Application Description}
+\subsubsection{Application Performance}
+\subsubsection{Application Development Needed}
+\subsubsection{Application Data Requirement}
+
+\section{Estimate of Resources Requested}
+
+\subsection{Theta Resources}
+
+\subsection{Mira or  Cooley Resources}
+
+\section{Other Collaborations}
+
+\section{Project Team Members}
+
+\subsection{Names and Levels of Effort}
+
+
+\end{document}
