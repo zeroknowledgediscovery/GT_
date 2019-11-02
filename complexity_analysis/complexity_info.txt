@@ -32,3 +32,14 @@ Mean gamma for 3826 csvs whose target was: 'Bombing_Explosion-Facility_Infrastru
 <M> = 0.1422 x sqrt(916 x 0.0455) = 0.918 for normalized I complexity mean
 <M> = 0.1422 x sqrt(6165 x 0.02222) = 0.94 for normalized I complexity median
 
+
+TA1A:
+Z: Median: 3.0, Mean: 3.53703215218
+Absolute I : Median: 815.0, Mean: 1150.62320917
+Normalizer: 1095 * 100 = 109500
+Normalized I : Median: 0.00074, Mean: 0.01051
+
+Mean gamma for the 698 csvs whose target was 'myFriends','meetingPairs','visitors','Dist','fracFriends','myFriends','popFrac','singles': 
+0.028472
+<M> = 0.0285 x sqrt(1095 x 0.00074) = 0.0256 for normalized I complexity mean
+<M> = 0.0285 x sqrt(1095 x 0.01051) = 0.0967 for normalized I complexity median
