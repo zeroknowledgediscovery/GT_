@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.3.12)  14 NOV 2019 00:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.3.12)  14 NOV 2019 09:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1972,51 +1972,57 @@ d
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `phvro8yn' already exists, duplicates ignor
 ed
-}] [2]
+}] [2] [3]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 22.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
 (./postproc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
 Package rerunfilecheck Info: File `postproc.out' has not changed.
-(rerunfilecheck)             Checksum: ADD31068876D3B81D1539DED5BF71C1F;282.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
+(rerunfilecheck)             Checksum: 8059F07C80361E9EAB0EBE26B9AE0076;813.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 2.6161pt have occurred.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 236.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37168 strings out of 493046
- 856963 string characters out of 6137253
- 1092061 words of memory out of 11000000
- 39958 multiletter control sequences out of 15000+600000
- 70135 words of font info for 158 fonts, out of 8000000 for 9000
+ 37224 strings out of 493046
+ 857879 string characters out of 6137253
+ 1093069 words of memory out of 11000000
+ 40004 multiletter control sequences out of 15000+600000
+ 77754 words of font info for 179 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 61i,16n,96p,1031b,5358s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/
-concmath-fonts/xccmi5.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/lj
-four/public/concmath-fonts/xccex10.600pk> </home/ishanu/.cache/texlive/texmf-va
-r/fonts/pk/ljfour/public/concrete/ccr10.600pk> </home/ishanu/.cache/texlive/tex
-mf-var/fonts/pk/ljfour/public/concmath-fonts/xccmi7.600pk> </home/ishanu/.cache
-/texlive/texmf-var/fonts/pk/ljfour/public/concrete/ccr7.600pk> </home/ishanu/.c
-ache/texlive/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccmi10.600pk> </h
-ome/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy
-10.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/ish
+ 61i,18n,96p,1031b,5358s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </h
+ome/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccmi
+5.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/concmath
+-fonts/xccex10.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/pu
+blic/concrete/ccr10.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfo
+ur/public/concmath-fonts/xccmi7.600pk> </home/ishanu/.cache/texlive/texmf-var/f
+onts/pk/ljfour/public/concrete/ccr7.600pk> </home/ishanu/.cache/texlive/texmf-v
+ar/fonts/pk/ljfour/public/concmath-fonts/xccmi10.600pk> </home/ishanu/.cache/te
+xlive/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy10.600pk> </home/ish
 anu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy7.600pk
 ></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/rsfs/rsfs5.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/rsfs/rsfs7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
-tic/uhvr8a.pfb>
-Output written on postproc.pdf (2 pages, 48653 bytes).
+tic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.
+pfb>
+Output written on postproc.pdf (3 pages, 65071 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

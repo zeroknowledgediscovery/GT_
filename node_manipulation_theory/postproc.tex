@@ -159,9 +159,74 @@ s_t^i \leftarrow s_t^i + \sum_{s^u \in U}\alpha_i^u \delta s^u_t
 Step 6.  Update target sites using approach in previous section.
 
 
-The last two sections are sufficient to answer both Q1 and Q2 for both scenarios. Now, we define the computation of confidence bounds.
+The last two sections are sufficient to answer both Q1 and Q2 for both scenarios. %Now, we define the computation of confidence bounds.
+\textbf{Confidence Bounds Needs for Q1}
 
-\subsection*{Confidence Bounds}
+\section{Q3 : Individual List of REC Sites Visited}
+
+\subsection{Scenario A}
+
+\subsubsection{Individuals Already in Cynet Run}
+
+Step 1. Compute Regressor to predict $3$ variables for all uid that were already in cynet run1:
+\begin{itemize}
+\item distHome
+\item distWork
+\item RecSiteVisit
+\end{itemize}
+
+Step 2. Identify which recsites were actually visited (when RecSiteVisit predicts a visit), by looking up the nearest RecSite that satisfies the distHome and distWork distances at that time.
+
+Step 3. Compute list of RecSites visited (in prediction period) by each individual
+
+\subsubsection{Individuals Not  in Cynet Run}
+
+\textit{Please message me if there are indeed any individuals who are not included in the cynet run? }
+
+
+\def\H{H^0}
+\def\hh{h^\star}
+
+Let $H^0$ be the set of individuals in the cynet run.
+
+Let  $h^\star$ be an individual not in the run for whom we have to make predictions
+Let $\omega(h)$ be the coordinate of the workplace for individual $h$, and $\sigma(h)$ be the coordiante of the home.
+
+Additionaly, let $h_t^\omega, h_t^\sigma$ be the predictions of distWork and distHome  for indivdual $h$.
+
+Assuming Step 1. above is done.
+
+Step 2. For each day $t$ in prediction period, set up and solve the following 2  
+regression problems:
+\cgather{
+\textrm{Given } h_t^\omega, h_t^\sigma \xrightarrow{predict} distHome \textrm{ (when at Rec site on day $t$ )}\\
+\textrm{Given }h_t^\omega, h_t^\sigma \xrightarrow{predict} distWork \textrm{ (when at Rec site on day $t$)}
+}
+
+Step 3. Use regressors computed in Step 2. to estimate distHome, distWork for $\hh$.
+
+Step 4. Compute list of sites 
+
+
+
+\subsection{Scenario B: Sites Close}
+
+We simply select the next closest site when computing the REC Site Ids
+
+
+\section{Q4: Average Number of Rec Site Visits Per Day}
+
+Step 1. Compute from RecSiteVisit Predictions directly on individuals in cynet run.
+
+
+\textbf{Confidence Bounds Needs for Q4}
+
+
+\section{Confidence Bounds Calculation}
+
+Step 1. Vary the model slection at Cynet prediction stage for all calculations, to generate a set of different predictions (time series levels)
+
+Step 2. Use this bank of time series to compute confidence bounds.
 
 
 \clearpage
