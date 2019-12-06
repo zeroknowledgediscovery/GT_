@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{may1972will}
+\bibinfo{author}{May, R.~M.}
+\newblock \bibinfo{title}{Will a large complex system be stable?}
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{238}},
+  \bibinfo{pages}{413--414} (\bibinfo{year}{1972}).
+
+\bibitem{may2001stability}
+\bibinfo{author}{May, R.~M.}
+\newblock \emph{\bibinfo{title}{Stability and complexity in model ecosystems}},
+  vol.~\bibinfo{volume}{6} (\bibinfo{publisher}{Princeton university press},
+  \bibinfo{year}{2001}).
+
+\bibitem{jacquet2016no}
+\bibinfo{author}{Jacquet, C.} \emph{et~al.}
+\newblock \bibinfo{title}{No complexity--stability relationship in empirical
+  ecosystems}.
+\newblock \emph{\bibinfo{journal}{Nature communications}}
+  \textbf{\bibinfo{volume}{7}}, \bibinfo{pages}{12573} (\bibinfo{year}{2016}).
+
+\bibitem{mora2011biological}
+\bibinfo{author}{Mora, T.} \& \bibinfo{author}{Bialek, W.}
+\newblock \bibinfo{title}{Are biological systems poised at criticality?}
+\newblock \emph{\bibinfo{journal}{Journal of Statistical Physics}}
+  \textbf{\bibinfo{volume}{144}}, \bibinfo{pages}{268--302}
+  (\bibinfo{year}{2011}).
+
+\end{thebibliography}
