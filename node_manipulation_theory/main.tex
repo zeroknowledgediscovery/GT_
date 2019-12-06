@@ -84,6 +84,7 @@
 \vspace{-15pt}   
 
 \section{Preliminary Notions \& Notations}
+\subsection{Distance}
 \begin{notn}[A Priori Sites]
 Let 
 \cgather{
@@ -98,10 +99,17 @@ d(q_i,q_j) = \sqrt{(x_i-x_j)^2 + (y_i -y_j)^2 }
 }
 where $x_i,x_j$ and $y_i,y_j$ are the X and Y coordinates of $q_i,q_j$ repectively. 
 \end{notn}
+
+We can use actual travel distance if available.
+
+\subsection{Probability SCaling and Summation}
+We define operations on probability vectors somewhat differently:
+
+{\color{Red4}
 \begin{defn}[Scaling Of Probability distribution]
 For a given probability distribution $\wp$, and a scalar $c \in \mathbb{R}$, we define the scaled distribution $\wp'$ as:
 \cgather{
-\wp'_i = c \odot \wp = \frac{\wp_i^c}{\sum_i \wp_i^c}
+\boxed{\wp'_i = c \odot \wp = \frac{\wp_i^c}{\sum_i \wp_i^c}}
 }
 \end{defn} 
 \begin{example}
@@ -113,7 +121,7 @@ Let $\wp=[0.1 \  0.2 \  0.7 ]$ and $c=0.2$. Then
 \begin{defn}[Addition Of Probability distribution]
 For a given probability distributions $\wp,\wp'$, the sum is defined as:
 \cgather{
-(\wp \oplus \wp')_i =  \frac{\wp_i \wp_i'}{\sum_i \wp_i \wp_i'}
+\boxed{(\wp \oplus \wp')_i =  \frac{\wp_i \wp_i'}{\sum_i \wp_i \wp_i'}}
 }
 \end{defn} 
 \begin{example}
@@ -122,13 +130,14 @@ Let $\wp=[0.1 \  0.2 \  0.7 ]$ and $\wp'=[0.3 \  0.3 \  0.4]$. Then,
 (\wp \oplus \wp')_i = [ 0.1\times 0.3 \mspace{15mu} 0.2\times0.3 \mspace{15mu}  0.7 \times 0.4 ] \times \frac{1}{ (0.1\times 0.3) + (0.2\times0.3) + (0.7 \times 0.4)}
 }
 \end{example}
-
+}
 It follows from the above definitions that for any distribution $\wp$:
 \cgather{
 \wp \oplus (-1)\wp = u
 }
 where u is the uniform distribution on the same alphabet.
 
+\subsection{Hybrid Scaling}
 
 \begin{defn}[Hybrid Scaling ]
 Given a tuple $(c,\wp)$ where $c \in \mathbb{R}$ and $\wp$ is a probability distribution, we define hybrid scaling by $\theta$ as follows:
@@ -174,7 +183,7 @@ This is the predicted number of visits at time $t$ at site $q_i$.
 \end{notn}
 
 Now we are ready to specify the addition calculation. 
-
+{\color{gray}
 \section{Addition of New Nodes}
 We calculate the visitors as a function of time to newly added nodes. And also the changes to the priorly eisting nodes due to the addition of one or more new nodes.
 
@@ -196,7 +205,7 @@ And the updated  visits to site $q_i$ is given by:
 \cgather{
 \forall q_i \in Q, u(q_i) =  \mathcal{R}_i ( F_i^t) - \sum_{s \in S} u_i(s) \mathcal{R}_i ( F_i^t)
 }
-
+}
 Next the subtraction algorithm.
 \section{Removal of Nodes}
 

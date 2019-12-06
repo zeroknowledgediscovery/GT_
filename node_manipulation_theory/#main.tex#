@@ -1,0 +1,217 @@
+\documentclass[onecolumn, compsoc,10pt]{IEEEtran}
+\let\labelindent\relax
+\usepackage{enumitem}
+\input{preamble.tex} 
+\usepackage{geometry}
+\geometry{a4paper, left=.7in,right=.75in,top=.8in,bottom=0.65in}
+\usepackage{textcomp}
+\usepackage{colortbl}
+% \usepackage{subfigure}
+\usepackage{array}
+\usepackage{courier}
+\usepackage{wrapfig}
+\usepackage{pifont} 
+\usepackage{subfig} 
+\usetikzlibrary{chains,backgrounds}
+\usetikzlibrary{intersections}
+\usepackage[super]{cite}  
+\usepackage{setspace} 
+\makeatletter \renewcommand{\@citess}[1]{\raisebox{1pt}{\textsuperscript{[#1]}}} \makeatother
+\usepackage{xstring}
+\usepackage{xspace}
+\captionsetup[subfigure]{labelformat=empty}
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+  {-2ex \@plus -1ex \@minus -.2ex}%
+  {1ex \@plus.1ex}%
+  {\LARGE\bfseries\scshape}}
+
+\def\thesectiondis{\thesection} \def\thesubsectiondis{\thesectiondis\alph{subsection}.} \def\thesubsubsectiondis{\thesubsectiondis\roman{subsubsection}.} %\def\theparagraphdis{\thesubsubsectiondis\arabic{paragraph}.}
+
+\makeatother
+\makeatletter
+\pgfdeclareradialshading[tikz@ball]{ball}{\pgfqpoint{-10bp}{10bp}}{%
+  color(0bp)=(tikz@ball!30!white);
+  color(9bp)=(tikz@ball!75!white);
+  color(18bp)=(tikz@ball!90!black);
+  color(25bp)=(tikz@ball!70!black);
+  color(50bp)=(black)}
+\makeatother
+\newcommand{\tball}[1][CadetBlue4]{${\color{#1}\Large\boldsymbol{\blacksquare}}$}
+\renewcommand{\baselinestretch}{1.1075}
+\renewcommand{\captionN}[1]{\caption{\color{CadetBlue4!80!black} \sffamily \fontsize{8}{9}\selectfont #1  }}
+\tikzexternaldisable 
+\parskip=7pt
+\parindent=0pt
+\newcommand{\Mark}[1]{\textsuperscript{#1}}
+% \lhead{\sf\footnotesize \color{DodgerBlue4!70!black}\today}
+\pagestyle{fancy} 
+\def\COLA{black}
+% ###################################
+\cfoot{}
+% \cfoot{}
+\rhead{\scriptsize\bf\sffamily\thepage}
+\lhead{\scriptsize\bf\sffamily DARPA GT \today}
+\newcommand{\partxt}{\bf\sffamily\itshape}
+% ############################################################
+\newif\iftikzX
+\tikzXtrue 
+\tikzXfalse
+\tikzexternalenable
+\def\jobnameX{atd}
+\newcommand{\SPX}[1][50pt]{\vspace{#1}}
+% ############################################################
+\newcommand{\incomplete}{\colorbox{Red1!80}{\textbf{\footnotesize\color{white}(incomplete section)}}}
+\def\FWN{\textbf{\small FWN}\xspace}
+% ############################################################
+% ##################################
+% ##################################
+
+\def\TITLE{Addition \& Subtraction of Interacting Nodes In A Spatio-temporal  Process Evolving Over An Atmost Countable Set }
+\author{}
+\date{June 2018}
+
+\begin{document}
+% 
+% 
+\xtitaut{\bf\sffamily \color{black!90!DodgerBlue1}  \fontsize{15}{16}\selectfont 
+\vskip 1em
+  {\TITLE \\
+    % \hrule 
+\small ishanu chattopadhyay
+  }
+}{}
+\vspace{-15pt}   
+
+\section{Preliminary Notions \& Notations}
+\subsection{Distance}
+\begin{notn}[A Priori Sites]
+Let 
+\cgather{
+Q=\{ q_1 , \cdots , q_i, \cdots , q_m\}
+}
+ denote the set of nodes or sites existing a priori. Note that the location of  each $q_i$ is specified by its X and Y coordinates. 
+\end{notn}
+\begin{notn}[Euclidean Distance]
+The Euclidean distance between sites $q_i,q_j$ is denoted by $d(q_i,q_j)$. This is simply:
+\cgather{
+d(q_i,q_j) = \sqrt{(x_i-x_j)^2 + (y_i -y_j)^2 }
+}
+where $x_i,x_j$ and $y_i,y_j$ are the X and Y coordinates of $q_i,q_j$ repectively. 
+\end{notn}
+
+We can use actual travel distance if available.
+
+\subsection{Probability SCaling and Summation}
+We define operations on probability vectors somewhat differently:
+
+{\color{Red4}
+\begin{defn}[Scaling Of Probability distribution]
+For a given probability distribution $\wp$, and a scalar $c \in \mathbb{R}$, we define the scaled distribution $\wp'$ as:
+\cgather{
+\boxed{\wp'_i = c \odot \wp = \frac{\wp_i^c}{\sum_i \wp_i^c}}
+}
+\end{defn} 
+\begin{example}
+Let $\wp=[0.1 \  0.2 \  0.7 ]$ and $c=0.2$. Then 
+\cgather{
+0.2 \star \wp = [ 0.1^{0.2} \ 0.2^{0.2} \ 0.7^{0.2} ] \times \frac{1}{ 0.1^{0.2} + 0.2^{0.2} + 0.7^{0.2}}
+}
+\end{example}
+\begin{defn}[Addition Of Probability distribution]
+For a given probability distributions $\wp,\wp'$, the sum is defined as:
+\cgather{
+\boxed{(\wp \oplus \wp')_i =  \frac{\wp_i \wp_i'}{\sum_i \wp_i \wp_i'}}
+}
+\end{defn} 
+\begin{example}
+Let $\wp=[0.1 \  0.2 \  0.7 ]$ and $\wp'=[0.3 \  0.3 \  0.4]$. Then, 
+\cgather{
+(\wp \oplus \wp')_i = [ 0.1\times 0.3 \mspace{15mu} 0.2\times0.3 \mspace{15mu}  0.7 \times 0.4 ] \times \frac{1}{ (0.1\times 0.3) + (0.2\times0.3) + (0.7 \times 0.4)}
+}
+\end{example}
+}
+It follows from the above definitions that for any distribution $\wp$:
+\cgather{
+\wp \oplus (-1)\wp = u
+}
+where u is the uniform distribution on the same alphabet.
+
+\subsection{Hybrid Scaling}
+
+\begin{defn}[Hybrid Scaling ]
+Given a tuple $(c,\wp)$ where $c \in \mathbb{R}$ and $\wp$ is a probability distribution, we define hybrid scaling by $\theta$ as follows:
+\cgather{
+\theta \odot (c, \wp) = (\theta c , \theta \odot \wp)
+}
+\end{defn}
+
+\begin{defn}[Normalized Coordinates]
+For a  site $P$ (new or existing a priori), its normlized coordinates $\Theta(P)$ is defined as:
+\cgather{
+\forall i \in \{1,\cdots, m\}, \Theta(P)_i = \frac{d(P,q_i)}{\sum_{i=1}^m d(P,q_i)  }
+}
+where $q_i$ are the a priori sites.
+\end{defn}
+
+\begin{defn}[Normalized Inverse Coordinates ]
+We define the normalized inverse coordinates as:
+\cgather{
+\forall i \in \{1,\cdots, m\}, \Theta^\star(P)_i = \frac{1}{\Theta(p)_i}
+}
+\end{defn}
+
+Recall the FTX files generated in the course of the \textit{cynet} simulation.
+Each line in each FTX file is actually a pair $(\gamma,\wp)$, where $\gamma$ is a scalar, and $\wp $ is a probability distribution.
+
+\begin{notn}
+Let the FTX file for site $q_i$ at time $t$ be denoted as $F_i^t$.
+\end{notn}
+
+\begin{defn}[FTX Scaling]
+Given the FTX file $F_i^t$, and a scalar $c$, the scaled FTX file $c \odot F_i^t$ is defined as:
+\cgather{
+(\gamma, \wp) \in F_i^t \Rightarrow (c\gamma, c \odot \wp) \in c \odot F_i^t
+}
+\end{defn}
+\begin{notn}
+Given the FTX file $F_i^t$, we denote the regressor output as:
+\cgather{
+\mathcal{R}_i(F_i^t)
+}
+This is the predicted number of visits at time $t$ at site $q_i$.
+\end{notn}
+
+Now we are ready to specify the addition calculation. 
+{\color{gray}
+\section{Addition of New Nodes}
+We calculate the visitors as a function of time to newly added nodes. And also the changes to the priorly eisting nodes due to the addition of one or more new nodes.
+
+Let $s$ be a new site added. Then we calcualte the number of \textit{pre-visits} as:
+\cgather{
+\hat{u}_i(s) = \mathcal{R}_i \left (\frac{1}{\Theta(s)_i} \odot F_i^t \right )
+}
+
+Allowing for the possibility of adding mutiple new sites $s \in S$, we compute:
+
+\cgather{
+u_i(s) = \frac{\hat{u}_i(s) }{ \mathcal{R}_i ( F_i^t)+   \hat{u}_i(s) }
+}
+And finally, we specify that  the visit to new site $s$ at time $t$ is given by:
+\cgather{
+  u(s) = \sum_{q_i \in Q} u_i(s) \mathcal{R}_i ( F_i^t)
+}
+And the updated  visits to site $q_i$ is given by:
+\cgather{
+\forall q_i \in Q, u(q_i) =  \mathcal{R}_i ( F_i^t) - \sum_{s \in S} u_i(s) \mathcal{R}_i ( F_i^t)
+}
+}/;;.
+Next the subtraction algorithm.
+\section{Removal of Nodes}
+
+Note that the normalized coordinates can be calculated for any of the existing nodes as well. Assume that $q_j \in Q$ is to be removed. Then, the updated visits to site $q_i$ is given by: 
+\cgather{
+\forall q_i \neq q_j \in Q,  u(q_i) = \mathcal{R}_i ( F_i^t)  + \frac{\mathcal{R}_j \left (\frac{1}{\Theta(q_j)_i} \odot F_j^t \right )}{\sum_i \mathcal{R}_j \left (\frac{1}{\Theta(q_j)_i} \odot F_j^t \right )}  \mathcal{R}_j ( F_j^t)
+}
+where we assume that $\mathcal{R}_i(x) \rightarrow 0$ as $\vert x \vert  \rightarrow \infty$.
+\end{document}

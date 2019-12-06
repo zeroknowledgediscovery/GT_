@@ -1,0 +1,514 @@
+\documentclass[onecolumn, compsoc,11pt]{IEEEtran}
+\let\labelindent\relax
+\usepackage{enumitem}
+\input{preamble.tex} 
+\usetikzlibrary{arrows}
+\usepackage{geometry}
+\geometry{a4paper, left=.7in,right=.75in,top=.8in,bottom=0.65in}
+\usepackage{textcomp}
+\usepackage{colortbl}
+%\usepackage{subfigure}
+\usepackage{array}
+\usepackage{courier}
+\usepackage{wrapfig}
+\usepackage{pifont}
+\usepackage{subfig}
+\usetikzlibrary{chains,backgrounds}
+\usetikzlibrary{intersections}
+\usepackage[super]{cite}  
+\usepackage{setspace} 
+\makeatletter \renewcommand{\@citess}[1]{\raisebox{1pt}{\textsuperscript{[#1]}}} \makeatother
+\usepackage{xstring}
+\usepackage{xspace}
+\captionsetup[subfigure]{labelformat=empty}
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-1ex \@plus -1ex \@minus -.2ex}%
+                                   {0.05ex \@plus.1ex}%
+                                   {\large\bfseries\scshape}}
+\renewcommand\subsection{\@startsection {section}{1}{\z@}%
+                                   {-1ex \@plus -.25ex \@minus -.2ex}%
+                                   {0.1ex \@plus.0ex}%
+                                   {\fontsize{11}{10}\selectfont\bfseries\sffamily\color{DodgerBlue4}}}
+\renewcommand\subsubsection{\@startsection {section}{1}{\z@}%
+                                   {0ex \@plus -.5ex \@minus -.2ex}%
+                                   {0.0ex \@plus.5ex}%
+                                   {\fontsize{10}{10}\selectfont\bfseries\sffamily\color{Red4}}}
+\renewcommand\paragraph{\@startsection {section}{1}{\z@}%
+                                   {-1.5ex \@plus -.5ex \@minus -.2ex}%
+                                   {0.0ex \@plus.5ex}%
+                                   {\fontsize{11}{11}\selectfont\itshape\sffamily\color{Red1!50!black}}}
+ 
+
+\makeatother
+\makeatletter
+\pgfdeclareradialshading[tikz@ball]{ball}{\pgfqpoint{-10bp}{10bp}}{%
+ color(0bp)=(tikz@ball!30!white);
+ color(9bp)=(tikz@ball!75!white);
+ color(18bp)=(tikz@ball!90!black);
+ color(25bp)=(tikz@ball!70!black);
+ color(50bp)=(black)}
+\makeatother
+\newcommand{\tball}[1][CadetBlue4]{${\color{#1}\Large\boldsymbol{\blacksquare}}$}
+\renewcommand{\baselinestretch}{1.05}
+\renewcommand{\captionN}[1]{\caption{\color{CadetBlue4!80!black} \sffamily \fontsize{10}{11}\selectfont #1  }}
+\tikzexternaldisable 
+\parskip=4pt
+\parindent=0pt
+\newcommand{\Mark}[1]{\textsuperscript{#1}}
+%\lhead{\sf\footnotesize \color{DodgerBlue4!70!black}\today}
+\pagestyle{fancy} 
+\def\COLA{black}
+%###################################
+\cfoot{\bf\sffamily \scriptsize \color{Maroon!50} \disclosure }
+%\cfoot{}
+\lhead{}
+\rhead{\scriptsize\bf\sffamily\thepage}
+\newcommand{\partxt}{\bf\sffamily\itshape}
+%############################################################
+\newif\iftikzX
+\tikzXtrue 
+%\tikzXfalse
+\tikzexternalenable
+\def\jobnameX{yfa}
+\newcommand{\SPX}[1][50pt]{\vspace{#1}}
+%############################################################
+\newcommand{\incomplete}{\colorbox{Red1!80}{\textbf{\footnotesize\color{white}(incomplete section)}}}
+\def\FWN{\textbf{\small FWN}\xspace}
+%############################################################
+% ##################################
+% ##################################
+\begin{document} 
+%
+\lhead{}
+
+
+\section{Executive Summary}
+We aim to detect, and quantify cognitive dissonance in individuals, communities, and sub-populations, and ultimately craft a general theory of belief shift over time driven by  the purported  human need of maintaining internal cognitive consistency. In addition to identifying dissonance,  we bring together psycho-social theory, stochastic processes, and large deviation theory to propose a theoretical framework to  predict likely choices of  response strategies invoked   to reduce cognitive conflict, and model the long-term stochastic dynamics of belief evolution. We aim to validate our proposed theory and tools  on publicly available large  social survey data sets, and in focused longitudinal experiments with human subjects.
+
+Cognitive dissonance~\cite{miller15} refers to  the psychological stress arising from holding two or more contradictory beliefs, ideas or values. Festinger in his \textit{A Theory of  Cognitive Dissonance}~\cite{festinger1962theory} posited that humans  have an intrinsic drive to hold all our beliefs in harmony. To maintain cognitive consistency, individuals might attempt to reduce the importance of the conflicting beliefs (trivialization), acquire new beliefs (rationalization), or alter  the conflicting attitude, opinion, belief or behavior. Thus, Festinger's thesis in effect postulates a mechanism of  belief shift over time, and suggests that such processes might be effectively modulated via interventions suitably  informed by  quantitative estimates of dissonance.
+
+Since Festinger's original formulation, researchers have theorized alternative mechanisms that maintain cognitive consistency~\cite{ARONSON19691,zanna74,COOPER1984229}. Notwithstanding the actual psychological processes in play, the central goal of this work is
+well defined: \textit{Can we quantify cognitive dissonance in individuals, or communities? And can we predict the routes they take to reduce conflicts in their cognitive processes?}
+
+% This is a problem of crucial importance for DoD operations, especially in conflict countries. In the modern reality of asymmetric and urban combat operations often directed against  local insurgencies, a tool that recognizes cognitive dissonance in the populace, and can predict belief shifts over time, is vitally important for long term strategy. As an example, ability to shift away from  violent behaviors might negate the need of military action, saving considerable resources. In addition, the proposed work will establish a fundamentally novel approach to analyzing, and interpreting large scale survey data, thus advancing socio-psychological theory. At the same time, ability to predict belief shifts among the US population can inform key  policy decisions.
+
+% The proposed set of measurable milestones will demonstrate verifiable progress within the first 6 months, with computation of dissonance vectors for the entire General Social Survey (GSS) dataset, with belief shifts modeled under simple scenarios. By the $10$th milestone, we aim to have  validated our belief shift models  in large scale longitudinal  databases, as well as
+% in focused field experiments.
+
+Our technical challenges  arise  from the qualitative nature of the notion of dissonance. The  complexities of social structures, and the diversity of ideas and beliefs that the human mind processes,  makes it  problematic to objectively  quantify | or even reliably recognize |  the notion of cognitive conflict. Perhaps even more difficult is the detection of  such conflicts at scale, with realistic observational data.  Naive attempts at directly quantifying the role of  historical and societal  drivers behind  beliefs, opinions and values | and how those  evolve |  is an intractable proposition.
+
+Our approach simplifies the problem by formulating  a computable measure of cognitive dissonance as a measure of surprise: when asked a diversity of questions, dissonance with respect to a specific topic manifests as a deviation from a model estimate of the expected and the actual recorded response. Effectively modeling  expected responses with little or no prior knowledge of the emergent dependencies between the survey responses, is  non-trivial. We plan to develop a novel machine learning  framework called the recursive decision forests,  specifically designed to seek out dependency structures in response databases without resorting to brute force searches in exponential spaces, and ultimately obtain quantitative estimates of cognitive dissonance.
+
+
+
+%The proposed work will be carried out over a period of 24 months in the base period, followed by 12 months in the option period, at a total cost of $1$M USD. 
+
+\section{Goals and Impact}
+%The goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals.
+Within the stated broad goals of this work, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
+
+\subsection*{Innovation: From Socio-psychological Theory To Data-driven Inference}
+Our proposed work is starkly novel in the level of mathematical rigor, the scalable computational tools, and the elegant quantitative adoption of a qualitative theory in psychology. The key innovation here  is the formulation of the notion of cognitive dissonance as a \textbf{quantitative  measure of surprise}; computed as the deviation of an individual's response to
+survey questions from what is predicted by data-inferred models from the  responses of a wider random population  to a broader set of queries. We bring together key insights from social and psychological theory, stochastic processes, and large deviation theory, to develop a novel machine learning framework (\textbf{recursive decision forest}) specifically designed for the problem at hand. Current research in the theory of cognitive dissonance is mostly qualitative, and the use of sophisticated learning algorithms custom is rare to non-existent. 
+\subsection*{Impact: Understanding  Opinion Maturation \& Dynamics of Belief Shifts }
+\begin{enumerate}
+[label=\tball, leftmargin=0pt,
+labelindent=0em, topsep=0.1em, labelsep=*, itemsep=.15em,itemindent=2em]\color{black} \sffamily\fontsize{11}{12}\selectfont
+\item  \textbf{Ability to quantify cognitive dissonance in US population and beyond.}  The ability to understand if there is cognitive dissonance arising from opinions on specific contentious  issues can potentially emerge as key tool in crafting policy.
+  %For the DoD, this capability will be a vital decision support tool when engaged in military  operations in conflict countries.
+\item  \textbf{Belief Shift Prediction.} Perhaps more crucial is the ability to understand how beliefs would shift as a result of cognitive conflict; thus allowing decision-makers to have actionable knowledge to modulate social interaction outcomes.%, particularly in foreign theaters  of DoD operations.
+\item \textbf{Extending Social Theory.} The successful validation of the our proposed tools will revolutionize the analysis of large scale survey data. The ability to distill incipient micro-structural  cross-dependencies and predict psycho-social dynamics at the level of sub-populations to individuals is currently beyond the state of the art, limited to mostly large scale trend analysis.
+\end{enumerate}
+%Deliverables include validated software, to be deposited in open source repositories; results from validation experiments; reports as determined by DARPA; and published research articles.
+%\clearpage
+\section{Technical Plan}
+% {\color{gray}\footnotesize Outline and address the technical challenges inherent in the proposed approach and possible solutions for overcoming potential problems.  Demonstrate a deep understanding of the technical challenges and present a credible (even if risky) plan to achieve the project’s goal.  Discuss mitigation of technical risk.  
+
+% Provide appropriate measurable milestones (quantitative if possible) at intermediate stages to demonstrate progress, and a plan for achieving the milestones.  
+
+% List Government-furnished materials or data assumed to be available.
+% }
+% ######################################################
+We aim to develop a scalable computational approach using sophisticated machine learning  algorithms  designed to seek out quantitative estimates of cognitive dissonance in raw survey data. In addition,  we propose a theoretical framework to  predict likely choices of  response strategies invoked   to reduce cognitive conflict, and ultimately model the dynamics of how dissonance evolves in individuals and communities. We aim to validate our proposed theory and tools  on publicly available large scale  social survey data sets, and in focused longitudinal experiments with human subjects.
+
+Our key challenges  arise  from the qualitative nature of the notion of dissonance. The  complexities of social structures, and the diversity of ideas and beliefs that the human mind processes,  makes it  problematic to objectively  quantify | or even reliably recognize |  the notion of cognitive conflict. Perhaps even more difficult is the detection of  such conflicts at scale, with realistic observational data.  Naive attempts at directly quantifying the role of  historical and societal  drivers behind  beliefs, opinions and values | and how those  evolve |  is an intractable proposition.
+%
+Our approach simplifies the problem by defining a computable notion of   cognitive conflict.
+%
+\subsubsection*{Intuitive Approach To Quantifying Dissonance} Thus, our central idea is the \textbf{computable definition of cognitive dissonance} (detailed later): intuitively, assume that we have  the responses to a set of survey questions from a specific individual from a target community. Now, survey questions are rarely independent | beliefs held within the constraints of a socio-political construct invariably drive emergent,  perhaps non-obvious and non-trivial, dependencies. Thus, the response to any specific question may be predicted (with varying degrees of uncertainty) from the responses to all other questions | provided we have an understanding of the dependencies between the survey questions. Lets this estimated response, conditioned on the rest of the responses, be called the  \textit{conditional cross-estimate}. Then, for a specific question, the \textbf{deviation of this cross-estimate from the actual recorded response}  quantifies dissonance in that topic. Put simply, we quantify dissonance as a \textit{measure of surprise}.
+
+Our intuitive notion  is immediately applicable   in   scenarios commonly used to expound the concept of cognitive dissonance. For example, a smoker  with an otherwise  healthy lifestyle will have a cross-estimated response of being a non-smoker, thus revealing the conflict.
+
+\subsubsection*{Technical Challenges} We are generally unaware of the cross-dependencies between answers. Indeed, social surveys tend to query beliefs on contentious issues, and are expected to  have complex dependencies. But, with no prior knowledge of these relationships, we have no choice but learn them from data. However, learning the structure is a non-trivial problem. We most probably  do not know the correct model structure a priori. Also the data is most likely a  mix of categorical and ordinal variables making the situation more complicated. Clearly, we cannot employ a brute force approach, and attempt to search the exponential space of all possible dependencies. 
+
+Our solution to this modeling and computational problem is based on the novel notion of a    \textbf{recursive forest of decision trees}, which  distills the dependency structure automatically, while not pre-supposing rigid constraints on what the dependencies might look like, or how complex they might be.
+%###########################
+%###########################
+%###########################
+\begin{figure}
+  %\centering
+  \vspace{-10pt}
+\iftikzX
+    \hspace{-25pt}
+    \input{Figures/treemap.tex}
+      \vspace{-38pt}
+
+\else
+    \hspace{-25pt}
+\includegraphics[width=1.02\textwidth]{Figures/External/main-figure0}
+      \vspace{-25pt}
+
+  \fi
+
+  
+  \captionN{Three Estimators from the Recursive Forest computed with a small number of query items from the GSS 2018. The items, as shown, ask if the person is strongly religious, if they support marijuana legalization, and if faculty with communistic ideologies should be fired from their teaching positions. Our calculations indicated a high dissonance for the questions on religion (A) and communism (B), and a low dissonance on cannabis legalization (C).  We note that further inspection, we find that both trees in A and B have clear dissonant patterns (marked in Red), while the tree for cannabis usage legalization does not. In particular, the decision tree in A indicates that there are individuals who pray multiple times a day, but consider themselves not very strongly religious. And B indicates that there are people who think faculty with communistic ideology should be fired, any text written by them should be removed from libraries (var: libcom), but also think that faculty supporting the military takeover of US and doing away with elections should be allowed to teach (var: colmil). Irrespective of whether these individual ideas can be supported, these results demonstrate our ability to uncover these potential dissonant patterns. In panel C, we have indications of both people supporting and disagreeing with cannabis legalization, but the views seem to be relatively free from obvious conflict. Inset shows that how the dissonance over the cannabis question has evolved over time, finally dropping below the mean dissonance level in 2016.}\label{fig0}
+  \vspace{-20pt}
+\end{figure}
+%###########################
+%###########################
+\subsection*{Recursive Decision Forests From Survey Responses}
+The recursive decision forest is a set of decision trees: given a survey with $N$ questions, the recursive forest consists of at most $N$ decision trees, where the $i^{th}$ tree attempts to predict the answers to the $i^{th}$ question using the responses to the rest of the $(N-1)$ questions as features.
+
+Thus, in contrast to  random forests, the estimators in a recursive forest are not independent. Also,  recursive forests are not necessarily ensemble estimators per se, $i.e.$, unlike random forests, we are not attempting to improve prediction by averaging over a predictor ensemble;  we are trying to infer dependencies across features, $i.e.$, the observable characteristics of the system at hand.
+
+The ``recursive'' nature of the forest arises from the fact that while the responses to  question $i$ might be affected by the responses to question $j$, the decision tree predicting $j$ might in turn use the responses to  $i$ as a predictive feature. Thus, the complete set of decision trees capture the potentially complex emergent dependencies between the survey responses. These dependencies may be inferred reliably even in the lack of any deep understanding of the nature of the questions, and the explicit societal forces that shape these structures. To describe the picture  formally, we need the following definitions:
+%
+\def\I{\mathds{I}}
+\def\D{\mathfrak{D}}
+\def\Q{\mathds{Q}}
+\def\R{X}
+\def\supp{\mathop{\mathsf{supp}}}
+\def\u{\boldsymbol{u}}
+\begin{defn}[Item Set]
+Let $\I$ be a finite set of questions (items) presented to a population of individuals in the course of a survey. We call this the \textit{item set}.  Each item response can be either categorical, ordinal or real valued. The
+range of each item $i \in \I$ is denoted as $\Sigma_i$. 
+\end{defn}
+%
+We can think of $\I$ as the index set of a set of random variables, $i.e.$, the item $i \in \I$ indexes a random variable $X_i$ taking values in $\Sigma_i$. And, the response of a specific individual to a particular item $i \in \I$ is  a sample for the corresponding random  variable $X_i$. These random variables are not independent, and the task of the recursive forest is to infer these dependencies.
+%%###########################
+%###########################
+%###########################
+\begin{figure}[!t]
+  %\centering
+  \vspace{-10pt}
+  
+\iftikzX
+    \hspace{-25pt}
+\input{Figures/clsmap.tex}
+  \vspace{-22pt}
+  \else \includegraphics[width=0.97\textwidth]{Figures/External/main-figure1}
+  \vspace{-15pt}
+  \fi
+
+  
+  \captionN{Dissonance measure used to find clusters with a limited set of survey questions from the years 2016  in the GSS dataset. We see that dissonance levels are mostly stable across people for most questions, but subtle changes make beliefs shift over time, as evidenced by the question on cannabis legalization in Fig.~\ref{fig0}}\label{fig1}
+  \vspace{-20pt}
+  
+\end{figure}
+%###########################
+%###########################
+%###########################
+%###########################%
+\subsubsection*{Recursive Forest Construction}
+Let $\D\left (i,\I\setminus\{i\}\right )$ be a decision tree with  item $i$ as the target variable, and the rest of the  items acting as ``features'' on which  decision rules are imposed. Thus:
+\cgather{
+\D\left (i,\I\setminus\{i\}\right ) = R_1\vee \cdots R_\ell \vee \cdots R_k
+\intertext{where $R_\ell$ are distinct rules, $i.e.$, paths from the root to a leaf in the decision tree:}
+\forall \ell, R_\ell = C_1 \wedge \cdots C_s \cdots \wedge C_m
+\textrm{ and }
+\forall s, \exists  j \in \I\setminus\{i\} , \textrm { s.t. } C_s \subset \Sigma_j
+}
+%The recursive forest is defined to be the collection of all such decision trees computed on $\I$.
+%
+{\noindent}We  always use conditional inference trees~\cite{Sard-Espinosa:2017:CIT:3108944.3109065}, unless otherwise specified.  In contrast to decision tree construction algorithms that perform univariate splits and use information measures such as the gini coefficient to select covariates, conditional inference trees uses multiple significance test procedure based on permutations.
+%
+\begin{defn}[Formal Definition of Recursive Decision Forest $\Q$] Using the notation introduced above, we define a recursive forest as the complete set of all cross-dependent predictors  computed on $\I$:
+  \cgather{
+\Q \triangleq \bigg  \{  \D\left (i,\I\setminus\{i\}\right ), i \in \I \bigg \}
+    }
+\end{defn}
+%%%%%
+\begin{notn}
+  The set of features involved in the decision tree $\D$ is denoted as $\supp(\D)$.
+    %Thus, $\supp(\D\left (i,\I\setminus\{i\}\right )) \subseteqq \I\setminus\{i\}$.
+  Additionally, negative subscripts $e.g.$ $x_{-i}$ denote a vector $x_1,\cdots,x_{i-1},x_{i+1}, \cdots x_\I$, $i.e.$, excludes the index $i$.
+\end{notn}
+%%%%
+\begin{defn}[Conditional Cross-estimate]
+A conditional cross-estimate $\mu_i(\Q,X_{-i})$ for the $i^{th}$ item is a random variable conditioned on the inferred recursive forest $\Q$, and the recorded responses $X_{-i}=x_{-i}$ to the rest of the items in $\I$. Thus, in the categorical case, we have:
+  \cgather{
+Pr(\mu_i(\Q,X_{-i}) = \sigma \in \Sigma_i) = Pr(X_i = \sigma \vert X_{-i}=x_{-i}, \Q)
+    }
+The definition  for  ordinal and continuous variables is analogous.
+  \end{defn} 
+  %
+  \subsection*{Quantitative Definition of Cognitive Dissonance As A Large Deviation Estimate}
+  We use large deviation theory to estimate the surprise in a recorded response from the
+  its conditional cross-estimate, to quantify dissonance. Thus:
+\begin{defn}[Dissonnance Vector $\u$]
+  For a specific individual, the dissonance measure $\u_i$ at item $i\in \I$, given  the inferred recursive forest $\Q$, and the responses $x_i, i \in \I$ is given by:
+  \cgather{
+    \u_i(x_i,x_{-i},\Q) = 1 - 2^{Pr(\mu_i(\Q,X_{-i})=x_i)\log_2 Pr(\mu_i(\Q,X_{-i})=x_i)}    
+  }
+  where the second term on the right hand side is the probability  of the observed deviation of the conditional cross-estimate and the actual response $x_i$ from large deviation theory and Sanov's theorem~\cite{cover}. Note that, as per notation, $x_i$ is the response to the $i^{th}$ item, whereas $x_{-i}$ is the vector of responses to the rest of the items indexed by $\I$.
+\end{defn}
+The  dissonance vector generalizes readily to scenarios where we are interested in   a community or a sub-population instead of individual respondents, and where only a subset of responses are available.
+
+The ability to  infer dissonance is demonstrated in Fig.~\ref{fig0}, with $3$ trees inferred from GSS 2018 survey data. Our analysis suggested that the trees in panels A and B had a high dissonance value, while the one is panel C (support of cannabis legalization) did not. Inspecting the trees, we find immediate evidence of conflict as shown highlighted in red (See figure caption for details). Fig.~\ref{fig1} illustrates the variation in dissonance across people, and survey questions.
+%
+\subsection*{Predicting Dissonance Response: Trivialization or Change in Belief?}
+Festinger's thesis dictates that dissonance motivates actions for reducing conflict. With the formal definition of  the dissonance vector, we can work out the probabilities of the different categories of  response strategies invoked by an individual. %We estimate the probabilities that the response to dissonance will be either a change in beleifs, or something else akin to trivialization or attempted rationalization of current beliefs.
+In particular, we investigate the probability of  dissonance dissipation by perturbing the specific responses. If a perturbation in the recorded response alone for the $i^{th}$ item is able to effectively reduce the value of the dissonance vector at $i$, then changing one's beliefs is a viable strategy. Likewise, if  a perturbation in  the responses to the rest of the items  reduces dissonance, then  some form of rationalization or trivialization is also viable.
+To estimate the likelihood of trivialization, we assume that individuals tend to follow the path of least resistance.  Thus, we ask, that given the current dissonance $ \u_i^\star$ in the item $i \in \I$:
+\begin{itemize}
+\item How hard is it to reduce dissonance holding  $X_i$ constant, $i.e.$, estimate $\alpha_{i,\Q} \triangleq Pr(\u_i \leqq \u_i^\star \vert X_i)$
+  \item How hard is it to reduce dissonance holding $X_{-i}$ constant, $i.e.$, estimate $\beta_{i,\Q} \triangleq Pr(\u_i \leqq \u_i^\star \vert X_{-i})$
+  \end{itemize}
+  The  probability of  adopting trivialization/rationalization is then the marginalized estimate:
+  \cgather{
+\wp_{i,\Q} \triangleq \frac{\alpha_{i,\Q} }{\alpha_{i,\Q} +\beta_{i,\Q}}
+}
+Clearly, it is harder to change one's beliefs as opposed to rationalization: perturbing a single response to achieve reduction in $\u_i$ is  harder to achieving the same by perturbing thousands of variables instead.
+\subsection*{Master Equation for Long Term Evolution Dynamics of Belief Shift}
+To model the dynamics of belief shift over time, we will investigate a range of increasingly complex  approaches that progressively relax simplifying assumptions.
+The analysis outlined above, in conjunction with Festinger's notion that belief shifts due to cognitive dissonance are aimed as reducing the current conflict, leads to the following stochastic evolution equations:
+\calign{
+&  Pr(X_i^{t+\Delta t} = X_i^t) = \wp_{i,\Q_t} \label{eq7} \\
+&  Pr(X_i^{t+\Delta t} = x) = \left \{ \begin{array}{ll} c_t (\u_{i}(x,x_{-i},\Q_t) - \u_{i}(x_i,x_{-i},\Q_t)), & \textrm{if } \u_{i}(x,x_{-i},\Q_t) < \u_{i}(x_i,x_{-i},\Q_t) \\
+                  0, & \textrm{otherwise} \end{array} \right. \label{eq8} \\
+     & \textrm{where } c_t= (1 - \wp_{i,\Q_t}) \left (  \sum_{x \in \Sigma_i}  \left (   \u_{i}(x,x_{-i},\Q_t) - \u_{i}(x_i,x_{-i},\Q_t)  \right ) \right )^{-1} \notag
+                                  }
+\noindent These relationships may be cast as a generalized Master Equation, often used to model stochastic dynamics. Note, Eq.~\eqref{eq7} is the \textbf{rationalization dynamics} (probability of no change in beliefs), and Eq.~\eqref{eq8} \textbf{models the shift in beliefs}, using Festinger's diktat that the dissonance measure must decrease. In our initial investigations, we assume that the probability of shifting to a new belief is proportional to the decrease in dissonance. Since no shift in belief for $X_i$ $i.e.$ the rationalization or trivialization action might change responses in other items (in the set $X_{-i}$), the dynamics is  coupled across items, leading to  complex stochastic evolution. One of our core objectives will be to investigate efficient solutions of this set of equations, and validate  results directly in longitudinal survey data.    Additionally, we will consider  frameworks with hidden states to model more complex responses.                           
+\subsection*{Research Plan}
+Our research plan consists of  development of inference algorithms as outlined above, with  consequent validation in large scale social survey data sets. The two main data sets to be used in this context are 1) the General Social Survey (GSS) , and 2) the National Longitudinal Study of Youth (NLSY).
+%
+\subsubsection*{GSS Dataset} The National Data Program for the Social Sciences has been conducted since 1972 by the non-partisan and objective research organization (NORC,\href{http://www.norc.org}{http://www.norc.org}) at the University of Chicago,  with the support of the National Science Foundation. %The GSS gathers data on contemporary American society in order to monitor and explain trends and constants in attitudes, behaviors, and attributes.
+The GSS contains a standard core of demographic, behavioral, and attitudinal questions, plus topics of special interest, and will be used as the main development, tuning and validation data for our learning algorithms. While individual belief shifts cannot be directly validated, population level predictions of the belief evolution over time will be tested on the GSS data.
+%
+\subsubsection*{NLSY Data set} The NLSY79 Cohort (\href{https://www.nlsinfo.org/content/cohorts/nlsy79}{https://www.nlsinfo.org/content/cohorts/nlsy79}) is a longitudinal project maintained by the U.S. Bureau of Labor Statistics, that follows the lives of a sample of American youth born between 1957-64. The cohort originally included 12,686 respondents ages 14-22 when first interviewed in 1979; after two sub-samples were dropped, 9,964 respondents remain in the eligible samples. %Data are now available from Round 1 (1979 survey year) to Round 27 (2016 survey year).
+The NLSY data set is of crucial importance to our proposed validation goals of predicting belief shifts over time, in response to quantified dissonance measures.
+
+The planned research comprises the following tasks:
+\begin{enumerate}
+[label=\tball, leftmargin=0pt,
+labelindent=0em, topsep=0.1em, labelsep=*, itemsep=.75em,itemindent=2em]\color{CadetBlue4!40!black} \sffamily\fontsize{11}{12}\selectfont
+\item  \textbf{Task 1 (Recursive Forest Generation)} The recursive forest generation task involves developing the general theory of recursive decision forests, and adopting the framework to sociological survey data. Key challenges here as scalability, identifying theoretical bounds on uncertainties, and sample complexities, and understanding trade-offs between the complexity of individual decision trees, and the predictive performance. We will also explore replacing decision trees as the component estimators in the recursive forest with more advanced predictors, $e.g.$, random forests (resulting in a recursive forest of random forests), gradient boosting ensembles, and multi-layer feed-forward perceptron networks.
+\item  \textbf{Task 2 (Belief Shift Prediction \& Validation)} The belief propagation task will investigate the dynamics of belief evolution over time, as predicted by the inferred decision forests, and the computational approaches outlined in the previous section. 
+  \item  \textbf{Task 3 (Software Development \& Validation)} This task focuses on developing efficient software implementations, that ultimately can be used easily by researchers and other  DoD programs.
+\item  \textbf{Task 4 (Experimental Validation)}
+Finally, we will carry out focused experiments with human subjects recruited from university of Chicago campus, and its surrounding locale in the City of Chicago, to carry out belief shift experiments in a controlled environment. Appropriate IRB approvals will be sought before the experiments are conducted.
+\end{enumerate}
+\subsection*{Measurable Milestones for Tracking Progress}
+%Research progress may be tracked via the following  measurable milestones:
+\begin{enumerate}
+[label=\tball, leftmargin=0pt,
+labelindent=0em, topsep=0.1em, labelsep=*, itemsep=.15em,itemindent=2em]\color{black} \sffamily\fontsize{11}{12}\selectfont
+\item  \textbf{Milestone 1 (month 3)} Initial software development complete, ready for analysis of survey data.
+\item  \textbf{Milestone 2 (month 6)} Recursive forests computed for GSS years from 1972 to 2018.
+\item \textbf{Milestone 3 (month 6) } Demonstration of belief shift dynamics in synthetic scenarios.
+\item  \textbf{Milestone 4 (month 12)} Dissonance measures and rationalization probability calc. demonstrated.
+\item \textbf{Milestone 5 (month 18) } Analysis of longitudinal data sets complete
+  \item \textbf{Milestone 6 (month 24} Demonstration of validated belief shift dynamics in longitudinal data sets.
+  \item \textbf{Milestone 7 (month 24)} Software deliverable at 2 year mark
+  \item \textbf{Milestone 8 (month 30)} Belief shift calculations  with relaxed assumptions demonstrated.
+  \item \textbf{Milestone 9 (month 30)} Initial reports from focused experiments reported.
+  \item \textbf{Milestone 10 (month 36)} Validated software implementation reported for overall project.
+ \item \textbf{Milestone 11 (month 36)} Analysis of experimental results reported, Final report submitted.
+\end{enumerate}
+%
+\subsection*{Technical Risk \& Mitigation}
+Our key technical risk are potential flaws in the theory of cognitive dissonance. We will mitigate this risk by suitably modifying our belief shift equations, and possibly even back out the driving equations from longitudinal data sets via machine learning approaches, at the cost of increased uncertainties.
+\section{Management Plan}
+\begin{enumerate}
+[label=\tball, leftmargin=0pt,
+labelindent=0em, topsep=0.1em, labelsep=*, itemsep=.25em,itemindent=2em]\color{black} \sffamily\fontsize{11}{12}\selectfont
+\item \textbf{Prof. Ishanu Chattopadhyay, PhD (Principal Investigator, Effort: 30-40\%):} is an expert in machine learning, stochastic processes, and predictions and forecasting in complex biological and social systems. Dr. Chattopadhyay, with help from two post-doctoral associates,  will be responsible for all theoretical development, software implementation, and data management. 
+\item \textbf{Prof. James Allen, PhD (Subject Matter \& Data Expert, Effort: 5\%):} is a professor of  sociology at the University of Chicago, and is an expert in social theory, computational sociology, and big data analysis. Professor Evans will advise on social theory, interpretation of variable associations inferred by the proposed algorithms in survey data,  and help the PI in designing the human subject experiments.
+  \item \textbf{Post doctoral Researcher 1 (Effort 100\%):} will report to the PI, and be responsible for theoretical development  of recursive forests, and uncertainty quantification in belief evolution.
+  \item \textbf{Post doctoral Researcher 2 (Effort 85\%):} will report to the PI, and be responsible for software development, and validation and tuning of the framework on large scale data sets.
+\end{enumerate}
+% Provide a summary of expertise of the key personnel on the proposed team (including any subcontractors and consultants) who will be executing the work.  Identify a principal investigator (PI) for the project.  
+% Provide a clear description of the team’s organization including an organization chart that includes, as applicable, the relationship of team members; unique capabilities of team members; task responsibilities of team members; teaming strategy among the team members; and key personnel with the amount of effort to be expended by each person during the project.  
+% Provide a detailed plan for coordination including explicit guidelines for interaction among collaborators/subcontractors of the proposed project.  Include risk management approaches.  
+% Describe any formal teaming agreements that are required to execute this project.
+\section{Personnel, Qualifications, and Commitments}
+\textbf{Prof. Chattopadhyay (PI): (Level of Effort: 560 hr/yr in base, 768 hr/yr in option) } 
+Dr. Chattopadhyay has a diverse background in machine learning, stochastic processes and systems biology, and has multiple graduate degrees in engineering, computer science, and mathematics. He earned his doctoral degree from the Pennsylvania State University, and completed his postdoctoral training at Cornell University. As a faculty in University of Chicago, Chattopadhyay heads the laboratory for Zero Knowledge Discovery (zed.uchicago.edu), where his research focuses on learning theory, and the modeling of complex systems.  His most visible contributions include the algorithms for data smashing~\cite{Chattopadhyay20140826}, inverse Gillespie inference~\cite{Chattopadhyay12990},  non-parametric implementations of Granger  inference~\cite{DBLP:journals/corr/Chattopadhyay14}, and the modeling and prediction of complex social phenomena including urban crime~\cite{li2019longrange} Chattopadhyay is currently funded by DARPA (total 30\% effort), and has been previously supported by  the Neubauer Collegium for Culture and Society {\footnotesize (\href{https://neubauercollegium.uchicago.edu/events/uc/crimes\_of\_prediction/}{https://neubauercollegium.uchicago.edu/events/uc/crimes\_of\_prediction}}).
+Curriculum Vitae is linked in the Bibliography.
+
+\textbf{Prof. Evans} has multiple funded grants including with DARPA. His CV is linked in the Bibliography.
+% List key personnel (no more than one page per person), showing a concise summary of their qualifications, discussion of previous accomplishments, and work in this or closely related research areas.  Do not include personnel that are not anticipated to execute the work.
+% Indicate the level of effort in terms of hours to be expended by each person during each year and other (current and proposed) major sources of support for them and/or commitments of their efforts.
+\section{Capabilities}
+University of Chicago has extensive computational facilities. The NORC at the University of Chicago is an objective non-partisan research institution that maintains the GSS database. Likewise, the National Longitudinal Survey of Youth (NLSY), is  conducted jointly by the Ohio State University and the NORC.
+%Describe organizational experience in relevant subject area(s), existing intellectual property, or specialized facilities.  Discuss any work in closely related research areas and previous accomplishments.  
+%
+%Identify any other solicitation(s) to which this concept has been proposed.  If applicable, state whether funding or a positive funding decision has already been received, and from which agency.
+
+%\clearpage
+\cfoot{}
+\section{Statement of Work (SOW)}
+All work will be performed at the University of Chicago, under the supervision of Dr. Chattopadhyay.
+\subsubsection*{Task 1 Year 1}
+\textbf{Objective:} Recursive Decision Forest Models\\
+\textbf{Description:} Development of the theory of recursive decision forests, and demonstrate applicability to GSS dataset. Demonstrate dissonance calculation, and estimation of probability of rationalization vs opinion change on GSS dataset.
+\textbf{Milestones:} 2 (Month 6), 4 (Month 12)
+\vspace{-5pt}
+
+\subsubsection*{Task 2 Year 1}\textbf{Objective:} Belief Shift Prediction in Simple Scenarios\\
+\textbf{Description:} Demonstration of belief shift dynamics in synthetic scenarios 
+\textbf{Milestones:} 3 (Month 6)
+\vspace{-5pt}
+
+\subsubsection*{Task 3 Year 1} \textbf{Objective:} Software Implementation\\
+\textbf{Description:} Beta Implementation of Recursive Decision Forests without efficiency and
+robustness considerations.\textbf{ Milestones:} 1 (Month 3)
+\vspace{-5pt}
+
+\subsubsection*{Task 1 Year 2}
+\textbf{Objective:} Recursive Decision Forest Models for Longitudinal Data sets\\
+\textbf{Description:} Development of strategies to analyze time varying recursive forests to analyze longitudinal data sets including the NLSY dataset.
+\textbf{Milestones:} 5 (Month 18)
+\vspace{-5pt}
+
+\subsubsection*{Task 2 Year 2}\textbf{Objective:} Belief Shift Prediction with relaxed assumptions\\
+\textbf{Description:} Demonstration of belief shift dynamics in the GSS and the NLSY \\
+\textbf{Milestones:}  6 (Month 24)
+\vspace{-5pt}
+
+\subsubsection*{Task 3 Year 2} \textbf{Objective:} Software Implementation with validation\\
+\textbf{Description:} Version 1.0 Implementation of Recursive Decision Forests with efficiency and robustness considerations.\textbf{ Milestones:} 7 (Month 24)
+\vspace{-5pt}
+
+\subsubsection*{Task 1 Year 3}
+\textbf{Objective:} Advanced Recursive Decision Forest Models for Longitudinal Data sets\\
+\textbf{Description:} Develop theoretical bounds on sample complexities, convergence rates, and investigate changing the base estimators to random forests, boosting classifier, and multi-layer perceptrons.
+\textbf{Milestones:} 10 (month 36), Report submitted
+\vspace{-5pt}
+
+\subsubsection*{Task 2 Year 3}\textbf{Objective:} Advanced Belief Shift Prediction\\
+\textbf{Description:} Demonstration of belief  dynamics in  GSS and  NLSY.
+\textbf{Milestones:}  8 (Month 30)
+\vspace{-5pt}
+
+\subsubsection*{Task 3 Year 3} \textbf{Objective:} Software Implementation with validation\\
+\textbf{Description:} Version 2.0 Implementation of Recursive Decision Forests with  the ability to optimize the base estimator class.\textbf{ Milestones:}  10 (Month 36)
+\vspace{-5pt}
+
+\subsubsection*{Task 4 Year 3} \textbf{Objective:} Human Subject Experiments\\ \textbf{Description:} Selecting random subjects from university campus and surrounding areas, and carry out longitudinal survey with carefully crafted questions. \\  IRB approval will be sought. \textbf{Milestones:} 9 (month 30), 11 (month 36)
+
+% provide a detailed task breakdown, citing specific tasks and their connection to the proposed milestones.  The SOW task structure must be consistent with the schedule, milestones and costs.  Separately define each year of the project.  Do not include any proprietary information. For each defined task/subtask/activity, provide:
+% A general description of the objective.
+% A detailed description of the approach to be taken to accomplish each defined task/subtask (including, where applicable, identifying the tasks/subtasks that will be performed on campus at a university).
+% Identification (by name) of the primary organization (prime contractor, subcontractor(s), consultant(s)) responsible for task/subtask execution.
+% A measurable milestone, (e.g., a deliverable, demonstration, or other event/activity that marks task completion).
+% A definition of all deliverables (e.g., data, reports, software) to be provided to the Government in support of the proposed tasks/subtasks.
+
+\section{Schedule and Milestones}
+% Provide a detailed schedule showing tasks (task name, duration, work breakdown structure element as applicable, performing organization), milestones, and the interrelationships among tasks.  The task structure must be consistent with that in the SOW.  Measurable milestones should be clearly articulated and defined in time relative to the start of the project.
+
+\begin{center}
+
+  Milestones shown in red.
+  
+\tikzexternaldisable
+\begin{tikzpicture}
+  \def\CGOL{lightgray}
+  \def\FCOL{Green1}
+  \tikzstyle{ann} = [draw=,fill=\CGOL,text width=.75in, text height=.1in,anchor=north]
+  \tikzstyle{mls} = [circle,anchor=center, fill=Red1, draw=black, text width=.2in, align=center,inner sep=0pt, very thick]
+  \node[ann,fill=gray] (Y10) at (0,0) {month 6};
+  \node[ann,fill=\FCOL] (T1Y10) at (Y10.south) {};
+  \node[ann] (T2Y10) at (T1Y10.south) {};
+  \node[ann,fill=\FCOL] (T3Y10) at (T2Y10.south) {};
+  \node[ann] (T4Y10) at (T3Y10.south) {};
+
+  \node[mls] (M1) at (T3Y10.center) {1};
+
+
+  
+  \node[ann,fill=gray,anchor=west] (Y11) at (Y10.east) {month 12};
+  \node[ann,fill=\FCOL] (T1Y11) at (Y11.south) {};
+  \node[ann,fill=\FCOL] (T2Y11) at (T1Y11.south) {};
+  \node[ann,fill=\FCOL] (T3Y11) at (T2Y11.south) {};
+  \node[ann] (T4Y11) at (T3Y11.south) {};
+
+
+  \node[ann,fill=gray,anchor=west] (Y20) at (Y11.east) {month 18};
+  \node[ann,fill=\FCOL] (T1Y20) at (Y20.south) {};
+  \node[ann,fill=\FCOL] (T2Y20) at (T1Y20.south) {};
+  \node[ann,fill=\FCOL] (T3Y20) at (T2Y20.south) {};
+  \node[ann] (T4Y20) at (T3Y20.south) {};
+
+ 
+  \node[ann,fill=gray,anchor=west] (Y21) at (Y20.east) {month 24};
+  \node[ann,fill=\FCOL] (T1Y21) at (Y21.south) {};
+  \node[ann,fill=\FCOL] (T2Y21) at (T1Y21.south) {};
+  \node[ann,fill=\FCOL] (T3Y21) at (T2Y21.south) {};
+  \node[ann] (T4Y21) at (T3Y21.south) {};
+
+  \node[ann,fill=gray,anchor=west] (Y30) at (Y21.east) {month 30};
+  \node[ann,fill=\FCOL] (T1Y30) at (Y30.south) {};
+  \node[ann,fill=\FCOL] (T2Y30) at (T1Y30.south) {};
+  \node[ann,fill=\FCOL] (T3Y30) at (T2Y30.south) {};
+  \node[ann,fill=\FCOL] (T4Y30) at (T3Y30.south) {};
+
+ 
+  \node[ann,fill=gray,anchor=west] (Y31) at (Y30.east) {month 36};
+  \node[ann] (T1Y31) at (Y31.south) {};
+  \node[ann,fill=\FCOL] (T2Y31) at (T1Y31.south) {};
+  \node[ann,fill=\FCOL] (T3Y31) at (T2Y31.south) {};
+  \node[ann,fill=\FCOL] (T4Y31) at (T3Y31.south) {};
+
+
+  %\node[ann,fill=gray] (Y10) at (0,0) {month 6};
+  \node[ann,anchor=east] (T1) at (T1Y10.west) {Task 1};
+  \node[ann,anchor=east] (T2) at (T2Y10.west) {Task 2};
+  \node[ann,anchor=east] (T3) at (T3Y10.west) {Task 3};
+  \node[ann,anchor=east] (T4) at (T4Y10.west) {Task 4};
+
+    \node[mls] (M2) at (T1Y10.east) {2};
+    \node[mls] (M3) at (T2Y10.east) {3};
+    \node[mls] (M4) at (T1Y11.east) {4};
+    \node[mls] (M5) at (T1Y20.east) {5};
+    \node[mls] (M6) at (T2Y21.east) {6};
+    \node[mls] (M7) at (T3Y21.east) {7};
+    \node[mls] (M8) at (T2Y30.east) {8};
+    \node[mls] (M9) at (T4Y30.east) {9};
+    \node[mls] (M10) at (T3Y31.east) {10};
+    \node[mls] (M11) at (T4Y31.east) {11};
+
+  \end{tikzpicture}
+
+  \end{center}
+% \clearpage
+
+
+% \input{Figures/treemap2.tex}
+
+
+\clearpage 
+%\setcounter{page}{1}
+\section{Bibliography}
+% Optional.  If desired, include links to relevant papers, reports or resumes.  Do not include technical papers. The linked materials will not be evaluated as part of the proposal review
+
+CV for Ishanu Chattopadhyay:
+
+\href{https://zed.uchicago.edu/cv/chattopadhyay\_cv.pdf}{https://zed.uchicago.edu/cv/chattopadhyay\_cv.pdf}
+
+CV for Other Personnel:
+
+\href{https://www.knowledgelab.org/}{https://www.knowledgelab.org/}
+
+\bibliographystyle{naturemag}
+\bibliography{creed,qnet,BibLib1}
+
+\end{document}
+% ####################################
+% ####################################
+% ####################################
+% ####################################
+% ####################################
+% ####################################
+% ####################################
