@@ -1,0 +1,10 @@
+./Figures/External/main-figure0.pdf: Figures/plotdata/zsoccer.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/zta1.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/zcrime_1416.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/zcrime_1315.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/zterror_1216.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/zterror_1115.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
