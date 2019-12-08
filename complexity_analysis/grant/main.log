@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.3.12)  7 DEC 2019 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.20)  7 DEC 2019 19:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1751,43 +1751,45 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
 [4{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pagd8z' already exists, duplicates ignored
+dmap/pdftex.map): fontmap entry for `cob' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `cobo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `com' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `coo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `hv' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `hvb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `hvbo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `hvo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrb8g' already exists, duplicates ignored
 
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pagdo8z' already exists, duplicates ignore
-d
+dmap/pdftex.map): fontmap entry for `pcrb8r' already exists, duplicates ignored
 
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pagk8z' already exists, duplicates ignored
-
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pagko8z' already exists, duplicates ignore
-d
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pbkd8z' already exists, duplicates ignored
-
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pbkdi8z' already exists, duplicates ignore
-d
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pbkl8z' already exists, duplicates ignored
-
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pbkli8z' already exists, duplicates ignore
-d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1796,8 +1798,43 @@ dmap/pdftex.map): fontmap entry for `pcrb8u' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrb8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrbo8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrbo8r' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `pcrbo8u' already exists, duplicates ignore
 d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrbo8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrr8r' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pcrr8rn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1806,8 +1843,38 @@ dmap/pdftex.map): fontmap entry for `pcrr8u' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrro8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrro8r' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `pcrro8u' already exists, duplicates ignore
 d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrro8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvb8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvb8r' already exists, duplicates ignored
+
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1816,7 +1883,12 @@ dmap/pdftex.map): fontmap entry for `phvb8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `phvbn8z' already exists, duplicates ignore
+dmap/pdftex.map): fontmap entry for `phvbo8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvbo8r' already exists, duplicates ignore
 d
 
 
@@ -1826,8 +1898,13 @@ d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `phvbon8z' already exists, duplicates ignor
-ed
+dmap/pdftex.map): fontmap entry for `phvr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvr8r' already exists, duplicates ignored
+
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1836,7 +1913,12 @@ dmap/pdftex.map): fontmap entry for `phvr8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `phvrn8z' already exists, duplicates ignore
+dmap/pdftex.map): fontmap entry for `phvro8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvro8r' already exists, duplicates ignore
 d
 
 
@@ -1846,18 +1928,8 @@ d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `phvron8z' already exists, duplicates ignor
-ed
+dmap/pdftex.map): fontmap entry for `pncr8g' already exists, duplicates ignored
 
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pncb8z' already exists, duplicates ignored
-
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pncbi8z' already exists, duplicates ignore
-d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1866,28 +1938,42 @@ dmap/pdftex.map): fontmap entry for `pncr8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncri8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `pncri8z' already exists, duplicates ignore
 d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pplb8z' already exists, duplicates ignored
+dmap/pdftex.map): fontmap entry for `psyr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `psyrgo' already exists, duplicates ignored
 
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pplbi8z' already exists, duplicates ignore
-d
+dmap/pdftex.map): invalid entry for `psyro': SlantFont/ExtendFont can be used o
+nly with embedded Type1 fonts
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pplr8z' already exists, duplicates ignored
+dmap/pdftex.map): fontmap entry for `ptmb8g' already exists, duplicates ignored
 
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pplri8z' already exists, duplicates ignore
-d
+dmap/pdftex.map): fontmap entry for `ptmb8r' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmb8y' already exists, duplicates ignored
+
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1896,8 +1982,58 @@ dmap/pdftex.map): fontmap entry for `ptmb8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmbi8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmbi8r' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmbi8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `ptmbi8z' already exists, duplicates ignore
 d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmbo8r': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmbo8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmr8r' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmr8rn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmr8yn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1906,13 +2042,228 @@ dmap/pdftex.map): fontmap entry for `ptmr8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmri8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmri8r' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmri8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `ptmri8z' already exists, duplicates ignore
 d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pzcmi8z' already exists, duplicates ignore
-d
+dmap/pdftex.map): invalid entry for `ptmro8r': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmro8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmrr8re': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmrr8ye': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pzdr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpcrb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpcrbo' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpcrr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpcrro' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rphvb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rphvbo' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rphvbon': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rphvbrn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rphvr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rphvro' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rphvron': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rphvrrn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpsyr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rpsyro': SlantFont/ExtendFont can be used 
+only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rptmb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rptmbi' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rptmbo': SlantFont/ExtendFont can be used 
+only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rptmr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rptmri' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rptmro': SlantFont/ExtendFont can be used 
+only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rptmrre': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rptmrrn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpzdr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `sy' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tib' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tibi' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tibo': SlantFont/ExtendFont can be used on
+ly with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tii' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tio': SlantFont/ExtendFont can be used onl
+y with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tir' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tmbi108r' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tmbo108r': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tmbu108r': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tmrb108r' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tmri108r' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tmrm108r' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tmro108r': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tmui108r': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `zd' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1968,6 +2319,56 @@ d
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `phvro8yn' already exists, duplicates ignor
 ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxphvb' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxphvbo': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxphvr' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxphvro': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmb' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmbi' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxptmbo': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmr' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmri' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxptmro': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
 }]
 <../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter.png, id=57, 433.62pt x 2
 89.08pt>
@@ -2274,56 +2675,34 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
 [8
 
 ]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 232.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <8> on input line 233.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <6> on input line 233.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <5> on input line 233.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 235.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.24948pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Overfull \hbox (3.03047pt too wide) has occurred while \output is active
- [][] 
- []
-
-[9]
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 216.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.72884> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.52061> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no î in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no î in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no î in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <12.045> on input line 235.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <8.43146> on input line 235.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <6.02249> on input line 235.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <12.045> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8.43146> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <6.02249> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <6> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 235.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2332,11 +2711,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 252.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 242.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.62097> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 252.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 242.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <4.015> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 252.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 242.
+
+Overfull \hbox (3.03047pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[9]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 248.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <11.04124> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 251.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.72884> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 251.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.52061> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 251.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.24948pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 
 Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  [][] 
@@ -2345,42 +2745,44 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
 [10]
 Missing character: There is no ‚ in font phvr7t!
 Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no î in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no î in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no î in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
 Missing character: There is no ô in font phvr7t!
 
 ===== Image './Figures/External/main-figure0' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--463
+Underfull \hbox (badness 10000) in paragraph at lines 347--496
 [][]
  []
 
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 497.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <8> on input line 498.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <6> on input line 498.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <5> on input line 498.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 498.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <6> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 498.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 498.
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 500.
-
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <12.045> on input line 500.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <8.43146> on input line 500.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <6.02249> on input line 500.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <12.045> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 500.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8.43146> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 500.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <6.02249> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 500.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.24948pt.
@@ -2393,78 +2795,6 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  []
 
 [11]
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 520.
-
-LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 52
-0.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <14.05249> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <9.83669> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.02625> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <14.05249> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <9.83669> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.02625> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <14.05249> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <9.83669> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.02625> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 520.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <14.05249> on input line 520.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <9.83669> on input line 520.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7.02625> on input line 520.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <11.04124> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.72884> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <5.52061> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <11.04124> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.72884> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 520.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <5.52061> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 520.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 521.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <11> on input line 521.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7.69997> on input line 521.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <5.5> on input line 521.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <11> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 521.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.69997> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 521.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.5> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 521.
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 521.
-
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <11> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 521.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.69997> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 521.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <5.5> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 521.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <11> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 521.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.69997> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 521.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <5.5> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 521.
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 522.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.24948pt.
@@ -2480,8 +2810,80 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
 
 LaTeX Font Warning: Command \Large invalid in math mode on input line 523.
 
+LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 52
+3.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <14.05249> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <9.83669> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.02625> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <14.05249> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <9.83669> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.02625> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <14.05249> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <9.83669> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.02625> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 523.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <14.05249> on input line 523.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <9.83669> on input line 523.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <7.02625> on input line 523.
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <11.04124> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.72884> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <5.52061> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <11.04124> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.72884> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 523.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <5.52061> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 523.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 524.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <11> on input line 524.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <7.69997> on input line 524.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <5.5> on input line 524.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <11> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 524.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.69997> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 524.
+LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.5> not available
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 524.
 
-Overfull \hbox (3.90651pt too wide) in paragraph at lines 523--524
+LaTeX Font Warning: Command \Large invalid in math mode on input line 524.
+
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <11> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 524.
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.69997> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 524.
+LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <5.5> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 524.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <11> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 524.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.69997> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 524.
+LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <5.5> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 524.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 525.
+
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 526.
+
+
+Overfull \hbox (3.90651pt too wide) in paragraph at lines 526--527
 \OT1/phv/m/n/11 the anal-y-sis of large scale sur-vey data. The abil-ity to dis
 -till in-cip-i-ent micro-structural cross-dependencies
  []
@@ -2503,18 +2905,18 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  []
 
 [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 530.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 530.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 530.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 530.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0EF202A6C22E070689DEBE4200694A77;150.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 530.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
  )
 (\end occurred inside a group at level 1)
 
@@ -2523,16 +2925,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 530.
 Here is how much of TeX's memory you used:
  37861 strings out of 493046
  875807 string characters out of 6137253
- 1122798 words of memory out of 11000000
+ 1122960 words of memory out of 9000000
  40559 multiletter control sequences out of 15000+600000
  125773 words of font info for 330 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  61i,17n,96p,1538b,5844s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/
-concmath-fonts/xccmi8.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/lj
-four/public/concmath-fonts/xccmi10.720pk> </home/ishanu/.cache/texlive/texmf-va
-r/fonts/pk/ljfour/public/concrete/ccr8.600pk> </home/ishanu/.cache/texlive/texm
-f-var/fonts/pk/ljfour/public/concmath-fonts/xccsy10.657pk> </home/ishanu/.cache
+concmath-fonts/xccsy10.657pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/l
+jfour/public/concrete/ccr8.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/
+pk/ljfour/public/concmath-fonts/xccmi8.600pk> </home/ishanu/.cache/texlive/texm
+f-var/fonts/pk/ljfour/public/concmath-fonts/xccmi10.720pk> </home/ishanu/.cache
 /texlive/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccmi10.657pk> </home/
 ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/concrete/ccr10.657pk>{/u
 sr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/tex
@@ -2541,7 +2943,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist
 e1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
 tic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.
 pfb>
-Output written on main.pdf (10 pages, 524382 bytes).
+Output written on main.pdf (10 pages, 524597 bytes).
 PDF statistics:
  309 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams

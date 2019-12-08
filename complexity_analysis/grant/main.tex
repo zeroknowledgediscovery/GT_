@@ -213,6 +213,38 @@ Thus, the primary over-arching goal of this work is to investigate the missing e
 
 We briefly enumerate the proposed characterizations (See Technical Plan for mathematical details).
 
+
+
+
+
+%####################################
+%####################################
+\def\COLA{SeaGreen1}
+\def\COLB{Tomato!40}
+\def\COLC{Yellow1}
+\def\COLD{DodgerBlue1!50}
+\def\COLE{DarkOrange1!30}
+\def\COLF{Orchid1!40}
+\setlength{\arrayrulewidth}{1pt}
+\arrayrulecolor{lightgray}
+\begin{table}[t]
+\centering
+\captionN{Dynamical Measures  Proposed For Precise Chracterization of Complex Systems}\label{tab0} \bf \sffamily \fontsize{8}{10}\selectfont
+\begin{tabular}{L{.1in} C{.8in}| L{1.2in}| L{3.65in}}\hline
+ \rowcolor{gray}  & \color{white}Measure & \color{white}Property Measured & \color{white}Description \\\hline \color{black}
+1. & \large $\mu_\C$ & \cellcolor{\COLA} Complexity & The level of complexity of multi-scale multi-variate spatially extended systems require new measures of compelxity that capture statistical compelxity, structure of connectedness, and cross-talk.\\\hline
+2. &\large$\mu_\S$ & \cellcolor{\COLB}Stability &  Stability in systems of interest might be finely poised between instability regimes, with the possibile manifestation of self-orgnized criticality.\\\hline
+3. &\large$\mu_\R$ & \cellcolor{\COLC} Resilience & Qunatify the ability of systems of interest to recover from directed and random perturbations, akin to homeostasis in living systems.  \\\hline
+4. &\large$\mu_\omega$ & \cellcolor{\COLD} Frequency-like & Generalization of frequecny domain tools and measures to non-linear multi-scale spatio-temporal system of systems with categorical and ordinal variables. \\\hline
+5. &\large$\mu_\E$ & \cellcolor{\COLE} External Influence & Estimate the pssibility having an  open vs a closed system.\\\hline
+6. &\mnp{.8in}{\centering \vskip .4em {\large$\partial \mu_i / \partial t$} \\ $ i= \C, \S, \R, \omega, \E$\vskip 1.5em } & \cellcolor{\COLF} Evolution \&  Influence & How the measures of dynamical properties  evolve in time characterizes the evolution of  emergent rules and drivers, indicative of the rate of information generation either within, or via influence import.\\\hline
+\end{tabular}
+\end{table}
+%####################################
+%####################################
+%####################################
+
+
 \subsection*{Measures of Stability: The May Constraint \& Self-organized Criticality}
 Stability is well-understood notion in the study of dynamical systems, with
 rigorous characterizations available for systems with known dynamical structures.
@@ -411,8 +443,8 @@ statistical mechanics model.
 % \node[anchor=north,text=\MCOL,align=center] (L2) at ([xshift=0in,yshift=-1.1in]L1.south) {Real-world\\\vspace{10pt}\\ Zipf's Law Holds:\\ Signature of \\Self-organized\\Criticality};
  
 \def\IMP{Figures/plotdata/may.csv}
-\node[anchor=west] (AA) at ([xshift=3.5in,yshift=-.5in]X0.east) {
-\begin{axis}[legend cell align=left,legend style={anchor=east,at={(.9,0.1)},inner sep=3pt,draw=none,fill=white,fill opacity=.85,align=right,text opacity=1,font=\bf\sffamily\fontsize{8}{9}\selectfont},axis line style={lightgray, opacity=0, thin},%
+\node[anchor=west,label={[yshift=.35in,xshift=1in]90: {\Large e.} May Stability Coefficients}] (AA) at ([xshift=3in,yshift=-.5in]X0.east) {
+\begin{axis}[legend cell align=left,legend style={anchor=east,at={(.90,1.1)},inner sep=3pt,draw=none,fill=white,fill opacity=.85,align=right,text opacity=1,font=\bf\sffamily\fontsize{8}{9}\selectfont},axis line style={lightgray, opacity=0, thin},%
 enlargelimits=true,
 %grid,
 xshift=.1in,
@@ -434,25 +466,26 @@ axis on top=false, bar width=15.2pt,xlabel={May coeff.},xlabel style={yshift=0.0
 %point meta=explicit symbolic,
 ] 
 
-\addplot[opacity=1,fill=black, xbar,area legend] table [ 
+\addplot[opacity=1,fill=\MCOLs, xbar,area legend] table [ 
     y expr=\coordindex,
     x=may,%discard if not={color}{0}
 ] {\IMP};   
+\addlegendentry{simulated}
 \addplot[opacity=1,fill=\MCOL, draw=black,xbar,area legend] table [ 
-    y expr=\coordindex,
+    y expr=\coordindex, 
     x=may,discard if not={color}{0.0}
 ] {\IMP};   
-\addplot[opacity=1,fill=\MCOLb, draw=black,xbar,area legend] table [ 
-    y expr=\coordindex,
-    x=may,discard if not={color}{1.0}
-] {\IMP};    
+\addlegendentry{real-world}
+% \addplot[opacity=1,fill=\MCOLb, draw=black,xbar,area legend] table [ 
+%     y expr=\coordindex,
+%     x=may,discard if not={color}{1.0}
+% ] {\IMP};    
 %\addlegendentry{Male}
 % \addplot[opacity=1,fill=\FXCOL, area legend] table [ 
 %     y expr=\coordindex,
 %     x=F
 % ] {\IMP};   
 % \addlegendentry{Female}
-   % \draw[ultra thin,Red1] (axis cs:1,0) -- (axis cs:1,5);
 
 \end{axis} 
 };
@@ -479,37 +512,7 @@ axis on top=false, bar width=15.2pt,xlabel={May coeff.},xlabel style={yshift=0.0
 \subsection*{Measures  of External Influence \& Closed vs Open Systems}
 
 
-\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer
-
-
-%####################################
-%####################################
-\def\COLA{SeaGreen1}
-\def\COLB{Tomato!40}
-\def\COLC{Yellow1}
-\def\COLD{DodgerBlue1!50}
-\def\COLE{DarkOrange1!30}
-\def\COLF{Orchid1!40}
-\setlength{\arrayrulewidth}{1pt}
-\arrayrulecolor{lightgray}
-\begin{table}[t]
-\centering
-\captionN{Dynamical Measures  Proposed For Precise Chracterization of Complex Systems}\label{tab0} \bf \sffamily \fontsize{8}{10}\selectfont
-\begin{tabular}{L{.1in} C{.8in}| L{1.2in}| L{3.65in}}\hline
- \rowcolor{gray}  & \color{white}Measure & \color{white}Property Measured & \color{white}Description \\\hline \color{black}
-1. & \large $\mu_\C$ & \cellcolor{\COLA} Complexity & The level of complexity of multi-scale multi-variate spatially extended systems require new measures of compelxity that capture statistical compelxity, structure of connectedness, and cross-talk.\\\hline
-2. &\large$\mu_\S$ & \cellcolor{\COLB}Stability &  Stability in systems of interest might be finely poised between instability regimes, with the possibile manifestation of self-orgnized criticality.\\\hline
-3. &\large$\mu_\R$ & \cellcolor{\COLC} Resilience & Qunatify the ability of systems of interest to recover from directed and random perturbations, akin to homeostasis in living systems.  \\\hline
-4. &\large$\mu_\omega$ & \cellcolor{\COLD} Frequency-like & Generalization of frequecny domain tools and measures to non-linear multi-scale spatio-temporal system of systems with categorical and ordinal variables. \\\hline
-5. &\large$\mu_\E$ & \cellcolor{\COLE} External Influence & Estimate the pssibility having an  open vs a closed system.\\\hline
-6. &\mnp{.8in}{\centering \vskip .4em {\large$\partial \mu_i / \partial t$} \\ $ i= \C, \S, \R, \omega, \E$\vskip 1.5em } & \cellcolor{\COLF} Evolution \&  Influence & How the measures of dynamical properties  evolve in time characterizes the evolution of  emergent rules and drivers, indicative of the rate of information generation either within, or via influence import.\\\hline
-\end{tabular}
-\end{table}
-%####################################
-%####################################
-%####################################
-
-The goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals. Within these broad goals, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
+\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life SoccerThe goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals. Within these broad goals, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
 
 \subsection*{Innovation: From Socio-psychological Theory To Data-driven Inference}
 Our proposed work is starkly novel in the level of mathematical rigor, the scalable computational tools, and the elegant quantitative adoption of a qualitative theory in psychology. The key innovation here  is the formulation of the notion of cognitive dissonance as a \textbf{quantitative  measure of surprise}; computed as the deviation of an individual's response to

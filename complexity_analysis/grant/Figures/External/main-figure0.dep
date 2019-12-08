@@ -7,4 +7,3 @@
 ./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
 ./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
 ./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
-./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
