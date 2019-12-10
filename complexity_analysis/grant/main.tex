@@ -262,6 +262,15 @@ The elegance of May's theorem, coupled with the  verified contradiction in large
 
 While most results in this direction are from biological ecosystems and food webs [REF], we hypothesize similar effects to exist in social interactions.
 
+\begin{figure}
+\tikzexternalenable
+ 
+\input{Figures/figzipf}
+
+\captionN{Zipf's Law holds in rela-world systems, but not in simulated ones, even  with significant effort and resources expended  to  replicate reality.}\label{fig1}
+\end{figure}
+
+
 \begin{quote}\itshape 
 Thus, we  define our first measure of stability as:
 \cgather{
@@ -270,28 +279,55 @@ Thus, we  define our first measure of stability as:
 and hypothesize that simulated systems will typically have a significantly lower value of $\mu_\S$, while real world systems will often violate the apparent stability criterion, while continuing to be stable in practice.
 \end{quote}
 This notion of natural systems atcrated to edges in parameter spaces is actually closely related to another fundamental notion in dynamical systems; that of self-organized criticality~\cite{mora2011biological}.
+%
+For decades, physicists have hoped that the emergent, collective phenomena of living systems, both at the moelcular and the social scales, could be captured using ideas from statistical mechanics. States of such  emergent systems are almost never at equilibrium, maintained by a flow of energy and material (in biology) or societal exchange of relevant entities (people, ideas, beliefs etc). We plan to investigate the intriguing idea that such systems are poised near criticality.
 
-For decades, physicists have hoped that the emergent, collective phenomena of life could be captured using ideas from statistical mechanics. The stationary states of biological systems have a subtle structure, neither “frozen” into a well ordered crystal, nor chaotic and disordered like a gas.
+Classicially, critical plhenomena has to do with phase transitions, and discontinuities in relevant order parameters near such transitions. 
+Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Assume we are able to model the statistically stationary states of a complex system  with a many-parameter model. Clearly random choice of these parameters is not likely to redproduce meaningful function; and  if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Thus, for complex systems the parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated  by critical surfaces. \textit{We plan to investigate the  intriguing possibility  that most compelx systems in the real-world are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.} 
 
+\def\q{\sigma}
 
-Further, these states are far from equilibrium, maintained by a con-
-stant flow of energy and material through the system. There is something special about the states corresponding to functional, living systems, but at the same time it cannot be that function depends on a fine tuning of parameters. Of the many ideas rooted in statistical physics that have been suggested to characterize these states, perhaps the most intriguing—and the most speculative—is the idea of self-organized criticality.
-
-Before proceeding, we should be much clearer what we mean by saying that a biological
-system is near criticality. By far our deepest understanding of critical phenomena is in the case of equilibrium systems, but there are very few cases where equilibrium properties are relevant to life—although see the recent discussion of criticality in biological membranes [87]. Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Many biological systems are in statistically stationary states, and we can try to give a probabilistic description of these states. Any such model, if it is realistic, will have many parameters. As physicists we aren’t really interested in the precise
-values of these parameters, and can even argue that the organism itself isn’t “interested” in parameters, only in the functions that these systems carry out. On the other hand, for many systems we know that if just pick parameters at random, we won’t find anything that reproduces biological function. Thus, real biological systems operate in special regions of parameter space, and we would like to understand just what defines these regions. As a guide to answering this fundamental question, we realize that if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Again, we know how to implement
-this construction explicitly for equilibrium systems, but the idea is much more general. Thus, rather than considering one model for a particular biological system, with many parameters fit to some large body of data, we want to emphasize that such models belong to a family, with varying parameters, and that this parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated (in the limit that systems are large) by critical surfaces. Our task in making a model of biological system is then not to find precise parameter values, but to locate the system in this phase diagram. The tantalizing possibility is that many systems are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.
-
-The connection to May's theorem, the observed contradictions, and our preliminary results with urban crime and terrorism motivate further research in this direction.
+Directly verifying this hypothesis is problematic. However, we can indeed validate if the systems carry signatures of critical organization, $e.g.$, the emergence of Zipf's Law in the distribution of
+strength of inferred predictive links between observables.
+The justification of looking for such characterization in the distrbution of links strengths arises from the idea that an enumeration of the link strangths may be seen as a specification of the state  the complex system, and it can be shown that existence of the Zipf's law amounts to the existence of critical temperature below which the system ``freezes'', and above which thermodynamic quantities diverge~\cite{mora2011biological}.
 
 
-Zipf's law
+As shown in Fig~\ref{fig1}, our preliminary studies corroborates this hypothesis, at least with the systems under consideration.
+%This allows us to think about the probability $P(\q)$ of finding the system in that state, and use standard statistical mechanics to write down the   Boltzmann distribution:
+% \cgather{
+% P(\q) = \frac{1}{Z} e^{E(\q)/k_BT}
+%   }
+% where $k_B$  is Boltzmann's constant and $Z$ the partition function. Without loss of generality, we can set the temperature $k_B T = 1,Z=1$,  leading  to the  definition of
+% the energy as:
+% \cgather{
+%   E(\q)= -\log P(\q )
+% }
+% Using well-understood arguments  that equate density of states (number of states within a small energey braket)  to the exponential of the entropy $S$, we can eventually work out that Zipf's Law implies:
+% \cgather{
+% S = E/\alpha + \cdots (\textrm{subextensive terms})
+% }
 
-With the availability of large datasets, it now seems possible to construct $P (\sigma )$ directly
-from the data, and to take the corresponding energy function $E(\sigma )$ seriously as a statistical
-mechanics problem. In this section we explore the consequences of that idea, by showing
-the equivalence between Zipf’s law of language and the critical properties of the associated
-statistical mechanics model.
+% The stationary states of biological systems have a subtle structure, neither “frozen” into a well ordered crystal, nor chaotic and disordered like a gas.
+
+
+% Further, these states are far from equilibrium, maintained by a con-
+% stant flow of energy and material through the system. There is something special about the states corresponding to functional, living systems, but at the same time it cannot be that function depends on a fine tuning of parameters. Of the many ideas rooted in statistical physics that have been suggested to characterize these states, perhaps the most intriguing—and the most speculative—is the idea of self-organized criticality.
+
+% Before proceeding, we should be much clearer what we mean by saying that a biological
+% system is near criticality. By far our deepest understanding of critical phenomena is in the case of equilibrium systems, but there are very few cases where equilibrium properties are relevant to life—although see the recent discussion of criticality in biological membranes [87]. Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Many biological systems are in statistically stationary states, and we can try to give a probabilistic description of these states. Any such model, if it is realistic, will have many parameters. As physicists we aren’t really interested in the precise
+% values of these parameters, and can even argue that the organism itself isn’t “interested” in parameters, only in the functions that these systems carry out. On the other hand, for many systems we know that if just pick parameters at random, we won’t find anything that reproduces biological function. Thus, real biological systems operate in special regions of parameter space, and we would like to understand just what defines these regions. As a guide to answering this fundamental question, we realize that if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Again, we know how to implement
+% this construction explicitly for equilibrium systems, but the idea is much more general. Thus, rather than considering one model for a particular biological system, with many parameters fit to some large body of data, we want to emphasize that such models belong to a family, with varying parameters, and that this parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated (in the limit that systems are large) by critical surfaces. Our task in making a model of biological system is then not to find precise parameter values, but to locate the system in this phase diagram. The tantalizing possibility is that many systems are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.
+
+% The connection to May's theorem, the observed contradictions, and our preliminary results with urban crime and terrorism motivate further research in this direction.
+
+
+% Zipf's law
+
+% With the availability of large datasets, it now seems possible to construct $P (\sigma )$ directly
+% from the data, and to take the corresponding energy function $E(\sigma )$ seriously as a statistical
+% mechanics problem. In this section we explore the consequences of that idea, by showing
+% the equivalence between Zipf’s law of language and the critical properties of the associated
+% statistical mechanics model.
 
 % There is a very old observation of a power law in a biological system, and this is Zipf’s
 % law in language [96], first observed by Auerbach in 1913 [5]. In contrast to examples such
@@ -319,190 +355,14 @@ statistical mechanics model.
 
 
 
-\begin{figure}
-\tikzexternalenable
- 
-
-\pgfplotsset{
-    discard if/.style 2 args={
-        x filter/.code={
-            \edef\tempa{\thisrow{#1}}
-            \edef\tempb{#2}
-            \ifx\tempa\tempb
-                \def\pgfmathresult{inf}
-            \fi
-        }
-    },
-    discard if not/.style 2 args={
-        x filter/.code={
-            \edef\tempa{\thisrow{#1}}
-            \edef\tempb{#2}
-            \ifx\tempa\tempb
-            \else
-                \def\pgfmathresult{inf}
-            \fi
-        }
-    }
-  }
- \begin{tikzpicture}[font=\bf\sffamily\fontsize{8}{10}\selectfont]
-    \def\datafile{Figures/plotdata/zsoccer.csv}
-    \def\datafileB{Figures/plotdata/zta1.csv}
-    \def\datafileC{Figures/plotdata/zcrime_1416.csv}
-    \def\datafileD{Figures/plotdata/zterror_1216.csv}
-    \def\datafileE{Figures/plotdata/zcrime_1315.csv}
-    \def\datafileF{Figures/plotdata/zterror_1115.csv}
-    \def\NCOLs{DodgerBlue2}
-    \def\MCOLs{DodgerBlue3}
-    \def\MCOLsb{white}
-    \def\NCOL{Red1}
-    \def\MCOL{Red2}
-    \def\NCOLB{Red4}
-    \def\MCOLB{Red4}
-    \def\MCOLBb{white}
-    \def\MCOLb{white}
-    \def\LWDT{0.015in}
-    \def\OPC{.9}
-    \def\TEXTCOL{gray} 
-    \def\AXISCOL{lightgray!30}
-    \def\SCALE{1.2}
-    \def\NCOL{black}
-    \def\NCOLs{black}
-
-    % \begin{axis}[]
-    \def\WDT{1.35in}
-    \def\HGT{1.25in}
-\node[] (X0) at (0,0) {};
-    \begin{groupplot}[at=(X0.south),anchor=north,group style={group name=A,group size= 2 by 2,horizontal sep=.65in, vertical sep=.7in},title style={yshift=.05in},
-      legend style={anchor=east,at={(1,.75)},
-        inner sep=3pt,draw=none,fill=none,
-        fill opacity=.85,align=right,text opacity=1,
-        font=\bf\sffamily\fontsize{8}{9}\selectfont,
-        text=black},
-      grid style={thin,dashed, gray,opacity=.35},
-      grid,
-      enlargelimits=true,
-      scale only axis=true,scaled x ticks = false,scaled y ticks = true,
-      height=\HGT,
-      width=\WDT,
-      enlarge x limits=0.03,
-      axis line style={\AXISCOL, opacity=1,ultra  thick, rounded corners=0pt}, 
-      y tick label style={/pgf/number format/fixed,/pgf/number format/precision=3,
-        /pgf/number format/fixed zerofill,
-        /pgf/number format/1000 sep = %\thinspace 
-        % Optional if you want to replace comma as the 1000 separator 
-      },
-      major tick length=0pt,
-      ylabel={frequency},
-      ylabel style={xshift=-.75in,yshift=0.1in}]
-      % 
-      \nextgroupplot[xlabel={},text=\TEXTCOL,title={{\Large a.} Robo Soccer}]%ymode=log]
-      \addplot[smooth, opacity=\OPC, line width=\LWDT, \NCOLs,mark=*, 
-      mark options={%
-        scale=\SCALE,draw=\MCOLsb,  thick, fill=\MCOLs,  
-      },]table[col sep=comma,x=rank, y=code]
-      {\datafile};
-    \addlegendentry{simulated};
-%
-      \nextgroupplot[xlabel={}, ylabel={},text=\TEXTCOL,title={{\Large b.} DARPA GT Urban World},]%ymode=log]
-      \addplot[smooth, opacity=\OPC, line width=\LWDT, \NCOLs,mark=*, 
-      mark options={%
-        scale=\SCALE,draw=\MCOLsb,  thick, fill=\MCOLs,  
-      },]table[col sep=comma,x=rank, y=code]
-      {\datafileB};
-    \addlegendentry{simulated};
- %
-      \nextgroupplot[xlabel={rank}, ylabel={},text=\TEXTCOL,,title={{\Large c.} Urban Crime Chicago},xmax=18]
-      \addplot[smooth, opacity=\OPC, line width=\LWDT, \NCOL,mark=*, 
-      mark options={%
-        scale=\SCALE,draw=\MCOLb,  thick, fill=\MCOL,  
-      },]table[col sep=comma,x=rank, y=code]
-      {\datafileC};
-      \addplot[forget plot, smooth, opacity=\OPC, line width=\LWDT, \NCOLB,mark=*, 
-      mark options={%
-        scale=\SCALE,draw=\MCOLBb,  thick, fill=\MCOLB,  
-      },]table[col sep=comma,x=rank, y=code]
-      {\datafileE};
-    \addlegendentry{real-world};
- %
-      \nextgroupplot[xlabel={rank}, ylabel={},text=\TEXTCOL,title={{\Large d.} Global Terrorism}]%ymode=log]
-      \addplot[smooth, opacity=\OPC, line width=\LWDT, \NCOL,mark=*, 
-      mark options={%
-        scale=\SCALE,draw=\MCOLb,  thick, fill=\MCOL,  
-      },]table[col sep=comma,x=rank, y=code]
-      {\datafileD};
-      \addplot[forget plot, smooth, opacity=\OPC, line width=\LWDT, \NCOLB,mark=*, 
-      mark options={%
-        scale=\SCALE,draw=\MCOLBb,  thick, fill=\MCOLB,  
-      },]table[col sep=comma,x=rank, y=code]
-      {\datafileF};
-    \addlegendentry{real-world};
-    \end{groupplot}
-%    
-\node[anchor=south west] (B) at ([xshift=-1in,yshift=.5in]X0.north) {\large Zipf's Law (Frequency $\propto$ rank$^{-1}$) for Inferred Strength of Predictive Influence ($\gamma$)};
-% \node[anchor=west,text=\MCOLs,align=center] (L1) at  ([xshift=1.7in,yshift=.3in]A.east) {Simulated\\\vspace{10pt}\\ No Zipf's Law};
-% \node[anchor=north,text=\MCOL,align=center] (L2) at ([xshift=0in,yshift=-1.1in]L1.south) {Real-world\\\vspace{10pt}\\ Zipf's Law Holds:\\ Signature of \\Self-organized\\Criticality};
- 
-\def\IMP{Figures/plotdata/may.csv}
-\node[anchor=west,label={[yshift=.35in,xshift=1in]90: {\Large e.} May Stability Coefficients}] (AA) at ([xshift=3in,yshift=-.5in]X0.east) {
-\begin{axis}[legend cell align=left,legend style={anchor=east,at={(.90,1.1)},inner sep=3pt,draw=none,fill=white,fill opacity=.85,align=right,text opacity=1,font=\bf\sffamily\fontsize{8}{9}\selectfont},axis line style={lightgray, opacity=0, thin},%
-enlargelimits=true,
-%grid,
-xshift=.1in,
-anchor=north west,
-  height=2.5in,
-width=1.75in,
-    %xbar, 
-    ytick=data,% crucial line for the xticklabels directive 
-    ymin=0, 
-    yticklabels from table={\IMP}{system},
-        yticklabel style={font=\bf\sffamily\fontsize{7}{7}\selectfont,align=right,rotate=0, text width=1.1in, anchor=east, yshift=0in,xshift=-.0450in,text=\TEXTCOL},
-major tick length=0pt,
-xticklabel style={font=\bf\sffamily\fontsize{7}{7}\selectfont,text=\TEXTCOL},
-grid,
-grid style={lightgray, opacity=.7},
-axis on top=false, bar width=15.2pt,xlabel={May coeff.},xlabel style={yshift=0.05in,text=\TEXTCOL},
-%enlarge y limits=1,
-%enlarge y limits=0.03,
-%point meta=explicit symbolic,
-] 
-
-\addplot[opacity=1,fill=\MCOLs, xbar,area legend] table [ 
-    y expr=\coordindex,
-    x=may,%discard if not={color}{0}
-] {\IMP};   
-\addlegendentry{simulated}
-\addplot[opacity=1,fill=\MCOL, draw=black,xbar,area legend] table [ 
-    y expr=\coordindex, 
-    x=may,discard if not={color}{0.0}
-] {\IMP};   
-\addlegendentry{real-world}
-% \addplot[opacity=1,fill=\MCOLb, draw=black,xbar,area legend] table [ 
-%     y expr=\coordindex,
-%     x=may,discard if not={color}{1.0}
-% ] {\IMP};    
-%\addlegendentry{Male}
-% \addplot[opacity=1,fill=\FXCOL, area legend] table [ 
-%     y expr=\coordindex,
-%     x=F
-% ] {\IMP};   
-% \addlegendentry{Female}
-
-\end{axis} 
-};
-
-
- \end{tikzpicture}
-\vspace{-10pt}
-
-\captionN{Zipf's Law holds in rela-world systems, but not in simulated ones, even  with significant effort and resources expended  to  replicate reality.}\label{figzipf}
-\end{figure}
-
-
 
 
 \subsection*{Measures of Complexity}
+Design  of non-trivial complexity measures for the systems of interest poses the challenge that our systems are obviously not simple: theyhave many varaibles, componenets and dependencies. Simply specifying the size of the system is not discriminative enough, and is potentially misleading. We plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the number of intrinsic states that the system has for it to manifest the observed behavior.
 
-
+We plan to accomplish this by relating complexity to the number of models we vcan infer normalized by the maximum number of possible models,  and the average number of states in these set of models.
+We call teh first measure I-complexity, and the second Z-complexity.
+I-complexity really is the connectance that appears in May's formalism: what is the probability that two varaibles or entities interact. And Z-complexity captures the complexity of the dependence. 
 
 
 
@@ -512,7 +372,9 @@ axis on top=false, bar width=15.2pt,xlabel={May coeff.},xlabel style={yshift=0.0
 \subsection*{Measures  of External Influence \& Closed vs Open Systems}
 
 
-\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life SoccerThe goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals. Within these broad goals, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
+\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer
+
+The goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals. Within these broad goals, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
 
 \subsection*{Innovation: From Socio-psychological Theory To Data-driven Inference}
 Our proposed work is starkly novel in the level of mathematical rigor, the scalable computational tools, and the elegant quantitative adoption of a qualitative theory in psychology. The key innovation here  is the formulation of the notion of cognitive dissonance as a \textbf{quantitative  measure of surprise}; computed as the deviation of an individual's response to

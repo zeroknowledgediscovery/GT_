@@ -7,3 +7,8 @@
 ./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
 ./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
 ./Figures/External/main-figure0.pdf: Figures/plotdata/may.csv
+./Figures/External/main-figure0.pdf: Figures/plotdata/crime1
+./Figures/External/main-figure0.pdf: Figures/plotdata/terror1
+./Figures/External/main-figure0.pdf: Figures/plotdata/terror2
+./Figures/External/main-figure0.pdf: Figures/plotdata/gt1
+./Figures/External/main-figure0.pdf: Figures/plotdata/soccerp
