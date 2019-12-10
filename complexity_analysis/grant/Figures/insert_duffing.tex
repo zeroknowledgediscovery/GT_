@@ -27,7 +27,7 @@
 	}
 	
 	\newcommand{\duffingPhase}[1]{
-		\nextgroupplot[
+		\nextgroupplot[\AXISCOL,
 			xmin=-2., xmax=2.,
 			ymin=-4., ymax=4.,
 			ylabel={$\dot{x}$},
@@ -50,7 +50,7 @@
 	}
 	
 	\newcommand{\duffingGamma}[2]{
-		\nextgroupplot[
+		\nextgroupplot[\AXISCOL,
           title={$\gamma(\Delta)$},
           title style={
             font=\rm\sffamily\fontsize{8}{8}\selectfont,
@@ -80,7 +80,7 @@
 	    \addplot[color=\COLORGamma, smooth, thick] table [x=0, y=gamma] {#1};
 	}
 	\newcommand{\duffingGammaNoYLabel}[2]{
-          \nextgroupplot[
+          \nextgroupplot[\AXISCOL,
           title={$\gamma(\Delta)$},
           title style={
             font=\rm\sffamily\fontsize{8}{8}\selectfont,

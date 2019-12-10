@@ -236,10 +236,10 @@ We briefly enumerate the proposed characterizations (See Technical Plan for math
  \rowcolor{gray}  & \color{white}Measure & \color{white}Property Measured & \color{white}Description \\\hline \color{black}
 1. & \large $\mu_\C$ & \cellcolor{\COLA} Complexity & The level of complexity of multi-scale multi-variate spatially extended systems require new measures of compelxity that capture statistical compelxity, structure of connectedness, and cross-talk.\\\hline
 2. &\large$\mu_\S$ & \cellcolor{\COLB}Stability &  Stability in systems of interest might be finely poised between instability regimes, with the possibile manifestation of self-orgnized criticality.\\\hline
-3. &\large$\mu_\R$ & \cellcolor{\COLC} Resilience & Qunatify the ability of systems of interest to recover from directed and random perturbations, akin to homeostasis in living systems.  \\\hline
-4. &\large$\mu_\omega$ & \cellcolor{\COLD} Frequency-like & Generalization of frequecny domain tools and measures to non-linear multi-scale spatio-temporal system of systems with categorical and ordinal variables. \\\hline
-5. &\large$\mu_\E$ & \cellcolor{\COLE} External Influence & Estimate the pssibility having an  open vs a closed system.\\\hline
-6. &\mnp{.8in}{\centering \vskip .4em {\large$\partial \mu_i / \partial t$} \\ $ i= \C, \S, \R, \omega, \E$\vskip 1.5em } & \cellcolor{\COLF} Evolution \&  Influence & How the measures of dynamical properties  evolve in time characterizes the evolution of  emergent rules and drivers, indicative of the rate of information generation either within, or via influence import.\\\hline
+% 3. &\large$\mu_\R$ & \cellcolor{\COLC} Resilience & Qunatify the ability of systems of interest to recover from directed and random perturbations, akin to homeostasis in living systems.  \\\hline
+3. &\large$\mu_\omega$ & \cellcolor{\COLD} Frequency-like & Generalization of frequecny domain tools and measures to non-linear multi-scale spatio-temporal system of systems with categorical and ordinal variables. \\\hline
+4. &\large$\mu_\E$ & \cellcolor{\COLE} External Influence & Estimate the pssibility having an  open vs a closed system.\\\hline
+5. &\mnp{.8in}{\centering \vskip .4em {\large$\partial \mu_i / \partial t$} \\ $ i= \C, \S, \omega, \E$\vskip 1.5em } & \cellcolor{\COLF} Evolution \&  Influence & How the measures of dynamical properties  evolve in time characterizes the evolution of  emergent rules and drivers, indicative of the rate of information generation either within, or via influence import.\\\hline
 \end{tabular}
 \end{table}
 %####################################
@@ -362,112 +362,44 @@ As shown in Fig~\ref{figzipf}, our preliminary studies corroborate this hypothes
 
 % Understanding the mechanisms responsible for stability and persistence of ecosystems is one of the greatest challenges in ecology. Robert May showed that, contrary to intuition, complex randomly built ecosystems are less likely to be stable than simpler ones. Few attempts have been tried to test May’s prediction empirically, and we still ignore what is the actual complexity–stability relationship in natural ecosystems. Here we perform a stability analysis of 116 quantitative food webs sampled worldwide. We find that classic descriptors of complexity (species richness, connectance and interaction strength) are not associated with stability in empirical food webs. Further analysis reveals that a correlation between the effects of predators on prey and those of prey on predators, combined with a high frequency of weak interactions, stabilize food web dynamics relative to the random expectation. We conclude that empirical food webs have several non-random properties contributing to the absence of a complexity–stability relationship.
 
-\subsection*{Measures of Complexity}
+\subsection*{Quantifying Complexity of Complex Systems: Are Real-world Systems More Complex?}
 Using system  size as a measure of complexity is potentially misleading. We plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the intricacies of how the system is internally wired, and the number of intrinsic states that the system has for it to manifest the observed behavior. Furthermore, since for real-world systems the ground truth of internal structures may only be estimated, our complexity measures must always be calculated from structures inferred or estimated from observed data and event streams.
 
-We plan to consider two broad compelxity measures: 1) \textit{I-complexity:}  the number of non-trivial models we can infer given the data and an upper bound on temporal memeory, normalized by the maximum number of possible models,   and 2) the \textit{Z-Complexity:} which is the average number of states in the set of inferred models.
+We plan to consider two broad compelxity measures: 1) \textit{I-complexity:} ($\mu_\C^1$)  the number of non-trivial models we can infer given the data and an upper bound on temporal memeory, normalized by the maximum number of possible models,   and 2) the \textit{Z-Complexity:}($\mu_\C^2$) which is the average number of states in the set of inferred models.
 I-complexity  is the connectance that appears in May's condition of stability of complex systems discussed before: what is the probability that two varaibles or entities interact. And Z-complexity captures the average complexity of the intervariable dependence. 
 
 Note that these measures are computable effectively only if we have an inference algorithm that models non-trivial dependence between observed data streams. Any such inference algorithm must return generative models capturing the complexity of signal tranduction across observables  only if there is actual dependence, and indicate  direction-specific independence otherwise. Thus, in the trivial case where  we are considering N independent coin tosses (implying no temporal memory, since outcomes are iid), we have $N$ trivial single state models. Thus, our complexity measures in this case: 
 \cgather{
-\textit{I-complexity: } N/(N^2) = 1/N \\
-\textit{Z-complexity: } 1  
+\mu_\C^1= N/(N^2) = 1/N \\
+\mu_\C^2  = 1
 }
-
-We plan to investigate if real-world systems are inherently more complex compared to simulated counterparts. In contrast to the stability measures, the complexity measures are easier to replicate, since we can always define in more dependencies in our simulation rules.
-
-% \subsection*{Measures of Reslience} In adition to stability which investigates the response of a system to input perturbations, we consider the resilience that refers to perturbations in system parameters.
-
-
-
-\subsection*{Frequency-domain (like)  Measures \& Analytics}
-
-
+We plan to investigate if real-world systems are inherently more complex compared to simulated counterparts. In contrast to the stability measures, the complexity measures are easier to replicate, since we can always define in more dependencies in our simulation rules. Nevertheless, we find that for the systems we considered for our preliminary studies, real-world systems are indeed more complex when such complexity is measured through the lens of the above metrics  (See Table~\ref{tab1}).
+%
+%######################
+%######################
+%######################
 \begin{figure}
-  % \tikzexternaldisable %Figures in Figures/External
-  \begin{tikzpicture}[scale=1, every node/.style={transform shape},font=\bf\sffamily\fontsize{8}{8}\selectfont]
-    % ------------------parameters for the label(leftmost) column-----------------
-    \def\TextWDT{1.25in}
-    \def\TextYSHIFT{-.06in}
-    \def\AXISCOL{gray}
-    % ----------------------parameters for the groupplots-------------------------
-    \def\WDT{1.65in} % the width of each individual axis in the groupplot
-    \def\HGT{1.2in} % the height of each individual axis in the groupplot
-    
-    \def\COLORX{DodgerBlue2} % color for the x curve
-    \def\COLORXdot{Red4} % color for the xdot curve
-    \def\COLORPhase{gray} % color for the phase plot
-    \def\COLORGamma{black} % color for the Delta-gamma plot
-    \def\COLORVlines{black} % color for the vertical lines
-    \def\OPACITY{0} % opacity of the vertical lines
-    \def\VlineWDT{1} % line width of the vertical lines 
-    \def\HSEP{.275in}
-    \def\VSEP{.35in}
-    \def\YST{.125in}
-    % --------------------------------linear--------------------------------------
-    \node[anchor=north west] (L) at (0, 0) {\input{Figures/insert_linear_omega.tex}};
-    \node[
-    anchor=north east, 
-    text width=\TextWDT, 
-    yshift=\TextYSHIFT,
-    %font=\fontsize{\TextFS}{\TextFS}\selectfont
-    ] (L.label) at (L.north west) {
-      {\large A.} Linear 
-      \cgathers{2.5\dot{x} + x = 2.5\sin(\omega t)\\
-      \omega =\begin{bmatrix} .5  &  1.0 &  1.5&  2.0.\end{bmatrix}}
-    };
-    
-    % --------------------------------Duffing-------------------------------------
-    \node[anchor=north west] (D) at ([yshift=\YST]L.south west) {\input{Figures/insert_duffing.tex}};
-    \node[
-    anchor=north east, 
-    text width=\TextWDT,
-    yshift=\TextYSHIFT,
-    %font=\fontsize{\TextFS}{\TextFS}\selectfont
-    ] (D.label) at (D.north west) {
-     { \large B.} Duffing 
-      \cgathers{\ddot{x}+\delta\dot{x}+x+5x^3 = 8\cos(.5t)\\
-      \delta = \begin{bmatrix}0.003 & 0.03&  0.3& 3.0.\end{bmatrix}}
-    };
-    
-    % -------------------------------Van der Pol----------------------------------
-    \node[anchor=north west] (V) at ([yshift=\YST]D.south west) {\input{Figures/insert_vpol.tex}};
-    \node[
-    anchor=north east, 
-    text width=\TextWDT,
-    yshift=\TextYSHIFT,
-    %font=\fontsize{\TextFS}{\TextFS}\selectfont
-    ] (V.label) at (V.north west) {
-      {\large C.} Van der Pol 
-      \cgathers{
-      x - \mu\dot{x}\left(1 - x^2\right) = 2.5\cos(3t)\\
-      \mu = \begin{bmatrix} 0.07 & 0.7  &  1.0 & 4.0. \end{bmatrix}}
-    };
-    
-  \end{tikzpicture}
-  \caption{Learning Processes Cross-talk in Complex Phenomena. Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.}
+  \tikzexternalenable
+  
+  \input{Figures/figgamma}
+  \vspace{-20pt}
+  
+  \captionN{Learning Processes Cross-talk in Complex Phenomena. Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.}\label{figgamma}
 \end{figure}
+%######################
+%######################
+%######################
+\subsection*{Frequency-domain (like)  Measures \& Analytics}
+Frequency-domain analysis is a classical tool for linear time-inavraint systems, that has enabled deisgn of sophisticated engineering systems over the last century. Unfortunately, the elegant tools of the frequency domain do not easily generalize to non-linear, mixed variable, multi-scale complexities of social interactions. Leveraging our ability to quantify directional influence propagation between observables as a function of possible time delays, we aim to investigate one possible design of an analogous tool. We cal this the $\gamma(\Delta)$ plot, where $\gamma$ is an iinferred measure of predictive influence, and $\Delta$ is the tiem delay over which the influence transpires.
 
+In our preliminary work, we evaluated the $\gamma(\Delta)$ analytic for a diversity of dyanmical systems, ranging from simple linear, to non-linear to chaotic to simuated and real-world complex systems (See Fig.~\ref{figgamma}).
+We concluded that in simple systems, the $\gamma(\Delta)$ plot reveals clear macro-scopic structure corresponding to periodic behaviors and/or near-exponential deacy. Similar behavior is observed in simulated complex systems. In the real-world systems, all obvious macroscopic  structure vanishes | suggesting the emergence of scale-free behavior (there are apparently no specific time or spatial scales that apply to the overall system).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+These observations might not be typical, as not all complex systems will have this scale-free behavior. Some systems may have periodicity enforced by  the nature of the dynamics being analyzed. Nevertheless, we will investigate the applicability of the  $\gamma(\Delta)$ plot to analyze non-temporally localized dynamical chracteristics much in the same manner that the frequency domain is used for linear systems.
 
 \subsection*{Measures  of External Influence \& Closed vs Open Systems}
-
+Apart from the question of designing tools to measure computable deviation of simulated systems from their real-world counterparts, we aim to develop tools that
+estimate the possibility of external drivers in a complex social system, $i.e.$, analyze if the system is open or closed.
 
 \subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer
 

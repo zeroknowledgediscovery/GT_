@@ -1,0 +1,16 @@
+./Figures/External/main-figure1.pdf: datafiles/linear_omega_0.5.dat
+./Figures/External/main-figure1.pdf: datafiles/linear_omega_0.5_gamma.dat
+./Figures/External/main-figure1.pdf: datafiles/linear_omega_1.0.dat
+./Figures/External/main-figure1.pdf: datafiles/linear_omega_1.0_gamma.dat
+./Figures/External/main-figure1.pdf: datafiles/linear_omega_1.5.dat
+./Figures/External/main-figure1.pdf: datafiles/linear_omega_1.5_gamma.dat
+./Figures/External/main-figure1.pdf: datafiles/linear_omega_2.0.dat
+./Figures/External/main-figure1.pdf: datafiles/linear_omega_2.0_gamma.dat
+./Figures/External/main-figure1.pdf: datafiles/duffing_0.003_small.dat
+./Figures/External/main-figure1.pdf: datafiles/duffing_0.003_gamma.dat
+./Figures/External/main-figure1.pdf: datafiles/duffing_0.03_small.dat
+./Figures/External/main-figure1.pdf: datafiles/duffing_0.03_gamma.dat
+./Figures/External/main-figure1.pdf: datafiles/duffing_0.3_small.dat
+./Figures/External/main-figure1.pdf: datafiles/duffing_0.3_gamma.dat
+./Figures/External/main-figure1.pdf: datafiles/duffing_3.0_small.dat
+./Figures/External/main-figure1.pdf: datafiles/duffing_3.0_gamma.dat

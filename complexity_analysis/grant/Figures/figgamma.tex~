@@ -1,0 +1,61 @@
+  % \tikzexternaldisable %Figures in Figures/External
+  \begin{tikzpicture}[scale=1, every node/.style={transform shape},font=\bf\sffamily\fontsize{8}{8}\selectfont]
+    % ------------------parameters for the label(leftmost) column-----------------
+    \def\TextWDT{1.25in}
+    \def\TextYSHIFT{-.06in}
+    \def\AXISCOL{gray}
+    % ----------------------parameters for the groupplots-------------------------
+    \def\WDT{1.65in} % the width of each individual axis in the groupplot
+    \def\HGT{1.2in} % the height of each individual axis in the groupplot
+    
+    \def\COLORX{DodgerBlue2} % color for the x curve
+    \def\COLORXdot{Red4} % color for the xdot curve
+    \def\COLORPhase{gray} % color for the phase plot
+    \def\COLORGamma{black} % color for the Delta-gamma plot
+    \def\COLORVlines{black} % color for the vertical lines
+    \def\OPACITY{0} % opacity of the vertical lines
+    \def\VlineWDT{1} % line width of the vertical lines 
+    \def\HSEP{.275in}
+    \def\VSEP{.35in}
+    \def\YST{.125in}
+    % --------------------------------linear--------------------------------------
+    \node[anchor=north west] (L) at (0, 0) {\input{Figures/insert_linear_omega.tex}};
+    \node[
+    anchor=north east, 
+    text width=\TextWDT, 
+    yshift=\TextYSHIFT,
+    %font=\fontsize{\TextFS}{\TextFS}\selectfont
+    ] (L.label) at (L.north west) {
+      {\large A.} Linear 
+      \cgathers{2.5\dot{x} + x = 2.5\sin(\omega t)\\
+      \omega =\begin{bmatrix} .5  &  1.0 &  1.5&  2.0.\end{bmatrix}}
+    };
+    
+    % --------------------------------Duffing-------------------------------------
+    \node[anchor=north west] (D) at ([yshift=\YST]L.south west) {\input{Figures/insert_duffing.tex}};
+    \node[
+    anchor=north east, 
+    text width=\TextWDT,
+    yshift=\TextYSHIFT,
+    %font=\fontsize{\TextFS}{\TextFS}\selectfont
+    ] (D.label) at (D.north west) {
+     { \large B.} Duffing 
+      \cgathers{\ddot{x}+\delta\dot{x}+x+5x^3 = 8\cos(.5t)\\
+      \delta = \begin{bmatrix}0.003 & 0.03&  0.3& 3.0.\end{bmatrix}}
+    };
+    
+    % -------------------------------Van der Pol----------------------------------
+    \node[anchor=north west] (V) at ([yshift=\YST]D.south west) {\input{Figures/insert_vpol.tex}};
+    \node[
+    anchor=north east, 
+    text width=\TextWDT,
+    yshift=\TextYSHIFT,
+    %font=\fontsize{\TextFS}{\TextFS}\selectfont
+    ] (V.label) at (V.north west) {
+      {\large C.} Van der Pol 
+      \cgathers{
+      x - \mu\dot{x}\left(1 - x^2\right) = 2.5\cos(3t)\\
+      \mu = \begin{bmatrix} 0.07 & 0.7  &  1.0 & 4.0. \end{bmatrix}}
+    };
+    
+  \end{tikzpicture}
