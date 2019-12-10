@@ -356,15 +356,22 @@ As shown in Fig~\ref{figzipf}, our preliminary studies corroborates this hypothe
 % Understanding the mechanisms responsible for stability and persistence of ecosystems is one of the greatest challenges in ecology. Robert May showed that, contrary to intuition, complex randomly built ecosystems are less likely to be stable than simpler ones. Few attempts have been tried to test May’s prediction empirically, and we still ignore what is the actual complexity–stability relationship in natural ecosystems. Here we perform a stability analysis of 116 quantitative food webs sampled worldwide. We find that classic descriptors of complexity (species richness, connectance and interaction strength) are not associated with stability in empirical food webs. Further analysis reveals that a correlation between the effects of predators on prey and those of prey on predators, combined with a high frequency of weak interactions, stabilize food web dynamics relative to the random expectation. We conclude that empirical food webs have several non-random properties contributing to the absence of a complexity–stability relationship.
 
 \subsection*{Measures of Complexity}
-Our systems are clearly not simple with many variables, components and dependencies. However, using system  size as a measure of complexity is potentially misleading. We plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the number of intrinsic states that the system has for it to manifest the observed behavior.
+Using system  size as a measure of complexity is potentially misleading. We plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the intricacies of how the system is internally wired, and the number of intrinsic states that the system has for it to manifest the observed behavior. Furthermore, since for real-world systems the ground truth of internal structures may only be estimated, our complexity measures must always be calculated from structures inferred or estimated from observed data and event streams.
 
-We plan to accomplish this by 1)  relating complexity to the number of models we can infer, normalized by the maximum number of possible models,   and 2) the average number of states in the set of inferred models.
-We call the first measure I-complexity, and the second Z-complexity.
-I-complexity  is the connectance that appears in May's formalism: what is the probability that two varaibles or entities interact. And Z-complexity captures the average complexity of the intervariable dependence. 
+We plan to consider two broad compelxity measures: 1) \textit{I-complexity:}  the number of non-trivial models we can infer given the data and an upper bound on temporal memeory, normalized by the maximum number of possible models,   and 2) the \textit{Z-Complexity:} which is the average number of states in the set of inferred models.
+I-complexity  is the connectance that appears in May's condition of stability of complex systems discussed before: what is the probability that two varaibles or entities interact. And Z-complexity captures the average complexity of the intervariable dependence. 
+
+Note that these measures are computable effectively only if we have an inference algorithm that models non-trivial dependence between observed data streams, returning generative models capturing the complexity of signal tranduction across observables considered only if there is actual dependence, and indicating  direction-specific independence otherwise. Thus, if we are considering N independent coin tosses (implying no temporal memory, since outcomes are iid), we have $N$ trivial single state models. Thus, our complexity measures in this case will be: 
+\cgather{
+\textit{I-complexity: } N/(N^2) = 1/N \\
+\textit{Z-complexity: } 1  
+}
+
+We plan to investigate if real-world systems are inherently more complex compared to simulated counterparts. In contrast to the stability measures, the complexity measures are easier to replicate, since we can always define in more dependencies in our simulation rules.
+
+% \subsection*{Measures of Reslience} In adition to stability which investigates the response of a system to input perturbations, we consider the resilience that refers to perturbations in system parameters.
 
 
-
-\subsection*{Measures of Reslience}
 
 \subsection*{Frequency-domain (like)  Measures \& Analytics}
 \subsection*{Measures  of External Influence \& Closed vs Open Systems}

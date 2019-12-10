@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1575943379 "main.aux" "main.bbl" "main" 1575965020
+["bibtex main"] 1575968297 "main.aux" "main.bbl" "main" 1575972528
   "/usr/share/texlive/texmf-dist/bibtex/bst/nature/naturemag.bst" 1136766823 34867 ae05936b307e5838449d1bb5fdbb2c19 ""
-  "main.aux" 1575964759 3178 c54a1be443636b19e57882ab16654b25 ""
+  "main.aux" 1575968298 3178 4ab7940bd11fd6b1bafc9f1679c7e0fd ""
   "seed.bib" 1575942831 1042 0cee839f4c315eaa8684f292144798a7 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1575964758 "main.tex" "main.pdf" "main" 1575965020
+["pdflatex"] 1575968297 "main.tex" "main.pdf" "main" 1575972528
   "..//CRIMEmean_gammahex.png" 1572753878 27978 6aa8b23b0aa118ae88b12520daabb494 ""
   "..//CRIMEmean_gammahex2.png" 1572753878 22266 19c3375a731a8bbaa76846eacf3f876a ""
   "..//CRIMEmean_gammascatter.png" 1572753878 43400 e2832fa2ef4d0d5b733d669d022c6877 ""
@@ -357,17 +357,17 @@
   "Figures/External/main-figure0.md5" 1575942831 62 cb82a17051b71070f9447da7276b55b3 ""
   "Figures/External/main-figure0.pdf" 1575942831 43327 b4cd8fb378d6469e2d6c8daffa5dfc0c ""
   "Figures/figzipf.tex" 1575942831 9306 da978c4d7c92cfa135b77a91c8b8c321 ""
-  "main.aux" 1575964759 3178 c54a1be443636b19e57882ab16654b25 ""
-  "main.bbl" 1575943379 1366 ae4af69bbcbe26842c01bf9582586d59 "bibtex main"
-  "main.out" 1575964759 150 0ef202a6c22e070689debe4200694a77 ""
-  "main.tex" 1575964757 80421 517209a63bcb43350c6ba4212db2b159 ""
-  "main.toc" 1575964759 196 78c349ab74a2b6ae5eefe62362c4f891 ""
+  "main.aux" 1575968298 3178 4ab7940bd11fd6b1bafc9f1679c7e0fd ""
+  "main.bbl" 1575968297 1366 ae4af69bbcbe26842c01bf9582586d59 "bibtex main"
+  "main.out" 1575968298 150 4590388f8c7a73f7bd66a60554ef3da9 ""
+  "main.tex" 1575968294 81805 ab1fa2590b35aabcf201fc30cf17ce65 ""
+  "main.toc" 1575968298 196 ce8053131522c9429fa48be6b8c0d717 ""
   "preamble.tex" 1575612646 11210 b2433f071ceda4c22c98c15705a4567c ""
   (generated)
+  "main.toc"
   "main.pdf"
+  "main.aux"
+  "main.auxlock"
   "main.log"
   "Figures/External/main-figure0.md5"
-  "main.toc"
-  "main.aux"
   "main.out"
-  "main.auxlock"
