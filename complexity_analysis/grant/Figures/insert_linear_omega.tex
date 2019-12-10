@@ -1,0 +1,201 @@
+\begin{tikzpicture}[scale=1, every node/.style={transform shape}]
+	\newcommand{\linearCurves}[2]{
+		\nextgroupplot[\AXISCOL,
+			xmin=-0*pi,
+			xmax=6.5*pi,
+			ymin=-2.,
+			ymax=2.,
+			xtick={0, 2*pi, 4*pi, 6*pi},
+			xticklabels={$0$, $2\pi$, $4\pi$, $6\pi$},
+			%xlabel={time (sec)}, 
+			ylabel={}, % {$x$ and $\dot{x}$},
+			legend columns=2,
+			every axis x label/.style={
+				at={(axis description cs:0.5,-0.35)},
+				anchor=center,
+				align=center
+	    	},
+			every axis y label/.style={
+	        	at={(ticklabel cs:0.5)},
+				rotate=90,
+				yshift=.08in,
+				anchor=center,
+				align=center
+	    	}
+		]
+	    \addplot[color=\COLORX,smooth,thick,] table [x=0, y=x] {#1};
+	    \addplot[color=\COLORXdot,smooth,thick,] table [x=0, y=xdot] {#1};
+		% \foreach \xcor in #2 {
+		% 	 \addplot [mark=none, \COLORVlines, opacity=\OPACITY, line width=\VlineWDT] coordinates {(\xcor, -2.) (\xcor, 2.)};
+		% }
+		\legend{$x$, $\dot{x}$};		
+	}
+	\newcommand{\linearCurvesNoYLabel}[2]{
+		\nextgroupplot[\AXISCOL,
+			xmin=-0*pi,
+			xmax=6.5*pi,
+			ymin=-2.,
+			ymax=2.,
+			xtick={0, 2*pi, 4*pi, 6*pi},
+			xticklabels={$0$, $2\pi$, $4\pi$, $6\pi$},
+			%xlabel={time (sec)}, 
+			% ylabel={$x$ and $\dot{x}$},
+			legend columns=2,
+			every axis x label/.style={
+				at={(axis description cs:0.5,-0.35)},
+				anchor=center,
+				align=center
+	    	},
+			every axis y label/.style={
+	        	at={(ticklabel cs:0.5)},
+				rotate=90,
+				yshift=.08in,
+				anchor=center,
+				align=center
+	    	}
+		]
+	    \addplot[color=\COLORX,smooth,thick,] table [x=0, y=x] {#1};
+	    \addplot[color=\COLORXdot,smooth,thick,] table [x=0, y=xdot] {#1};
+		% \foreach \xcor in #2 {
+		% 	 \addplot [mark=none, \COLORVlines, opacity=\OPACITY, line width=\VlineWDT] coordinates {(\xcor, -2.) (\xcor, 2.)};
+		% }
+		\legend{$x$, $\dot{x}$};		
+	}
+	
+	\newcommand{\linearGamma}[2]{
+		\nextgroupplot[          title={$\gamma(\Delta)$},
+          title style={
+            font=\rm\sffamily\fontsize{8}{8}\selectfont,
+            text=black,
+            anchor=west,
+            at={(.1,.7)},
+            inner sep=1pt,
+            draw=none,
+            fill=black!5,
+            fill opacity=.75,
+            align=right,
+            text opacity=1,},			\AXISCOL,
+			xmin=-0*pi,
+			xmax=6.5*pi,
+			ymin=-0.05,
+			ymax=1.,
+			xtick={0, 2*pi, 4*pi, 6*pi},
+			xticklabels={$0$, $2\pi$, $4\pi$, $6\pi$},
+%			xlabel={delay (sec)}, 
+			ylabel={$\gamma$},
+			every axis x label/.style={
+				at={(axis description cs:0.5,-0.35)},
+				anchor=center,
+				align=center
+	    	},
+			every axis y label/.style={
+	        	at={(ticklabel cs:0.5)},
+				rotate=90,
+				yshift=.075in,
+				anchor=center,
+				align=center
+	    	}
+		] 
+	    \addplot[color=\COLORGamma,smooth,thick,] table [x=0, y=gamma] {#1};
+		% \foreach \xcor in #2 {
+		% 	 \addplot [mark=none, \COLORVlines, opacity=\OPACITY, line width=\VlineWDT] coordinates {(\xcor, -2.) (\xcor, 2.)};
+		% }
+		% \legend{$\gamma$ of $x$};		
+	}
+	\newcommand{\linearGammaNoYLabel}[2]{
+		\nextgroupplot[          title={$\gamma(\Delta)$},
+          title style={
+            font=\rm\sffamily\fontsize{8}{8}\selectfont,
+            text=black,
+            anchor=west,
+            at={(.1,.7)},
+            inner sep=1pt,
+            draw=none,
+            fill=black!5,
+            fill opacity=.75,
+            align=right,
+            text opacity=1,},			\AXISCOL,
+			xmin=-0*pi,
+			xmax=6.5*pi,
+			ymin=-0.05,
+			ymax=1.,
+			xtick={0, 2*pi, 4*pi, 6*pi},
+			xticklabels={$0$, $2\pi$, $4\pi$, $6\pi$},
+%			xlabel={delay (sec)}, 
+			% ylabel={coefficient of\\causal dependence},
+			every axis x label/.style={
+				at={(axis description cs:0.5,-0.35)},
+				anchor=center,
+				align=center
+	    	},
+			every axis y label/.style={
+	        	at={(ticklabel cs:0.5)},
+				rotate=90,
+				yshift=.14in,
+				anchor=center,
+				align=center
+	    	}
+		]
+	    \addplot[color=\COLORGamma,smooth,thick,] table [x=0, y=gamma] {#1};
+		% \foreach \xcor in #2 {
+		% 	 \addplot [mark=none, \COLORVlines, opacity=\OPACITY, line width=\VlineWDT] coordinates {(\xcor, -2.) (\xcor, 2.)};
+		% }
+		% \legend{$\gamma$ of $x$};		
+	}
+
+
+	%---------------------------------------------Group Plots----------------------------------------------	
+	\pgfplotstableread[col sep=comma]{datafiles/linear_omega_0.5.dat}{\dataOne}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_omega_0.5_gamma.dat}{\gammaLogOne}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_omega_1.0.dat}{\dataTwo}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_omega_1.0_gamma.dat}{\gammaLogTwo}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_omega_1.5.dat}{\dataThree}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_omega_1.5_gamma.dat}{\gammaLogThree}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_omega_2.0.dat}{\dataFour}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_omega_2.0_gamma.dat}{\gammaLogFour}
+	
+	\begin{groupplot}[
+          group style={group size=4 by 2,
+			horizontal sep=\HSEP, 
+			vertical sep=\VSEP,
+          },
+		width=\WDT,
+		height=\HGT,
+        legend style={
+			font=\rm\sffamily\fontsize{8}{8}\selectfont,
+			text=black,
+			anchor=west,
+			at={(0,1.2)},
+        	inner sep=1pt,
+			draw=none,
+			fill=black!5,
+			fill opacity=.75,
+			align=right,
+        	text opacity=1,
+			/tikz/column 2/.style={column sep=5pt,},
+		},
+		axis on top=false,
+		major tick length=0pt,
+		grid,
+		grid style={
+			opacity=1,
+			thick,
+			black!15
+		}
+	]
+	
+		%--------------------------first row----------------------------	
+		\linearCurves{\dataOne}{{0, 4*pi, 8*pi, 12*pi}}
+		\linearCurvesNoYLabel{\dataTwo}{{0, 2*pi, 4*pi, 6*pi, 8*pi, 10*pi, 12*pi}}
+		\linearCurvesNoYLabel{\dataThree}{{0, 4*pi/3, 8*pi/3, 12*pi/3, 16*pi/3, 20*pi/3, 24*pi/3, 28*pi/3, 32*pi/3}}
+		\linearCurvesNoYLabel{\dataFour}{{0, pi, 2*pi, 3*pi, 4*pi, 5*pi, 6*pi, 7*pi, 8*pi, 9*pi, 10*pi, 11*pi, 12*pi}}
+		
+		%--------------------------second row----------------------------	
+		\linearGamma{\gammaLogOne}{{0, 4*pi, 8*pi, 12*pi}}		
+		\linearGammaNoYLabel{\gammaLogTwo}{{0, 2*pi, 4*pi, 6*pi, 8*pi, 10*pi, 12*pi}}		
+		\linearGammaNoYLabel{\gammaLogThree}{{0, 4*pi/3, 8*pi/3, 12*pi/3, 16*pi/3, 20*pi/3, 24*pi/3, 28*pi/3, 32*pi/3}}		
+		\linearGammaNoYLabel{\gammaLogFour}{{0, pi, 2*pi, 3*pi, 4*pi, 5*pi, 6*pi, 7*pi, 8*pi, 9*pi, 10*pi, 11*pi, 12*pi}}
+	\end{groupplot}
+    \node[anchor=north] at ([yshift=-.125in]$(group c1r1.south east)!0.5!(group c4r1.south west)$){time [sec]};
+    \node[anchor=north] at ([yshift=-.125in]$(group c1r2.south east)!0.5!(group c4r2.south west)$){delay [sec]};
+\end{tikzpicture}

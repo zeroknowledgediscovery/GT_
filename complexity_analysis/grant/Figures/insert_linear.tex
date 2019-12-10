@@ -1,0 +1,135 @@
+% \documentclass[margin=5mm]{standalone}
+% 
+% \usepackage{tikz}
+% \usetikzlibrary{positioning}
+% \usepackage{pgfplots}
+% \pgfplotsset{compat=1.8}
+% \usepackage{pgfplotstable}
+% \usepgfplotslibrary{groupplots}
+
+
+% \begin{document}
+
+\begin{tikzpicture}[scale=1, every node/.style={transform shape}]
+	\newcommand{\linearCurves}[1]{
+		\nextgroupplot[
+			xlabel={time (sec)}, 
+			ylabel={$x$ and $\dot{x}$},
+			xmax=50,
+			legend columns=2,
+			every axis x label/.style={
+				at={(axis description cs:0.5,-0.22)},
+				anchor=center,
+				align=center
+	    	},
+			every axis y label/.style={
+	        	at={(ticklabel cs:0.5)},
+				rotate=90,
+				yshift=.2cm,
+				anchor=center,
+				align=center
+	    	}
+		]
+	    \addplot[color=\xcolor] table [x=0, y=x] {#1};
+	    \addplot[color=\xdotcolor] table [x=0, y=xdot] {#1};
+		\legend{$x$, $\dot{x}$};		
+	}
+	\newcommand{\linearCurvesNoYLabel}[1]{
+		\nextgroupplot[
+			xlabel={time (sec)}, 
+			% ylabel={$x$ and $\dot{x}$},
+			xmax=50,
+			legend columns=2,
+			every axis x label/.style={
+				at={(axis description cs:0.5,-0.22)},
+				anchor=center,
+				align=center
+	    	},
+			every axis y label/.style={
+	        	at={(ticklabel cs:0.5)},
+				rotate=90,
+				yshift=.2cm,
+				anchor=center,
+				align=center
+	    	}
+		]
+	    \addplot[color=\xcolor] table [x=0, y=x] {#1};
+	    \addplot[color=\xdotcolor] table [x=0, y=xdot] {#1};
+		\legend{$x$, $\dot{x}$};		
+	}
+	
+	\newcommand{\linearGamma}[1]{
+		\nextgroupplot[
+			xlabel={delay (sec)}, 
+			ylabel={coefficient of\\causal dependence},
+			every axis x label/.style={
+				at={(axis description cs:0.5,-0.22)},
+				anchor=center,
+				align=center
+	    	},
+			every axis y label/.style={
+	        	at={(ticklabel cs:0.5)},
+				rotate=90,
+				yshift=.35cm,
+				anchor=center,
+				align=center
+	    	}
+		]
+	    \addplot[color=\xcolor] table [x=0, y=gamma] {#1};
+		\legend{$\gamma$ of $x$};		
+	}
+	\newcommand{\linearGammaNoYLabel}[1]{
+		\nextgroupplot[xlabel={delay (sec)}, 
+			% ylabel={coefficient of\\causal dependence},
+			every axis x label/.style={
+				at={(axis description cs:0.5,-0.22)},
+				anchor=center,
+				align=center
+	    	},
+			every axis y label/.style={
+	        	at={(ticklabel cs:0.5)},
+				rotate=90,
+				yshift=.35cm,
+				anchor=center,
+				align=center
+	    	}
+		]
+	    \addplot[color=\xcolor] table [x=0, y=gamma] {#1};
+		\legend{$\gamma$ of $x$};		
+	}
+
+	
+	\def\xcolor{blue}
+	\def\xdotcolor{orange}
+	
+	\pgfplotstableread[col sep=comma]{datafiles/linear_2.0.dat}{\dataOne}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_2.0_gamma.dat}{\gammaLogOne}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_3.0.dat}{\dataTwo}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_3.0_gamma.dat}{\gammaLogTwo}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_4.0.dat}{\dataThree}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_4.0_gamma.dat}{\gammaLogThree}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_5.0.dat}{\dataFour}
+    \pgfplotstableread[col sep=comma]{datafiles/linear_5.0_gamma.dat}{\gammaLogFour}
+	
+	\begin{groupplot}[
+		group style={group size=4 by 2},
+		width=6cm,
+		height=4.2cm,
+	]
+	
+		%--------------------------first row----------------------------	
+		\linearCurves{\dataOne}
+		\linearCurvesNoYLabel{\dataTwo}
+		\linearCurvesNoYLabel{\dataThree}
+		\linearCurvesNoYLabel{\dataFour}
+		
+		%--------------------------second row----------------------------	
+		\linearGamma{\gammaLogOne}		
+		\linearGammaNoYLabel{\gammaLogTwo}		
+		\linearGammaNoYLabel{\gammaLogThree}		
+		\linearGammaNoYLabel{\gammaLogFour}		
+	\end{groupplot}
+
+\end{tikzpicture}
+
+\end{document}

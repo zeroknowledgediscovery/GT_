@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2019.3.12)  10 DEC 2019 02:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.20)  10 DEC 2019 09:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1250,7 +1250,33 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/txr/bx/it --> OT1/ccr/m/it on input line 54.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplotstable 2016/01/06 v1.13 Table typesetting and Pretty-printing (
+1.13)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.code
+.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.colt
+ype.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymath.code.tex
+\tikz@math@for@depth=\count194
+\tikz@math@dimen=\dimen284
+\tikz@math@toks=\toks53
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex
+File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
+\pgfarrowinset=\dimen285
+\pgfarrowlength=\dimen286
+\pgfarrowwidth=\dimen287
+\pgfarrowlinewidth=\dimen288
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -1334,18 +1360,18 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks53
+\everycr=\toks54
 \minrowclearance=\skip87
 )
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen284
-\WF@size=\dimen285
-\c@WF@wrappedlines=\count194
+\wrapoverhang=\dimen289
+\WF@size=\dimen290
+\c@WF@wrappedlines=\count195
 \WF@box=\box74
-\WF@everypar=\toks54
+\WF@everypar=\toks55
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
@@ -1369,13 +1395,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen286
-\captionmargin@=\dimen287
-\captionwidth=\dimen288
-\caption@tempdima=\dimen289
-\caption@indent=\dimen290
-\caption@parindent=\dimen291
-\caption@hangindent=\dimen292
+\captionmargin=\dimen291
+\captionmargin@=\dimen292
+\captionwidth=\dimen293
+\caption@tempdima=\dimen294
+\caption@indent=\dimen295
+\caption@parindent=\dimen296
+\caption@hangindent=\dimen297
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -1394,23 +1420,23 @@ x {\normalfont \sffamily \footnotesize {#1.}\nobreakspace }\parbox [t]{\hsize }
 {\normalfont \sffamily \footnotesize \noindent \unhbox \@tempboxa #2}\else \hbo
 x to\hsize {\normalfont \sffamily \footnotesize \box \@tempboxa \hfil }\fi \fi 
 .
-\c@ContinuedFloat=\count195
+\c@ContinuedFloat=\count196
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@KVtest=\count196
+\c@KVtest=\count197
 \sf@farskip=\skip88
-\sf@captopadj=\dimen293
+\sf@captopadj=\dimen298
 \sf@capskip=\skip89
 \sf@nearskip=\skip90
-\c@subfigure=\count197
-\c@subfigure@save=\count198
-\c@lofdepth=\count199
+\c@subfigure=\count198
+\c@subfigure@save=\count199
 Normal \count register pool exhausted, switching to extended pool.
-\c@subtable=\count277
-\c@subtable@save=\count278
-\c@lotdepth=\count279
+\c@lofdepth=\count277
+\c@subtable=\count278
+\c@subtable@save=\count279
+\c@lotdepth=\count280
 \sf@top=\skip91
 \sf@bottom=\skip92
 )
@@ -1428,7 +1454,7 @@ File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
 zlibraryintersections.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersection
 s.code.tex
-\pgf@intersect@solutions=\count280
+\pgf@intersect@solutions=\count281
 )) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -1441,158 +1467,158 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write5
-\integerpart=\count281
-\decimalpart=\count282
+\integerpart=\count282
+\decimalpart=\count283
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.gr
 oupplots.code.tex
-\pgfplots@group@current@plot=\count283
-\pgfplots@group@current@row=\count284
-\pgfplots@group@current@column=\count285
+\pgfplots@group@current@plot=\count284
+\pgfplots@group@current@row=\count285
+\pgfplots@group@current@column=\count286
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 83.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 83.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 88.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 88.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 83.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 88.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 88.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 83.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 88.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 88.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 83.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 88.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 83.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 83.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <6.02249> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6.02249> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <6.02249> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <6.02249> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8.03> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.03374> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.03374> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <9.03374> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9.03374> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.03749> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.03749> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10.03749> not available
 
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.03749> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12.045> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12.045> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <12.045> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <12.045> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.06374> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <17.06374> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <17.06374> not available
 
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <17.06374> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.075> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <20.075> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <20.075> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <20.075> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.09> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <24.09> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <24.09> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <24.09> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 88.
 
 -- Lines per column: 53 (approximate, difference = 3.58195pt).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count286
-\scratchdimen=\dimen294
+\scratchcounter=\count287
+\scratchdimen=\dimen299
 \scratchbox=\box77
-\nofMPsegments=\count287
-\nofMParguments=\count288
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count289
-\MPscratchDim=\dimen295
-\MPnumerator=\count290
-\makeMPintoPDFobject=\count291
-\everyMPtoPDFconversion=\toks56
+\nofMPsegments=\count288
+\nofMParguments=\count289
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen300
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
+\everyMPtoPDFconversion=\toks57
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1611,7 +1637,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring ON on input line 83.
+Package hyperref Info: Link coloring ON on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1619,11 +1645,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count292
+\c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 88.
+LaTeX Info: Redefining \pageref on input line 88.
+LaTeX Info: Redefining \nameref on input line 88.
 
 (./main.out) (./main.out)
 \@outlinefile=\write6
@@ -1634,7 +1660,7 @@ LaTeX Info: Redefining \nameref on input line 83.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
 your preamble.
- on input line 83.
+ on input line 88.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1674,7 +1700,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12.045> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 88.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 93.
 (./main.toc)
 \tf@toc=\write7
 \openout7 = `main.toc'.
@@ -1686,60 +1712,60 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 89.
-LaTeX Font Info:    Try loading font information for OT1+ccr on input line 89.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 94.
+LaTeX Font Info:    Try loading font information for OT1+ccr on input line 94.
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/ot1ccr.fd
 File: ot1ccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OML+ccm on input line 89.
+LaTeX Font Info:    Try loading font information for OML+ccm on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omlccm.fd
 File: omlccm.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 89.
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 94.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
 File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMX+ccex on input line 89.
+LaTeX Font Info:    Try loading font information for OMX+ccex on input line 94.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omxccex.fd
 File: omxccex.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <8.03> on input line 89.
+(Font)              <8.03> on input line 94.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <5.62097> on input line 89.
+(Font)              <5.62097> on input line 94.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <4.015> on input line 89.
-LaTeX Font Info:    Try loading font information for U+txsya on input line 89.
+(Font)              <4.015> on input line 94.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 89.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 89.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 89.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 89.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 89.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1751,43 +1777,45 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
 [4{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pagd8z' already exists, duplicates ignored
+dmap/pdftex.map): fontmap entry for `cob' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `cobo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `com' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `coo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `hv' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `hvb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `hvbo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `hvo' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrb8g' already exists, duplicates ignored
 
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pagdo8z' already exists, duplicates ignore
-d
+dmap/pdftex.map): fontmap entry for `pcrb8r' already exists, duplicates ignored
 
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pagk8z' already exists, duplicates ignored
-
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pagko8z' already exists, duplicates ignore
-d
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pbkd8z' already exists, duplicates ignored
-
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pbkdi8z' already exists, duplicates ignore
-d
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pbkl8z' already exists, duplicates ignored
-
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pbkli8z' already exists, duplicates ignore
-d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1796,8 +1824,43 @@ dmap/pdftex.map): fontmap entry for `pcrb8u' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrb8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrbo8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrbo8r' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `pcrbo8u' already exists, duplicates ignore
 d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrbo8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrr8r' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pcrr8rn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1806,8 +1869,38 @@ dmap/pdftex.map): fontmap entry for `pcrr8u' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrro8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrro8r' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `pcrro8u' already exists, duplicates ignore
 d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrro8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvb8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvb8r' already exists, duplicates ignored
+
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1816,7 +1909,12 @@ dmap/pdftex.map): fontmap entry for `phvb8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `phvbn8z' already exists, duplicates ignore
+dmap/pdftex.map): fontmap entry for `phvbo8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvbo8r' already exists, duplicates ignore
 d
 
 
@@ -1826,8 +1924,13 @@ d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `phvbon8z' already exists, duplicates ignor
-ed
+dmap/pdftex.map): fontmap entry for `phvr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvr8r' already exists, duplicates ignored
+
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1836,7 +1939,12 @@ dmap/pdftex.map): fontmap entry for `phvr8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `phvrn8z' already exists, duplicates ignore
+dmap/pdftex.map): fontmap entry for `phvro8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvro8r' already exists, duplicates ignore
 d
 
 
@@ -1846,18 +1954,8 @@ d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `phvron8z' already exists, duplicates ignor
-ed
+dmap/pdftex.map): fontmap entry for `pncr8g' already exists, duplicates ignored
 
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pncb8z' already exists, duplicates ignored
-
-
-
-pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pncbi8z' already exists, duplicates ignore
-d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1866,28 +1964,42 @@ dmap/pdftex.map): fontmap entry for `pncr8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncri8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `pncri8z' already exists, duplicates ignore
 d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pplb8z' already exists, duplicates ignored
+dmap/pdftex.map): fontmap entry for `psyr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `psyrgo' already exists, duplicates ignored
 
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pplbi8z' already exists, duplicates ignore
-d
+dmap/pdftex.map): invalid entry for `psyro': SlantFont/ExtendFont can be used o
+nly with embedded Type1 fonts
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pplr8z' already exists, duplicates ignored
+dmap/pdftex.map): fontmap entry for `ptmb8g' already exists, duplicates ignored
 
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pplri8z' already exists, duplicates ignore
-d
+dmap/pdftex.map): fontmap entry for `ptmb8r' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmb8y' already exists, duplicates ignored
+
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1896,8 +2008,58 @@ dmap/pdftex.map): fontmap entry for `ptmb8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmbi8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmbi8r' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmbi8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `ptmbi8z' already exists, duplicates ignore
 d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmbo8r': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmbo8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmr8r' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmr8rn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmr8yn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1906,13 +2068,228 @@ dmap/pdftex.map): fontmap entry for `ptmr8z' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmri8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmri8r' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmri8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `ptmri8z' already exists, duplicates ignore
 d
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
-dmap/pdftex.map): fontmap entry for `pzcmi8z' already exists, duplicates ignore
-d
+dmap/pdftex.map): invalid entry for `ptmro8r': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmro8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmrr8re': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmrr8ye': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pzdr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpcrb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpcrbo' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpcrr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpcrro' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rphvb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rphvbo' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rphvbon': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rphvbrn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rphvr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rphvro' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rphvron': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rphvrrn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpsyr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rpsyro': SlantFont/ExtendFont can be used 
+only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rptmb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rptmbi' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rptmbo': SlantFont/ExtendFont can be used 
+only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rptmr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rptmri' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rptmro': SlantFont/ExtendFont can be used 
+only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rptmrre': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rptmrrn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpzdr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `sy' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tib' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tibi' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tibo': SlantFont/ExtendFont can be used on
+ly with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tii' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tio': SlantFont/ExtendFont can be used onl
+y with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tir' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tmbi108r' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tmbo108r': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tmbu108r': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tmrb108r' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tmri108r' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `tmrm108r' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tmro108r': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `tmui108r': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `zd' already exists, duplicates ignored
 
 
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
@@ -1968,185 +2345,235 @@ d
 pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map): fontmap entry for `phvro8yn' already exists, duplicates ignor
 ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxphvb' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxphvbo': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxphvr' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxphvro': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmb' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmbi' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxptmbo': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmr' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmri' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxptmro': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
 }]
-<../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter.png, id=57, 433.62pt x 2
+<../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter.png, id=50, 433.62pt x 2
 89.08pt>
 File: ../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter.png Graphic file (t
 ype png)
  <use ../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter.
-png used on input line 106.
+png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter2.png, id=59, 433.62pt x 
+<../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter2.png, id=52, 433.62pt x 
 289.08pt>
 File: ../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter2.png Graphic file (
 type png)
  <use ../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2008_2012mean_gammascatter2
-.png used on input line 106.
+.png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter.png, id=60, 433.62pt x 2
+<../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter.png, id=53, 433.62pt x 2
 89.08pt>
 File: ../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter.png Graphic file (t
 ype png)
  <use ../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter.
-png used on input line 106.
+png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter2.png, id=61, 433.62pt x 
+<../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter2.png, id=54, 433.62pt x 
 289.08pt>
 File: ../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter2.png Graphic file (
 type png)
  <use ../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2009_2013mean_gammascatter2
-.png used on input line 106.
+.png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter.png, id=62, 433.62pt x 2
+<../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter.png, id=55, 433.62pt x 2
 89.08pt>
 File: ../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter.png Graphic file (t
 ype png)
  <use ../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter.
-png used on input line 106.
+png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter2.png, id=63, 433.62pt x 
+<../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter2.png, id=56, 433.62pt x 
 289.08pt>
 File: ../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter2.png Graphic file (
 type png)
  <use ../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2010_2014mean_gammascatter2
-.png used on input line 106.
+.png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter.png, id=64, 433.62pt x 2
+<../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter.png, id=57, 433.62pt x 2
 89.08pt>
 File: ../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter.png Graphic file (t
 ype png)
  <use ../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter.
-png used on input line 106.
+png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter2.png, id=65, 433.62pt x 
+<../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter2.png, id=58, 433.62pt x 
 289.08pt>
 File: ../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter2.png Graphic file (
 type png)
  <use ../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2011_2015mean_gammascatter2
-.png used on input line 106.
+.png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter.png, id=66, 433.62pt x 2
+<../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter.png, id=59, 433.62pt x 2
 89.08pt>
 File: ../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter.png Graphic file (t
 ype png)
  <use ../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter.
-png used on input line 106.
+png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter2.png, id=67, 433.62pt x 
+<../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter2.png, id=60, 433.62pt x 
 289.08pt>
 File: ../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter2.png Graphic file (
 type png)
  <use ../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2012_2016mean_gammascatter2
-.png used on input line 106.
+.png used on input line 111.
 (pdftex.def)             Requested size: 162.6071pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2008_2012mean_gammahex.png, id=68, 433.62pt x 433.6
+<../TERRORcomp2/plots/TERROR2008_2012mean_gammahex.png, id=61, 433.62pt x 433.6
 2pt>
 File: ../TERRORcomp2/plots/TERROR2008_2012mean_gammahex.png Graphic file (type 
 png)
  <use ../TERRORcomp2/plots/TERROR2008_2012mean_gammahex.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2008_2012mean_gammahex.png 
-used on input line 121.
+used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2008_2012mean_gammahex2.png, id=69, 433.62pt x 433.
+<../TERRORcomp2/plots/TERROR2008_2012mean_gammahex2.png, id=62, 433.62pt x 433.
 62pt>
 File: ../TERRORcomp2/plots/TERROR2008_2012mean_gammahex2.png Graphic file (type
  png)
  <use ../TERRORcomp2/plots/TERROR2008_2012mean_gammahex2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2008_2012mean_gammahex2.png
- used on input line 121.
+ used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2009_2013mean_gammahex.png, id=70, 433.62pt x 433.6
+<../TERRORcomp2/plots/TERROR2009_2013mean_gammahex.png, id=63, 433.62pt x 433.6
 2pt>
 File: ../TERRORcomp2/plots/TERROR2009_2013mean_gammahex.png Graphic file (type 
 png)
  <use ../TERRORcomp2/plots/TERROR2009_2013mean_gammahex.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2009_2013mean_gammahex.png 
-used on input line 121.
+used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2009_2013mean_gammahex2.png, id=71, 433.62pt x 433.
+<../TERRORcomp2/plots/TERROR2009_2013mean_gammahex2.png, id=64, 433.62pt x 433.
 62pt>
 File: ../TERRORcomp2/plots/TERROR2009_2013mean_gammahex2.png Graphic file (type
  png)
  <use ../TERRORcomp2/plots/TERROR2009_2013mean_gammahex2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2009_2013mean_gammahex2.png
- used on input line 121.
+ used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2010_2014mean_gammahex.png, id=72, 433.62pt x 433.6
+<../TERRORcomp2/plots/TERROR2010_2014mean_gammahex.png, id=65, 433.62pt x 433.6
 2pt>
 File: ../TERRORcomp2/plots/TERROR2010_2014mean_gammahex.png Graphic file (type 
 png)
  <use ../TERRORcomp2/plots/TERROR2010_2014mean_gammahex.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2010_2014mean_gammahex.png 
-used on input line 121.
+used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2010_2014mean_gammahex2.png, id=73, 433.62pt x 433.
+<../TERRORcomp2/plots/TERROR2010_2014mean_gammahex2.png, id=66, 433.62pt x 433.
 62pt>
 File: ../TERRORcomp2/plots/TERROR2010_2014mean_gammahex2.png Graphic file (type
  png)
  <use ../TERRORcomp2/plots/TERROR2010_2014mean_gammahex2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2010_2014mean_gammahex2.png
- used on input line 121.
+ used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2011_2015mean_gammahex.png, id=74, 433.62pt x 433.6
+<../TERRORcomp2/plots/TERROR2011_2015mean_gammahex.png, id=67, 433.62pt x 433.6
 2pt>
 File: ../TERRORcomp2/plots/TERROR2011_2015mean_gammahex.png Graphic file (type 
 png)
  <use ../TERRORcomp2/plots/TERROR2011_2015mean_gammahex.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2011_2015mean_gammahex.png 
-used on input line 121.
+used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2011_2015mean_gammahex2.png, id=75, 433.62pt x 433.
+<../TERRORcomp2/plots/TERROR2011_2015mean_gammahex2.png, id=68, 433.62pt x 433.
 62pt>
 File: ../TERRORcomp2/plots/TERROR2011_2015mean_gammahex2.png Graphic file (type
  png)
  <use ../TERRORcomp2/plots/TERROR2011_2015mean_gammahex2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2011_2015mean_gammahex2.png
- used on input line 121.
+ used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2012_2016mean_gammahex.png, id=76, 433.62pt x 433.6
+<../TERRORcomp2/plots/TERROR2012_2016mean_gammahex.png, id=69, 433.62pt x 433.6
 2pt>
 File: ../TERRORcomp2/plots/TERROR2012_2016mean_gammahex.png Graphic file (type 
 png)
  <use ../TERRORcomp2/plots/TERROR2012_2016mean_gammahex.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2012_2016mean_gammahex.png 
-used on input line 121.
+used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<../TERRORcomp2/plots/TERROR2012_2016mean_gammahex2.png, id=77, 433.62pt x 433.
+<../TERRORcomp2/plots/TERROR2012_2016mean_gammahex2.png, id=70, 433.62pt x 433.
 62pt>
 File: ../TERRORcomp2/plots/TERROR2012_2016mean_gammahex2.png Graphic file (type
  png)
  <use ../TERRORcomp2/plots/TERROR2012_2016mean_gammahex2.png>
 Package pdftex.def Info: ../TERRORcomp2/plots/TERROR2012_2016mean_gammahex2.png
- used on input line 121.
+ used on input line 126.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
 
@@ -2188,33 +2615,33 @@ ORcomp2/plots/TERROR2010_2014mean_gammahex.png> <../TERRORcomp2/plots/TERROR201
 0_2014mean_gammahex2.png> <../TERRORcomp2/plots/TERROR2011_2015mean_gammahex.pn
 g> <../TERRORcomp2/plots/TERROR2011_2015mean_gammahex2.png> <../TERRORcomp2/plo
 ts/TERROR2012_2016mean_gammahex.png> <../TERRORcomp2/plots/TERROR2012_2016mean_
-gammahex2.png>] <..//CRIMEmean_gammahex.png, id=106, 433.62pt x 433.62pt>
+gammahex2.png>] <..//CRIMEmean_gammahex.png, id=99, 433.62pt x 433.62pt>
 File: ..//CRIMEmean_gammahex.png Graphic file (type png)
 
 <use ..//CRIMEmean_gammahex.png>
-Package pdftex.def Info: ..//CRIMEmean_gammahex.png used on input line 132.
+Package pdftex.def Info: ..//CRIMEmean_gammahex.png used on input line 137.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<..//CRIMEmean_gammahex2.png, id=107, 433.62pt x 433.62pt>
+<..//CRIMEmean_gammahex2.png, id=100, 433.62pt x 433.62pt>
 File: ..//CRIMEmean_gammahex2.png Graphic file (type png)
 
 <use ..//CRIMEmean_gammahex2.png>
-Package pdftex.def Info: ..//CRIMEmean_gammahex2.png used on input line 133.
+Package pdftex.def Info: ..//CRIMEmean_gammahex2.png used on input line 138.
 (pdftex.def)             Requested size: 108.40472pt x 108.405pt.
 
-<..//CRIMEmean_gammascatter.png, id=108, 462.528pt x 346.896pt>
+<..//CRIMEmean_gammascatter.png, id=101, 462.528pt x 346.896pt>
 File: ..//CRIMEmean_gammascatter.png Graphic file (type png)
 
 <use ..//CRIMEmean_gammascatter.png>
-Package pdftex.def Info: ..//CRIMEmean_gammascatter.png used on input line 142.
+Package pdftex.def Info: ..//CRIMEmean_gammascatter.png used on input line 147.
 
 (pdftex.def)             Requested size: 144.53964pt x 108.405pt.
 
-<..//CRIMEmean_gammascatter2.png, id=109, 462.528pt x 346.896pt>
+<..//CRIMEmean_gammascatter2.png, id=102, 462.528pt x 346.896pt>
 File: ..//CRIMEmean_gammascatter2.png Graphic file (type png)
 
 <use ..//CRIMEmean_gammascatter2.png>
-Package pdftex.def Info: ..//CRIMEmean_gammascatter2.png used on input line 143
+Package pdftex.def Info: ..//CRIMEmean_gammascatter2.png used on input line 148
 .
 (pdftex.def)             Requested size: 144.53964pt x 108.405pt.
 
@@ -2234,31 +2661,31 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  <..//CRIMEmean_gammahex.png> <..//CRIMEmean_gammahex2.png> <..//CRIMEmean_gamm
 ascatter.png> <..//CRIMEmean_gammascatter2.png>]
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 17
-1.
+6.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <11.04124> on input line 171.
+(Font)              <11.04124> on input line 176.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7.72884> on input line 171.
+(Font)              <7.72884> on input line 176.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <5.52061> on input line 171.
+(Font)              <5.52061> on input line 176.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7.72884> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 171.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 176.
 
 
-LaTeX Warning: Citation `miller15' on page 8 undefined on input line 171.
+LaTeX Warning: Citation `miller15' on page 8 undefined on input line 176.
 
 
 LaTeX Warning: Citation `festinger1962theory' on page 8 undefined on input line
- 171.
+ 176.
 
 
-LaTeX Warning: Citation `ARONSON19691' on page 8 undefined on input line 173.
+LaTeX Warning: Citation `ARONSON19691' on page 8 undefined on input line 178.
 
 
-LaTeX Warning: Citation `zanna74' on page 8 undefined on input line 173.
+LaTeX Warning: Citation `zanna74' on page 8 undefined on input line 178.
 
 
-LaTeX Warning: Citation `COOPER1984229' on page 8 undefined on input line 173.
+LaTeX Warning: Citation `COOPER1984229' on page 8 undefined on input line 178.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2271,7 +2698,7 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  [][] 
  []
 
-[8
+[1
 
 ]
 
@@ -2285,46 +2712,61 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  [][] 
  []
 
-[9]
+[2]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 228.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 234.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <8> on input line 229.
+(Font)              <8> on input line 235.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <6> on input line 229.
+(Font)              <6> on input line 235.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <5> on input line 229.
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 231.
+(Font)              <5> on input line 235.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 237.
 
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <12.045> on input line 231.
+(Font)              <12.045> on input line 237.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <8.43146> on input line 231.
+(Font)              <8.43146> on input line 237.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <6.02249> on input line 231.
+(Font)              <6.02249> on input line 237.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <12.045> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 231.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8.43146> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 231.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <6.02249> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 231.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 231.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <6> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 231.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 231.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 244.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 250.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 245.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 252.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.72884> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 245.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 252.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.52061> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 245.
- (./Figures/figzipf.tex
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 252.
+
+
+LaTeX Warning: Citation `may1972will' on page 3 undefined on input line 252.
+
+
+LaTeX Warning: Citation `may2001stability' on page 3 undefined on input line 25
+2.
+
+
+LaTeX Warning: Citation `jacquet2016no' on page 3 undefined on input line 254.
+
+(./Figures/figzipf.tex
 ===== Image './Figures/External/main-figure0' is up-to-date. ======
 )
+
+LaTeX Warning: Citation `mora2011biological' on page 3 undefined on input line 
+288.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.24948pt.
@@ -2332,17 +2774,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 282.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 289.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.62097> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 282.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 289.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <4.015> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 282.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 289.
 
 Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  [][] 
  []
 
-[10]
+[3]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.24948pt.
@@ -2354,159 +2796,102 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  [][] 
  []
 
-[11 <./Figures/External/main-figure0.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.296 
+       [4 <./Figures/External/main-figure0.pdf>]
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.24948pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Warning: Citation `mora2011biological' on page 5 undefined on input line 
+301.
 
-
-Overfull \hbox (3.03047pt too wide) has occurred while \output is active
- [][] 
- []
-
-[12]
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 390.
-
-LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 39
-0.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <14.05249> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <9.83669> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.02625> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <14.05249> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <9.83669> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.02625> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <14.05249> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <9.83669> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.02625> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 390.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <14.05249> on input line 390.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <9.83669> on input line 390.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7.02625> on input line 390.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <11.04124> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.72884> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <5.52061> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <11.04124> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.72884> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 390.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <5.52061> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 390.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 391.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <11> on input line 391.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7.69997> on input line 391.
-LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <5.5> on input line 391.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <11> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 391.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.69997> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 391.
-LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.5> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 391.
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 391.
-
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <11> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 391.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.69997> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 391.
-LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <5.5> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 391.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <11> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 391.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.69997> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 391.
-LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <5.5> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 391.
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 392.
+(./Figures/insert_linear_omega.tex
+PGFPlots: reading {datafiles/linear_omega_0.5.dat}
 
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 393.
+Package pgfplots Warning: Table 'datafiles/linear_omega_0.5.dat' has an empty c
+olumn name; replacing it by '0'' on input line 148.
 
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {datafiles/linear_omega_0.5_gamma.dat}
 
-Overfull \hbox (3.90651pt too wide) in paragraph at lines 393--394
-\OT1/phv/m/n/11 the anal-y-sis of large scale sur-vey data. The abil-ity to dis
--till in-cip-i-ent micro-structural cross-dependencies
- []
+Package pgfplots Warning: Table 'datafiles/linear_omega_0.5_gamma.dat' has an e
+mpty column name; replacing it by '0'' on input line 149.
 
-(./main.bbl)
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {datafiles/linear_omega_1.0.dat}
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 25.
-See the caption package documentation for explanation.
+Package pgfplots Warning: Table 'datafiles/linear_omega_1.0.dat' has an empty c
+olumn name; replacing it by '0'' on input line 150.
 
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {datafiles/linear_omega_1.0_gamma.dat}
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.24948pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+Package pgfplots Warning: Table 'datafiles/linear_omega_1.0_gamma.dat' has an e
+mpty column name; replacing it by '0'' on input line 151.
 
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {datafiles/linear_omega_1.5.dat}
 
-Overfull \hbox (3.03047pt too wide) has occurred while \output is active
- [][] 
- []
+Package pgfplots Warning: Table 'datafiles/linear_omega_1.5.dat' has an empty c
+olumn name; replacing it by '0'' on input line 152.
 
-[13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4590388F8C7A73F7BD66A60554EF3DA9;150.
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {datafiles/linear_omega_1.5_gamma.dat}
 
+Package pgfplots Warning: Table 'datafiles/linear_omega_1.5_gamma.dat' has an e
+mpty column name; replacing it by '0'' on input line 153.
 
-LaTeX Warning: There were undefined references.
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {datafiles/linear_omega_2.0.dat}
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 400.
- )
-(\end occurred inside a group at level 1)
+Package pgfplots Warning: Table 'datafiles/linear_omega_2.0.dat' has an empty c
+olumn name; replacing it by '0'' on input line 154.
 
-### simple group (level 1) entered at line 1061 ({)
-### bottom level 
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {datafiles/linear_omega_2.0_gamma.dat}
+
+Package pgfplots Warning: Table 'datafiles/linear_omega_2.0_gamma.dat' has an e
+mpty column name; replacing it by '0'' on input line 155.
+
+ [warning /pgfplots/warning/empty column name]
+Missing character: There is no ; in font nullfont!
+
+! Package PGF Math Error: Could not parse input '2*pi' as a floating point numb
+er, sorry. The unreadable part was near '*pi'..
+
+See the PGF Math package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 ...0, 2*pi, 4*pi, 6*pi, 8*pi, 10*pi, 12*pi}}
+                                                  
+? x
+ 
 Here is how much of TeX's memory you used:
- 37872 strings out of 493046
- 875983 string characters out of 6137253
- 1141930 words of memory out of 11000000
- 40565 multiletter control sequences out of 15000+600000
- 127717 words of font info for 333 fonts, out of 8000000 for 9000
+ 39107 strings out of 493046
+ 917077 string characters out of 6137253
+ 1511241 words of memory out of 9000000
+ 41808 multiletter control sequences out of 15000+600000
+ 86897 words of font info for 208 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 61i,17n,96p,1530b,5844s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/
-concmath-fonts/xccsy10.657pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/l
-jfour/public/concrete/ccr8.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/
-pk/ljfour/public/concmath-fonts/xccmi8.600pk> </home/ishanu/.cache/texlive/texm
-f-var/fonts/pk/ljfour/public/concmath-fonts/xccmi10.720pk> </home/ishanu/.cache
-/texlive/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccmi10.657pk> </home/
-ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/concrete/ccr10.657pk>{/u
-sr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/txfonts/txbsya.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
-tic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.
-pfb>
-Output written on main.pdf (10 pages, 535463 bytes).
+ 61i,17n,96p,1530b,8375s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/concmath-fonts/x
+ccsy10.657pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public/con
+crete/ccr8.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/ljfour/public
+/concmath-fonts/xccmi8.600pk> </home/ishanu/.cache/texlive/texmf-var/fonts/pk/l
+jfour/public/concmath-fonts/xccmi10.720pk> </home/ishanu/.cache/texlive/texmf-v
+ar/fonts/pk/ljfour/public/concmath-fonts/xccmi10.657pk> </home/ishanu/.cache/te
+xlive/texmf-var/fonts/pk/ljfour/public/concrete/ccr10.657pk>{/usr/share/texlive
+/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
+vr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (8 pages, 522157 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 16 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 

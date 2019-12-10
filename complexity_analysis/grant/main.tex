@@ -2,6 +2,11 @@
 \let\labelindent\relax
 \usepackage{enumitem}
 \input{preamble.tex} 
+\usepackage{pgfplotstable}
+\usetikzlibrary{math}
+\usetikzlibrary{matrix}
+\usetikzlibrary{arrows.meta}
+
 \usetikzlibrary{arrows}
 \usepackage{geometry}
 \geometry{a4paper, left=.7in,right=.75in,top=.8in,bottom=0.65in}
@@ -188,6 +193,7 @@ The proposed work will be carried out over a period of 24 months in the base per
 
 
 \section{Goals and Impact}
+\setcounter{page}{1}
 % {\color{gray} \footnotesize Describe what the proposed team is trying to achieve and the difference it will make (qualitatively and quantitatively) if successful.  Describe the innovative aspects of the project in the context of existing capabilities and approaches, clearly delineating the uniqueness and benefits in the context of the state of the art, alternative approaches, and other projects from the past and present.  Describe how the project is revolutionary and how it significantly rises above the current state of the art.  
 
 % Describe the deliverables and any plans to commercialize the technology, transition it to a customer, or further the work.  Discuss the mitigation of any issues related to sustainment of the technology over its entire lifecycle, assuming the technology transition plan is successful.
@@ -242,11 +248,12 @@ We briefly enumerate the proposed characterizations (See Technical Plan for math
 
   
 \subsection*{Measures of Stability: The May Constraint \& Self-organized Criticality In Real-World Systems}
-Stability is well-understood  in the study of dynamical systems. For our purpose, a stable system  is one that can carry on operating with low probability of generating event patterns or behaviors that threaten catastrophic failures, and cessation of operation; a stable system  is in no danger of dying suddenly. \textit{We hypothesize that explicit  measures of expected stability can be designed that potentially disambiguate real world complex systems of social interactions from simulated ones.} To see how such measures are  designed, we  briefly describe the seminal work of Robert May~\cite{may1972will,may2001stability} on  stability of complex systems.
+%Stability is well-understood  in the study of dynamical systems.
+ For our purpose, a stable system  is one that can carry on operating with low probability of generating event patterns or behaviors that threaten catastrophic failures, and cessation of operation; a stable system  is in no danger of dying suddenly. Stability criteria are well understood for systems with known structures. However, for real-world multi-component multi-scale complex  sytems revealed only  through finite set of empirical observations, it is less clear how to establish or analyze stability properties.  \textit{We hypothesize that explicit  measures of expected stability may be designed that potentially disambiguate real world complex systems of social interactions from simulated ones.} To see how such measures are  designed, we  briefly describe the seminal work of Robert May~\cite{may1972will,may2001stability} on  stability of complex systems.
 
 May's work on  large random systems  show  that  complex systems tend to be inherently unstable, implying that for  ecosystems with more species, more interspecific interactions per species (connectance), or stronger interactions are not as likely to  be as stable as systems with fewer of these attributes. However, these results are at odds with the empirical  observations  that large, highly complex ecosystems are  MORE stable NOT LESS~\cite{jacquet2016no}.
 
-In other words, May's work identifies a computable constraints on system parameters, violations of which  that are overwhelmingly likely to cause systemic instability in large random systems; nevertheless natural complex systems seem to be able to operate in those regimes with no sign of an unstable demise.
+In other words, May's work identifies  computable constraints on system parameters, violations of which  that are overwhelmingly likely to cause systemic instability in large random systems; nevertheless natural complex systems seem to be able to operate in those regimes with no sign of an unstable demise.
 %
 More specifically, May's theorem deals with  $S$ variables (species), where the $i$th species interacts with the $j$th one with a strength  drawn  from a normal distribution
  with probability $C$ and are $0$ otherwise.
@@ -278,23 +285,23 @@ Thus, we  define our first measure of stability as:
 }
  We hypothesize that simulated systems will typically have a significantly lower value of $\mu_\S$, while real world systems will often violate the apparent stability criterion ($\mu_\S < 1$), while continuing to be actually stable in practice.
 \end{quote}
-This notion of natural systems being poised at special miniscule ``critical'' regions   in  high-dimensional parameter spaces  is strongly indicative of the   intrguing phenomena  of \textit{self-organized criticality}~\cite{mora2011biological}.  Our preliminary studies | and  the discussion below | suggests that real-world complex systems tend to be \textit{poised at criticality}, operating at or near systemic phase transitions, while simulated systems often lack this behavior. We exploit these insights  for our second class of  stability-related characterization measures. First, we briefly dilineate this deep  connection, before charting our  application strategy.
+This notion of natural systems being poised at special miniscule ``critical'' regions   in  high-dimensional parameter spaces  is strongly indicative of \textit{self-organized criticality}~\cite{mora2011biological}.  Our preliminary studies | and  the discussion below | suggests that real-world complex systems tend to be \textit{poised at criticality}, operating at or near systemic phase transitions, while simulated systems often lack this behavior. We exploit these insights  for our second class of  stability-related characterization measures. First, we briefly dilineate this deep  connection, before charting our  application strategy.
 
 % For decades, physicists have hoped that the emergent, collective phenomena of life | both at the modelcular and social levels |   could be captured using ideas from statistical mechanics. For example, the stationary states of biological systems,   have a subtle structure, neither ``frozen'' into a well ordered crystal, nor chaotic and disordered like a gas.
 
-For decades, physicists have hoped that the emergent, collective phenomena of living systems, both at the moelcular and the social scales, could be captured using ideas from statistical mechanics. States of such  emergent systems are almost never at equilibrium, maintained by a flow of energy and material (in biology) or societal exchange of relevant entities (people, ideas, beliefs etc). We plan to investigate this intriguing idea at length, that such systems are poised near criticality | which we believe is the key to undertsanding the criteria that distinguish real-world systems from simulations.
+For decades, physicists have hoped that the emergent, collective phenomena of living systems, both at the moelcular and the social scales, could be captured using ideas from statistical mechanics. States of such  emergent systems are almost never at equilibrium, maintained by a flow of energy and material (in biology) or societal exchange of relevant entities (people, ideas, beliefs etc). At the same time, it seems impossible that such balance is attained via accidental choice of system parameters. We believe that recognizing the emergence of self-organized criticality across  scales is  key to  distinguishing real-world systems from existing simulation efforts.
 
 Classicially, critical plhenomena has to do with phase transitions, and discontinuities in relevant order parameters near such transitions. 
-Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Assume we are able to model the statistically stationary states of a complex system  with a many-parameter model. Clearly random choice of these parameters is not likely to redproduce meaningful function; and  if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Thus, for complex systems the parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated  by critical surfaces. \textit{We plan to investigate the  intriguing possibility  that most compelx systems in the real-world are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.} 
+Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Assume that we are able to model the statistically stationary states of a complex system  with a many-parameter model. Clearly random choice of these parameters is not likely to redproduce meaningful function; and  if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Thus, for complex systems it is likely that the parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated  by critical surfaces. \textit{We plan to investigate the  intriguing possibility  that most complex systems in the real-world are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.} 
 
 \def\q{\sigma}
 
 Directly verifying this hypothesis is problematic. However, we can indeed validate if the systems carry signatures of critical organization, $e.g.$, the emergence of Zipf's Law in the distribution of
 strength of inferred predictive links between observables, or the in/out degree distribution of the inferred influence network.
-The justification of looking for such characterization in the distrbution of links strengths or degrees  arises from the idea that an enumeration of these properties may be seen as a specification of the state  the complex system, and it can be shown that existence of the Zipf's law amounts to the existence of critical temperature below which the system ``freezes'', and above which thermodynamic quantities diverge~\cite{mora2011biological}.
+The justification of looking for such characterization in the distrbution of links strengths or degrees  arises from the idea that an enumeration of these properties may be seen as a specification of the state  the complex system | and  existence of the Zipf's law amounts to the existence of a critical temperature below which the system ``freezes'', and above which thermodynamic quantities diverge~\cite{mora2011biological}.
 
 
-As shown in Fig~\ref{figzipf}, our preliminary studies corroborates this hypothesis, at least with the systems under consideration.
+As shown in Fig~\ref{figzipf}, our preliminary studies corroborate this hypothesis, at least with the systems under consideration.
 %This allows us to think about the probability $P(\q)$ of finding the system in that state, and use standard statistical mechanics to write down the   Boltzmann distribution:
 % \cgather{
 % P(\q) = \frac{1}{Z} e^{E(\q)/k_BT}
@@ -361,7 +368,7 @@ Using system  size as a measure of complexity is potentially misleading. We plan
 We plan to consider two broad compelxity measures: 1) \textit{I-complexity:}  the number of non-trivial models we can infer given the data and an upper bound on temporal memeory, normalized by the maximum number of possible models,   and 2) the \textit{Z-Complexity:} which is the average number of states in the set of inferred models.
 I-complexity  is the connectance that appears in May's condition of stability of complex systems discussed before: what is the probability that two varaibles or entities interact. And Z-complexity captures the average complexity of the intervariable dependence. 
 
-Note that these measures are computable effectively only if we have an inference algorithm that models non-trivial dependence between observed data streams, returning generative models capturing the complexity of signal tranduction across observables considered only if there is actual dependence, and indicating  direction-specific independence otherwise. Thus, if we are considering N independent coin tosses (implying no temporal memory, since outcomes are iid), we have $N$ trivial single state models. Thus, our complexity measures in this case will be: 
+Note that these measures are computable effectively only if we have an inference algorithm that models non-trivial dependence between observed data streams. Any such inference algorithm must return generative models capturing the complexity of signal tranduction across observables  only if there is actual dependence, and indicate  direction-specific independence otherwise. Thus, in the trivial case where  we are considering N independent coin tosses (implying no temporal memory, since outcomes are iid), we have $N$ trivial single state models. Thus, our complexity measures in this case: 
 \cgather{
 \textit{I-complexity: } N/(N^2) = 1/N \\
 \textit{Z-complexity: } 1  
@@ -374,6 +381,91 @@ We plan to investigate if real-world systems are inherently more complex compare
 
 
 \subsection*{Frequency-domain (like)  Measures \& Analytics}
+
+
+\begin{figure}
+  % \tikzexternaldisable %Figures in Figures/External
+  \begin{tikzpicture}[scale=1, every node/.style={transform shape},font=\bf\sffamily\fontsize{8}{8}\selectfont]
+    % ------------------parameters for the label(leftmost) column-----------------
+    \def\TextWDT{1.25in}
+    \def\TextYSHIFT{-.06in}
+    \def\AXISCOL{gray}
+    % ----------------------parameters for the groupplots-------------------------
+    \def\WDT{1.65in} % the width of each individual axis in the groupplot
+    \def\HGT{1.2in} % the height of each individual axis in the groupplot
+    
+    \def\COLORX{DodgerBlue2} % color for the x curve
+    \def\COLORXdot{Red4} % color for the xdot curve
+    \def\COLORPhase{gray} % color for the phase plot
+    \def\COLORGamma{black} % color for the Delta-gamma plot
+    \def\COLORVlines{black} % color for the vertical lines
+    \def\OPACITY{0} % opacity of the vertical lines
+    \def\VlineWDT{1} % line width of the vertical lines 
+    \def\HSEP{.275in}
+    \def\VSEP{.35in}
+    \def\YST{.125in}
+    % --------------------------------linear--------------------------------------
+    \node[anchor=north west] (L) at (0, 0) {\input{Figures/insert_linear_omega.tex}};
+    \node[
+    anchor=north east, 
+    text width=\TextWDT, 
+    yshift=\TextYSHIFT,
+    %font=\fontsize{\TextFS}{\TextFS}\selectfont
+    ] (L.label) at (L.north west) {
+      {\large A.} Linear 
+      \cgathers{2.5\dot{x} + x = 2.5\sin(\omega t)\\
+      \omega =\begin{bmatrix} .5  &  1.0 &  1.5&  2.0.\end{bmatrix}}
+    };
+    
+    % --------------------------------Duffing-------------------------------------
+    \node[anchor=north west] (D) at ([yshift=\YST]L.south west) {\input{Figures/insert_duffing.tex}};
+    \node[
+    anchor=north east, 
+    text width=\TextWDT,
+    yshift=\TextYSHIFT,
+    %font=\fontsize{\TextFS}{\TextFS}\selectfont
+    ] (D.label) at (D.north west) {
+     { \large B.} Duffing 
+      \cgathers{\ddot{x}+\delta\dot{x}+x+5x^3 = 8\cos(.5t)\\
+      \delta = \begin{bmatrix}0.003 & 0.03&  0.3& 3.0.\end{bmatrix}}
+    };
+    
+    % -------------------------------Van der Pol----------------------------------
+    \node[anchor=north west] (V) at ([yshift=\YST]D.south west) {\input{Figures/insert_vpol.tex}};
+    \node[
+    anchor=north east, 
+    text width=\TextWDT,
+    yshift=\TextYSHIFT,
+    %font=\fontsize{\TextFS}{\TextFS}\selectfont
+    ] (V.label) at (V.north west) {
+      {\large C.} Van der Pol 
+      \cgathers{
+      x - \mu\dot{x}\left(1 - x^2\right) = 2.5\cos(3t)\\
+      \mu = \begin{bmatrix} 0.07 & 0.7  &  1.0 & 4.0. \end{bmatrix}}
+    };
+    
+  \end{tikzpicture}
+  \caption{Learning Processes Cross-talk in Complex Phenomena. Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection*{Measures  of External Influence \& Closed vs Open Systems}
 
 
