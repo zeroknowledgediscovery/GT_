@@ -186,7 +186,6 @@ Our approach simplifies the problem by formulating  a computable measure of cogn
 
 The proposed work will be carried out over a period of 24 months in the base period, followed by 12 months in the option period, at a total cost of $1$M USD. 
 
-
 \section{Goals and Impact}
 % {\color{gray} \footnotesize Describe what the proposed team is trying to achieve and the difference it will make (qualitatively and quantitatively) if successful.  Describe the innovative aspects of the project in the context of existing capabilities and approaches, clearly delineating the uniqueness and benefits in the context of the state of the art, alternative approaches, and other projects from the past and present.  Describe how the project is revolutionary and how it significantly rises above the current state of the art.  
 
@@ -255,6 +254,21 @@ For large $S$, he shows that the system is stable with probability $1$ if:
 \noindent and with probability 0 otherwise, where $\gamma$ is the average strength of interaction.
 The elegance of May's theorem, coupled with the  verified contradiction in large scale natural systems suggests that  complex ecosystems are perhaps  NOT  randomly wired. Real world  systems exist in small islands of stability in complex high dimensional parameter spaces, where  large perturbations would risk incursion into unstable regimes by  May's theorem.
 
+%While most results in this direction are from biological ecosystems and food webs [REF], we hypothesize similar effects to exist in social interactions.
+%
+\begin{quote}\itshape 
+Thus, we  define our first measure of stability as:
+\cgather{
+\mu_\S =  \gamma \sqrt{SC}
+}
+ We hypothesize that simulated systems will typically have a significantly lower value of $\mu_\S$, while real world systems will often violate the apparent stability criterion ($\mu_\S < 1$), while continuing to be actually stable in practice.
+\end{quote}
+This notion of natural systems being poised at special miniscule ``critical'' regions   in  high-dimensional parameter spaces  is strongly indicative of the   intrguing phenomena  of \textit{self-organized criticality}~\cite{mora2011biological}.  Our preliminary studies | and  the discussion below | suggests that real-world complex systems tend to be \textit{poised at criticality}, operating at or near systemic phase transitions, while simulated systems often lack this behavior. We exploit these insights  for our second class of  stability-related characterization measures. First, we briefly dilineate this deep  connection, before charting our  application strategy.
+
+For decades, physicists have hoped that the emergent, collective phenomena of life | both at the modelcular and social levels |   could be captured using ideas from statistical mechanics. For example, the stationary states of biological systems,   have a subtle structure, neither ``frozen'' into a well ordered crystal, nor chaotic and disordered like a gas.
+
+%############################################33
+%############################################33
 %############################################33
 %############################################33
 \begin{figure}{t}
@@ -269,67 +283,26 @@ The elegance of May's theorem, coupled with the  verified contradiction in large
 %############################################33
 %############################################33
 %############################################33
-%While most results in this direction are from biological ecosystems and food webs [REF], we hypothesize similar effects to exist in social interactions.
-%
-\begin{quote}\itshape 
-Thus, we  define our first measure of stability as:
-\cgather{
-\mu_\S =  \gamma \sqrt{SC}
-}
- We hypothesize that simulated systems will typically have a significantly lower value of $\mu_\S$, while real world systems will often violate the apparent stability criterion ($\mu_\S < 1$), while continuing to be actually stable in practice.
-\end{quote}
-This notion of natural systems being poised at special miniscule ``critical'' regions   in  high-dimensional parameter spaces  is strongly indicative of the   intrguing phenomena  of \textit{self-organized criticality}~\cite{mora2011biological}.  Our preliminary studies | and  the discussion below | suggests that real-world complex systems tend to be \textit{poised at criticality}, operating at or near systemic phase transitions, while simulated systems often lack this behavior. We exploit these insights  for our second class of  stability-related characterization measures. First, we briefly dilineate this deep  connection, before charting our  application strategy.
-
-% For decades, physicists have hoped that the emergent, collective phenomena of life | both at the modelcular and social levels |   could be captured using ideas from statistical mechanics. For example, the stationary states of biological systems,   have a subtle structure, neither ``frozen'' into a well ordered crystal, nor chaotic and disordered like a gas.
-
-For decades, physicists have hoped that the emergent, collective phenomena of living systems, both at the moelcular and the social scales, could be captured using ideas from statistical mechanics. States of such  emergent systems are almost never at equilibrium, maintained by a flow of energy and material (in biology) or societal exchange of relevant entities (people, ideas, beliefs etc). We plan to investigate this intriguing idea at length, that such systems are poised near criticality | which we believe is the key to undertsanding the criteria that distinguish real-world systems from simulations.
-
-Classicially, critical plhenomena has to do with phase transitions, and discontinuities in relevant order parameters near such transitions. 
-Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Assume we are able to model the statistically stationary states of a complex system  with a many-parameter model. Clearly random choice of these parameters is not likely to redproduce meaningful function; and  if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Thus, for complex systems the parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated  by critical surfaces. \textit{We plan to investigate the  intriguing possibility  that most compelx systems in the real-world are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.} 
-
-\def\q{\sigma}
-
-Directly verifying this hypothesis is problematic. However, we can indeed validate if the systems carry signatures of critical organization, $e.g.$, the emergence of Zipf's Law in the distribution of
-strength of inferred predictive links between observables, or the in/out degree distribution of the inferred influence network.
-The justification of looking for such characterization in the distrbution of links strengths or degrees  arises from the idea that an enumeration of these properties may be seen as a specification of the state  the complex system, and it can be shown that existence of the Zipf's law amounts to the existence of critical temperature below which the system ``freezes'', and above which thermodynamic quantities diverge~\cite{mora2011biological}.
 
 
-As shown in Fig~\ref{figzipf}, our preliminary studies corroborates this hypothesis, at least with the systems under consideration.
-%This allows us to think about the probability $P(\q)$ of finding the system in that state, and use standard statistical mechanics to write down the   Boltzmann distribution:
-% \cgather{
-% P(\q) = \frac{1}{Z} e^{E(\q)/k_BT}
-%   }
-% where $k_B$  is Boltzmann's constant and $Z$ the partition function. Without loss of generality, we can set the temperature $k_B T = 1,Z=1$,  leading  to the  definition of
-% the energy as:
-% \cgather{
-%   E(\q)= -\log P(\q )
-% }
-% Using well-understood arguments  that equate density of states (number of states within a small energey braket)  to the exponential of the entropy $S$, we can eventually work out that Zipf's Law implies:
-% \cgather{
-% S = E/\alpha + \cdots (\textrm{subextensive terms})
-% }
+Further, these states are far from equilibrium, maintained by a con-
+stant flow of energy and material through the system. There is something special about the states corresponding to functional, living systems, but at the same time it cannot be that function depends on a fine tuning of parameters. Of the many ideas rooted in statistical physics that have been suggested to characterize these states, perhaps the most intriguing—and the most speculative—is the idea of self-organized criticality.
 
-% The stationary states of biological systems have a subtle structure, neither “frozen” into a well ordered crystal, nor chaotic and disordered like a gas.
+Before proceeding, we should be much clearer what we mean by saying that a biological
+system is near criticality. By far our deepest understanding of critical phenomena is in the case of equilibrium systems, but there are very few cases where equilibrium properties are relevant to life—although see the recent discussion of criticality in biological membranes [87]. Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Many biological systems are in statistically stationary states, and we can try to give a probabilistic description of these states. Any such model, if it is realistic, will have many parameters. As physicists we aren’t really interested in the precise
+values of these parameters, and can even argue that the organism itself isn’t “interested” in parameters, only in the functions that these systems carry out. On the other hand, for many systems we know that if just pick parameters at random, we won’t find anything that reproduces biological function. Thus, real biological systems operate in special regions of parameter space, and we would like to understand just what defines these regions. As a guide to answering this fundamental question, we realize that if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Again, we know how to implement
+this construction explicitly for equilibrium systems, but the idea is much more general. Thus, rather than considering one model for a particular biological system, with many parameters fit to some large body of data, we want to emphasize that such models belong to a family, with varying parameters, and that this parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated (in the limit that systems are large) by critical surfaces. Our task in making a model of biological system is then not to find precise parameter values, but to locate the system in this phase diagram. The tantalizing possibility is that many systems are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.
+
+The connection to May's theorem, the observed contradictions, and our preliminary results with urban crime and terrorism motivate further research in this direction.
 
 
-% Further, these states are far from equilibrium, maintained by a con-
-% stant flow of energy and material through the system. There is something special about the states corresponding to functional, living systems, but at the same time it cannot be that function depends on a fine tuning of parameters. Of the many ideas rooted in statistical physics that have been suggested to characterize these states, perhaps the most intriguing—and the most speculative—is the idea of self-organized criticality.
+Zipf's law
 
-% Before proceeding, we should be much clearer what we mean by saying that a biological
-% system is near criticality. By far our deepest understanding of critical phenomena is in the case of equilibrium systems, but there are very few cases where equilibrium properties are relevant to life—although see the recent discussion of criticality in biological membranes [87]. Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Many biological systems are in statistically stationary states, and we can try to give a probabilistic description of these states. Any such model, if it is realistic, will have many parameters. As physicists we aren’t really interested in the precise
-% values of these parameters, and can even argue that the organism itself isn’t “interested” in parameters, only in the functions that these systems carry out. On the other hand, for many systems we know that if just pick parameters at random, we won’t find anything that reproduces biological function. Thus, real biological systems operate in special regions of parameter space, and we would like to understand just what defines these regions. As a guide to answering this fundamental question, we realize that if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Again, we know how to implement
-% this construction explicitly for equilibrium systems, but the idea is much more general. Thus, rather than considering one model for a particular biological system, with many parameters fit to some large body of data, we want to emphasize that such models belong to a family, with varying parameters, and that this parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated (in the limit that systems are large) by critical surfaces. Our task in making a model of biological system is then not to find precise parameter values, but to locate the system in this phase diagram. The tantalizing possibility is that many systems are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.
-
-% The connection to May's theorem, the observed contradictions, and our preliminary results with urban crime and terrorism motivate further research in this direction.
-
-
-% Zipf's law
-
-% With the availability of large datasets, it now seems possible to construct $P (\sigma )$ directly
-% from the data, and to take the corresponding energy function $E(\sigma )$ seriously as a statistical
-% mechanics problem. In this section we explore the consequences of that idea, by showing
-% the equivalence between Zipf’s law of language and the critical properties of the associated
-% statistical mechanics model.
+With the availability of large datasets, it now seems possible to construct $P (\sigma )$ directly
+from the data, and to take the corresponding energy function $E(\sigma )$ seriously as a statistical
+mechanics problem. In this section we explore the consequences of that idea, by showing
+the equivalence between Zipf’s law of language and the critical properties of the associated
+statistical mechanics model.
 
 % There is a very old observation of a power law in a biological system, and this is Zipf’s
 % law in language [96], first observed by Auerbach in 1913 [5]. In contrast to examples such
@@ -355,12 +328,12 @@ As shown in Fig~\ref{figzipf}, our preliminary studies corroborates this hypothe
 
 % Understanding the mechanisms responsible for stability and persistence of ecosystems is one of the greatest challenges in ecology. Robert May showed that, contrary to intuition, complex randomly built ecosystems are less likely to be stable than simpler ones. Few attempts have been tried to test May’s prediction empirically, and we still ignore what is the actual complexity–stability relationship in natural ecosystems. Here we perform a stability analysis of 116 quantitative food webs sampled worldwide. We find that classic descriptors of complexity (species richness, connectance and interaction strength) are not associated with stability in empirical food webs. Further analysis reveals that a correlation between the effects of predators on prey and those of prey on predators, combined with a high frequency of weak interactions, stabilize food web dynamics relative to the random expectation. We conclude that empirical food webs have several non-random properties contributing to the absence of a complexity–stability relationship.
 
-\subsection*{Measures of Complexity}
-Our systems are clearly not simple with many variables, components and dependencies. However, using system  size as a measure of complexity is potentially misleading. We plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the number of intrinsic states that the system has for it to manifest the observed behavior.
 
-We plan to accomplish this by 1)  relating complexity to the number of models we can infer, normalized by the maximum number of possible models,   and 2) the average number of states in the set of inferred models.
-We call the first measure I-complexity, and the second Z-complexity.
-I-complexity  is the connectance that appears in May's formalism: what is the probability that two varaibles or entities interact. And Z-complexity captures the average complexity of the intervariable dependence. 
+
+
+\subsection*{Measures of Complexity}
+
+
 
 
 
@@ -370,9 +343,7 @@ I-complexity  is the connectance that appears in May's formalism: what is the pr
 \subsection*{Measures  of External Influence \& Closed vs Open Systems}
 
 
-\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer
-
-The goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals. Within these broad goals, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
+\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life SoccerThe goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals. Within these broad goals, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
 
 \subsection*{Innovation: From Socio-psychological Theory To Data-driven Inference}
 Our proposed work is starkly novel in the level of mathematical rigor, the scalable computational tools, and the elegant quantitative adoption of a qualitative theory in psychology. The key innovation here  is the formulation of the notion of cognitive dissonance as a \textbf{quantitative  measure of surprise}; computed as the deviation of an individual's response to

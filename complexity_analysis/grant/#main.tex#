@@ -20,6 +20,8 @@
 \makeatletter \renewcommand{\@citess}[1]{\raisebox{1pt}{\textsuperscript{[#1]}}} \makeatother
 \usepackage{xstring}
 \usepackage{xspace}
+\usepgfplotslibrary{groupplots}
+
 \captionsetup[subfigure]{labelformat=empty}
 \makeatletter
 \renewcommand\section{\@startsection {section}{1}{\z@}%
@@ -38,7 +40,7 @@
   {-1.5ex \@plus -.5ex \@minus -.2ex}%
   {0.0ex \@plus.5ex}%
   {\fontsize{11}{11}\selectfont\itshape\sffamily\color{Red1!50!black}}}
-
+ 
 
 \makeatother
 \makeatletter
@@ -53,7 +55,7 @@
 \renewcommand{\baselinestretch}{1.05}
 \renewcommand{\captionN}[1]{\caption{\color{CadetBlue4!80!black} \sffamily \fontsize{10}{11}\selectfont #1  }}
 \tikzexternaldisable 
-\parskip=4pt
+\parskip=7pt
 \parindent=0pt
 \newcommand{\Mark}[1]{\textsuperscript{#1}}
 % \lhead{\sf\footnotesize \color{DodgerBlue4!70!black}\today}
@@ -80,7 +82,7 @@
 % ##################################
 \begin{document} 
 % 
-\lhead{DARPA-RA-19-01 Volume 1}
+\lhead{DARPA Seedling}
 \setcounter{page}{4}
 
 \tableofcontents
@@ -145,71 +147,16 @@
 
 
 
-
+%####################################
+\def\C{\mathbf{c}}
+\def\S{\mathbf{s}}
+\def\R{\mathbf{r}}
+\def\E{\mathbf{e}}
 
 
 
 
 \clearpage
-
-Detailed simulation of social phenomena is currently used by the DoD to undertsand the evolution  of social structures, and the emergence of relevant  organizational hierachies  in theatres of conflict. In the modern reality of assymmetric warfare often against local insurgencies in conlfict countries, informing military strategy with expected social impacts is instrumental for long-term policy success.
-In this work, we aim to define, develop and demonstrate principles for validating  complex social simulations. Additionally, our investigations will extend social theory with the deep undertsanding of the principles that 1) enable us to compare and constrast complex systems, 2)  disambiguate real and simulated phenomena,   3) chart effective principles to narrow such distinctions to ultimately realize more realistic models and predictions, and 4) develop computable stragegies  to disambiguate closed vs open systems, $i.e.$ identify the existence and delineate the role of  external influences driving 
-systemic outcomes.
-
-Social phenomena unfold as complex interdependent system of systems operating at multiple scales  of orgamization in space and time. While over a century of work in social theory  has teased out a few of the important  guiding principles around which such large scale  systems organize, first principle quantitative rules  akin to the laws of physics, are generally  missing. Thus, unlike physics, social scientists do not have a ``standard model'' | a neat set of equations  believed  to be not just a \textit{good} model of the physical univese, but rather an actual representation of the exact ground truth. Under  this scenario, physicists  can work out simulations that confidently reflect reality, and build gargantuan particle accelerators to test when and if  rare events deviate from simulated outcomes to search for \textit{new physics}, and validate existing theory. The reality for social scientists is harsher | with no such universal set of equations (\textit{or the hope of ever finding one}), the veracity of complex social simulations is forever suspect. How do we know we have built in the right amount of complexity? How do we know if the simulated systemes have the same emergent structures, and any conclusion or observation in such systems have even a tenuous  connection to  reality? 
-
-Answering these questions are of crucial importance to national security. Without quantified confidence on the large scale social simulations that are becoming increasingly important in military strategy and foreign policy,  incorrect recommendations has the potential for  catastrophic long-term consequences.
-
-
-
-\def\C{\mathbf{c}}
-\def\S{\mathbf{s}}
-\def\R{\mathbf{r}}
-\def\E{\mathbf{e}}
-\def\COLA{SeaGreen1}
-\def\COLB{Tomato!40}
-\def\COLC{Yellow1}
-\def\COLD{DodgerBlue1!50}
-\def\COLE{DarkOrange1!30}
-\def\COLF{Orchid1!40}
-\setlength{\arrayrulewidth}{1pt}
-\arrayrulecolor{lightgray}
-\begin{table}[!h]
-\centering
-\captionN{Dynamical Measures  Proposed For Precise Chracterization of Complex Systems}\label{tab0} \bf \sffamily \fontsize{8}{10}\selectfont
-\begin{tabular}{L{.1in} C{.8in}| L{1.2in}| L{3.65in}}\hline
- \rowcolor{gray} \color{white} & \color{white}Measure & \color{white}Property Measured & \color{white}Description \\\hline
-1. & \large $\mu_\C$ & \cellcolor{\COLA} Complexity & The level of complexity of multi-scale multi-variate spatially extended systems require new measures of compelxity that capture statistical compelxity, structure of connectedness, and cross-talk.\\\hline
-2. &\large$\mu_\S$ & \cellcolor{\COLB}Stability &  Stability in systems of interest might be finely poised between instability regimes, with the possibile manifestation of self-orgnized criticality.\\\hline
-3. &\large$\mu_\R$ & \cellcolor{\COLC} Resilience & Qunatify the ability of systems of interest to recover from directed and random perturbations, akin to homeostasis in living systems.  \\\hline
-4. &\large$\mu_\omega$ & \cellcolor{\COLD} Frequency-like & Generalization of frequecny domain tools and measures to non-linear multi-scale spatio-temporal system of systems with categorical and ordinal variables. \\\hline
-5. &\large$\mu_\E$ & \cellcolor{\COLE} External Influence & Estimate the pssibility having an  open vs a closed system.\\\hline
-6. &\mnp{.8in}{\centering \vskip .4em {\large$\partial \mu_i / \partial t$} \\ $ i= \C, \S, \R, \omega, \E$\vskip 1.5em } & \cellcolor{\COLF} Evolution \&  Influence & How the measures of dynamical properties  evolve in time characterizes the evolution of  emergent rules and drivers, indicative of the rate of information generation either within, or via influence import.\\\hline
-\end{tabular}
-\end{table}
-
-
-What we propose is defining measures that chraterioze diverse aspects of the emergent dynamics. The challenge here is to define of craft these measures that are application agnostic, and thus capable of evaluation objectuvely by looking at dfata from diverse real-life and soimluated scsarios. Technically speaking, we are infact designbing chraceroizations for complex spatio-=termporal systems, with unknow or poor;y understood rules, operating t multiple spatial and temporal scales, with variables that can be a mix of categoriacal, ordinal as well as discrete and continuous, is subject to noisy and possibly adversarially corrupted observations.
-
-Why is this great, and never before done.
-
-
-
-\subsection*{Measures of Complexity}
-
-Characteriztion of complexity has intrigues mathematicians, physicistys and philosophers for centuries. Social systems bring new challanges for the reasons described above. It is unclear if teh fundamental ideas of descriptional complexity adequately capture the notion of interest in our case. Intutively, we aim to investigate th eidea that real systems are somehow more complex | maybe irreducibly complex | and simulations however detailed often lack this tell-tale signatures of real-world complexity.
-
-\subsection*{Measures of Stability}
-
-\subsection*{Measures of Reslience}
-
-\subsection*{Time -domain Measures \& Analytics}
-\subsection*{Measures  of External Influence}
-
-
-\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer
-
-
 
 
 \section{Executive Summary}
@@ -239,11 +186,192 @@ Our approach simplifies the problem by formulating  a computable measure of cogn
 
 The proposed work will be carried out over a period of 24 months in the base period, followed by 12 months in the option period, at a total cost of $1$M USD. 
 
+
 \section{Goals and Impact}
 % {\color{gray} \footnotesize Describe what the proposed team is trying to achieve and the difference it will make (qualitatively and quantitatively) if successful.  Describe the innovative aspects of the project in the context of existing capabilities and approaches, clearly delineating the uniqueness and benefits in the context of the state of the art, alternative approaches, and other projects from the past and present.  Describe how the project is revolutionary and how it significantly rises above the current state of the art.  
 
 % Describe the deliverables and any plans to commercialize the technology, transition it to a customer, or further the work.  Discuss the mitigation of any issues related to sustainment of the technology over its entire lifecycle, assuming the technology transition plan is successful.
 % }
+
+
+Detailed simulation of social phenomena is currently used by the DoD to undertsand the evolution  of social structures, and the emergence of relevant  organizational hierarchies  in theatres of conflict. In the modern reality of asymmetric warfare often against local insurgencies in conflict countries, informing military strategy with expected social implications is crucial for optimal long-term outcomes, and US  foreign policy success.
+In this work, we aim to define, develop and demonstrate proof-of-concept principles for validating  complex social simulations. Additionally, our goal is to  extend social theory to 1)  compare and constrast complex systems, 2)  disambiguate real and simulated phenomena,   3) chart effective principles to narrow or erase such identifiable distinctions to ultimately realize more realistic models and predictions, and 4) develop computable strategies  to disambiguate closed vs open systems, $i.e.$, identify the existence and the role of  unobserved and unknown  external influences.
+
+Social phenomena unfold as complex interdependent system of systems operating at multiple scales  of orgamization in space and time. Centuries of work in social theory  has teased out a few of the important  guiding principles around which such large scale  systems organize; nevertheless first principle quantitative rules  akin to the laws of physics, are generally  missing. Thus, unlike physics, social scientists do not have a ``standard model'' | a neat set of equations  believed  to be not just a \textit{good} model of the physical univese, but rather a representation of the exact ground truth. Under  this convenient  scenario, physicists  can work out simulations that confidently reflect reality, and build gargantuan particle accelerators to test when-and-if  rare events subtly deviate from simulated outcomes to search for \textit{new physics}, and validate existing theory. The reality for social scientists is harsher | with no such universal set of equations (\textit{or the hope of ever finding one}), the veracity of complex social simulations is forever suspect. How do we know we have built in the right amount of complexity? How do we know if the simulated systemes have the same emergent structures, and any conclusion or observation in such systems have even a tenuous  connection to  reality? How do we \textit{quantify} the deviations from and uncertainties between real systems of interest  and engineered simulations built to interrogate them, often at great expense?
+
+
+These questions are of crucial importance to national security. Without quantified confidence on the large scale social simulations that are becoming increasingly important in military strategy and foreign policy,  incorrect recommendations have the potential for  catastrophic long-term consequences.
+
+
+In this work we propose to address these issues by crafting rigorous computable measures  that characterize diverse aspects of the  emergent dynamics in social interactions. The challenge here is to  craft measures that are application agnostic, and thus capable of evaluating  objectively  diverse real-life and simulated scenarios. Technically speaking, we are  designing characterizations for complex spatio-temporal systems, with unknown or poorly understood rules, operating at multiple spatial and temporal scales, with variables that can be a mix of categorical, ordinal as well as discrete and continuous, and potentially subject to noisy and  adversarially corrupted observations.
+
+Our approach is predicated on our ability to effectively distill good predictive models of  such systems from data, in a manner that is agnostic to the explicit details of the application. To that effect we leverage our recent work on a novel  spatio-temporal stochastic modeling framework   | the Granger nets | which are  demonstrably superior in predictive ability and sample complexity to   existing off-the-shelf deep learning architectures.
+
+Broadly our scheme is as follows: Given observation logs from a system (simulated or real), we construct the Granger net, and then interrogate the inferred predictive structures through the lens of a range of carefully constructed measures (See Table~\ref{tab0} for overview) that illuminate various  dynamical characteristics pertaining to complexity, stability, reslilience, and evidence of self-organized criticality. In our preliminary studies, these measures  clearly disambiguate real and simulated systems | even ones  constructed  with considerable  effort aiming to erase any such distinctions.
+
+Thus, the primary over-arching goal of this work is to investigate the missing elements that  leave such tell-tale signatures in high fidelity simulations, and ultimately move towards future design principles that better simulate reality.
+%
+We briefly enumerate the proposed characterizations (See Technical Plan for mathematical details).
+
+%####################################
+%####################################
+\def\COLA{SeaGreen1}
+\def\COLB{Tomato!40}
+\def\COLC{Yellow1}
+\def\COLD{DodgerBlue1!50}
+\def\COLE{DarkOrange1!30}
+\def\COLF{Orchid1!40}
+\setlength{\arrayrulewidth}{1pt}
+\arrayrulecolor{lightgray}
+\begin{table}[t]
+\centering
+\captionN{Dynamical Measures  Proposed For Precise Chracterization of Complex Systems}\label{tab0} \bf \sffamily \fontsize{8}{10}\selectfont
+\begin{tabular}{L{.1in} C{.8in}| L{1.2in}| L{3.65in}}\hline
+ \rowcolor{gray}  & \color{white}Measure & \color{white}Property Measured & \color{white}Description \\\hline \color{black}
+1. & \large $\mu_\C$ & \cellcolor{\COLA} Complexity & The level of complexity of multi-scale multi-variate spatially extended systems require new measures of compelxity that capture statistical compelxity, structure of connectedness, and cross-talk.\\\hline
+2. &\large$\mu_\S$ & \cellcolor{\COLB}Stability &  Stability in systems of interest might be finely poised between instability regimes, with the possibile manifestation of self-orgnized criticality.\\\hline
+3. &\large$\mu_\R$ & \cellcolor{\COLC} Resilience & Qunatify the ability of systems of interest to recover from directed and random perturbations, akin to homeostasis in living systems.  \\\hline
+4. &\large$\mu_\omega$ & \cellcolor{\COLD} Frequency-like & Generalization of frequecny domain tools and measures to non-linear multi-scale spatio-temporal system of systems with categorical and ordinal variables. \\\hline
+5. &\large$\mu_\E$ & \cellcolor{\COLE} External Influence & Estimate the pssibility having an  open vs a closed system.\\\hline
+6. &\mnp{.8in}{\centering \vskip .4em {\large$\partial \mu_i / \partial t$} \\ $ i= \C, \S, \R, \omega, \E$\vskip 1.5em } & \cellcolor{\COLF} Evolution \&  Influence & How the measures of dynamical properties  evolve in time characterizes the evolution of  emergent rules and drivers, indicative of the rate of information generation either within, or via influence import.\\\hline
+\end{tabular}
+\end{table}
+%####################################
+%####################################
+%####################################
+
+  
+\subsection*{Measures of Stability: The May Constraint \& Self-organized Criticality In Real-World Systems}
+Stability is well-understood  in the study of dynamical systems. For our purpose, a stable system  is one that can carry on operating with low probability of generating event patterns or behaviors that threaten catastrophic failures, and cessation of operation; a stable system  is in no danger of dying suddenly. \textit{We hypothesize that explicit  measures of expected stability can be designed that potentially disambiguate real world complex systems of social interactions from simulated ones.} To see how such measures are  designed, we  briefly describe the seminal work of Robert May~\cite{may1972will,may2001stability} on  stability of complex systems.
+
+May's work on  large random systems  show  that  complex systems tend to be inherently unstable, implying that for  ecosystems with more species, more interspecific interactions per species (connectance), or stronger interactions are not as likely to  be as stable as systems with fewer of these attributes. However, these results are at odds with the empirical  observations  that large, highly complex ecosystems are  MORE stable NOT LESS~\cite{jacquet2016no}.
+
+In other words, May's work identifies a computable constraints on system parameters, violations of which  that are overwhelmingly likely to cause systemic instability in large random systems; nevertheless natural complex systems seem to be able to operate in those regimes with no sign of an unstable demise.
+%
+More specifically, May's theorem deals with  $S$ variables (species), where the $i$th species interacts with the $j$th one with a strength  drawn  from a normal distribution
+ with probability $C$ and are $0$ otherwise.
+For large $S$, he shows that the system is stable with probability $1$ if:
+\cgather{\gamma  \sqrt{SC} < 1  }
+\noindent and with probability 0 otherwise, where $\gamma$ is the average strength of interaction.
+The elegance of May's theorem, coupled with the  verified contradiction in large scale natural systems suggests that  complex ecosystems are perhaps  NOT  randomly wired. Real world  systems exist in small islands of stability in complex high dimensional parameter spaces, where  large perturbations would risk incursion into unstable regimes by  May's theorem.
+
+%############################################33
+%############################################33
+\begin{figure}{t}
+\tikzexternalenable
+\centering
+ 
+\input{Figures/figzipf.tex}
+
+\captionN{Zipf's Law holds in real-world systems, but not in simulated ones, even  the ones where  significant effort and resources are  expended  to  replicate reality. Thus, it appears complex system of systems in the real world often exhibit critical phenomena, whereas simulated systems often do not. This discrepancy is also reflected in the stability criterion of Robert May: it seems that real worls systems should be unstable but they are not: they exist in islands of stability surrounded by unstable regimes in high dimensional parameter spaces.}\label{figzipf}
+\end{figure}
+%############################################33
+%############################################33
+%############################################33
+%############################################33
+%While most results in this direction are from biological ecosystems and food webs [REF], we hypothesize similar effects to exist in social interactions.
+%
+\begin{quote}\itshape 
+Thus, we  define our first measure of stability as:
+\cgather{
+\mu_\S =  \gamma \sqrt{SC}
+}
+ We hypothesize that simulated systems will typically have a significantly lower value of $\mu_\S$, while real world systems will often violate the apparent stability criterion ($\mu_\S < 1$), while continuing to be actually stable in practice.
+\end{quote}
+This notion of natural systems being poised at special miniscule ``critical'' regions   in  high-dimensional parameter spaces  is strongly indicative of the   intrguing phenomena  of \textit{self-organized criticality}~\cite{mora2011biological}.  Our preliminary studies | and  the discussion below | suggests that real-world complex systems tend to be \textit{poised at criticality}, operating at or near systemic phase transitions, while simulated systems often lack this behavior. We exploit these insights  for our second class of  stability-related characterization measures. First, we briefly dilineate this deep  connection, before charting our  application strategy.
+
+% For decades, physicists have hoped that the emergent, collective phenomena of life | both at the modelcular and social levels |   could be captured using ideas from statistical mechanics. For example, the stationary states of biological systems,   have a subtle structure, neither ``frozen'' into a well ordered crystal, nor chaotic and disordered like a gas.
+
+For decades, physicists have hoped that the emergent, collective phenomena of living systems, both at the moelcular and the social scales, could be captured using ideas from statistical mechanics. States of such  emergent systems are almost never at equilibrium, maintained by a flow of energy and material (in biology) or societal exchange of relevant entities (people, ideas, beliefs etc). We plan to investigate this intriguing idea at length, that such systems are poised near criticality | which we believe is the key to undertsanding the criteria that distinguish real-world systems from simulations.
+
+Classicially, critical plhenomena has to do with phase transitions, and discontinuities in relevant order parameters near such transitions. 
+Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Assume we are able to model the statistically stationary states of a complex system  with a many-parameter model. Clearly random choice of these parameters is not likely to redproduce meaningful function; and  if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Thus, for complex systems the parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated  by critical surfaces. \textit{We plan to investigate the  intriguing possibility  that most compelx systems in the real-world are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.} 
+
+\def\q{\sigma}
+
+Directly verifying this hypothesis is problematic. However, we can indeed validate if the systems carry signatures of critical organization, $e.g.$, the emergence of Zipf's Law in the distribution of
+strength of inferred predictive links between observables, or the in/out degree distribution of the inferred influence network.
+The justification of looking for such characterization in the distrbution of links strengths or degrees  arises from the idea that an enumeration of these properties may be seen as a specification of the state  the complex system, and it can be shown that existence of the Zipf's law amounts to the existence of critical temperature below which the system ``freezes'', and above which thermodynamic quantities diverge~\cite{mora2011biological}.
+
+
+As shown in Fig~\ref{figzipf}, our preliminary studies corroborates this hypothesis, at least with the systems under consideration.
+%This allows us to think about the probability $P(\q)$ of finding the system in that state, and use standard statistical mechanics to write down the   Boltzmann distribution:
+% \cgather{
+% P(\q) = \frac{1}{Z} e^{E(\q)/k_BT}
+%   }
+% where $k_B$  is Boltzmann's constant and $Z$ the partition function. Without loss of generality, we can set the temperature $k_B T = 1,Z=1$,  leading  to the  definition of
+% the energy as:
+% \cgather{
+%   E(\q)= -\log P(\q )
+% }
+% Using well-understood arguments  that equate density of states (number of states within a small energey braket)  to the exponential of the entropy $S$, we can eventually work out that Zipf's Law implies:
+% \cgather{
+% S = E/\alpha + \cdots (\textrm{subextensive terms})
+% }
+
+% The stationary states of biological systems have a subtle structure, neither “frozen” into a well ordered crystal, nor chaotic and disordered like a gas.
+
+
+% Further, these states are far from equilibrium, maintained by a con-
+% stant flow of energy and material through the system. There is something special about the states corresponding to functional, living systems, but at the same time it cannot be that function depends on a fine tuning of parameters. Of the many ideas rooted in statistical physics that have been suggested to characterize these states, perhaps the most intriguing—and the most speculative—is the idea of self-organized criticality.
+
+% Before proceeding, we should be much clearer what we mean by saying that a biological
+% system is near criticality. By far our deepest understanding of critical phenomena is in the case of equilibrium systems, but there are very few cases where equilibrium properties are relevant to life—although see the recent discussion of criticality in biological membranes [87]. Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Many biological systems are in statistically stationary states, and we can try to give a probabilistic description of these states. Any such model, if it is realistic, will have many parameters. As physicists we aren’t really interested in the precise
+% values of these parameters, and can even argue that the organism itself isn’t “interested” in parameters, only in the functions that these systems carry out. On the other hand, for many systems we know that if just pick parameters at random, we won’t find anything that reproduces biological function. Thus, real biological systems operate in special regions of parameter space, and we would like to understand just what defines these regions. As a guide to answering this fundamental question, we realize that if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Again, we know how to implement
+% this construction explicitly for equilibrium systems, but the idea is much more general. Thus, rather than considering one model for a particular biological system, with many parameters fit to some large body of data, we want to emphasize that such models belong to a family, with varying parameters, and that this parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated (in the limit that systems are large) by critical surfaces. Our task in making a model of biological system is then not to find precise parameter values, but to locate the system in this phase diagram. The tantalizing possibility is that many systems are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.
+
+% The connection to May's theorem, the observed contradictions, and our preliminary results with urban crime and terrorism motivate further research in this direction.
+
+
+% Zipf's law
+
+% With the availability of large datasets, it now seems possible to construct $P (\sigma )$ directly
+% from the data, and to take the corresponding energy function $E(\sigma )$ seriously as a statistical
+% mechanics problem. In this section we explore the consequences of that idea, by showing
+% the equivalence between Zipf’s law of language and the critical properties of the associated
+% statistical mechanics model.
+
+% There is a very old observation of a power law in a biological system, and this is Zipf’s
+% law in language [96], first observed by Auerbach in 1913 [5]. In contrast to examples such
+% as avalanches, where power laws describe the dynamics of the system, Zipf’s law really
+% refers to the distribution over states of the system, in the same way that the Boltzmann
+% distribution describes the distribution over states of an equilibrium system. Specifically, in
+% written language we can think of the state of the system as being a single word σ , and as
+% texts or conversations proceed they sample many such states. If one orders (ranks) words
+% σ by their decreasing frequency P (σ ), Zipf’s law states that the frequency of words P (σ )
+% decays as the inverse of their rank r(σ ).
+
+
+
+% Local stability measures the tendency of the system to return to
+% equilibrium after small perturbations. In unstable systems, even infinitesimal perturbations will make the system move
+% away from the equilibrium state, potentially resulting in the loss of species. Thus, it should be extremely improbable
+% to observe rich (large S) or highly connected (large C) ecosystems persisting through time. Mathematically, an
+% equilibrium point is stable if all the eigenvalues of the corresponding community matrix have negative real part.
+
+
+% Characteriztion of dynamical complexity has intrigued mathematicians, physicists and philosophers. Social systems bring new challanges for the reasons described above. It is unclear if the fundamental ideas of descriptional complexity adequately capture the notion of interest in our case. Intutively, we aim to investigate th eidea that real systems are somehow more complex | maybe irreducibly complex | and simulations however detailed often lack this tell-tale signatures of real-world complexity.
+
+
+% Understanding the mechanisms responsible for stability and persistence of ecosystems is one of the greatest challenges in ecology. Robert May showed that, contrary to intuition, complex randomly built ecosystems are less likely to be stable than simpler ones. Few attempts have been tried to test May’s prediction empirically, and we still ignore what is the actual complexity–stability relationship in natural ecosystems. Here we perform a stability analysis of 116 quantitative food webs sampled worldwide. We find that classic descriptors of complexity (species richness, connectance and interaction strength) are not associated with stability in empirical food webs. Further analysis reveals that a correlation between the effects of predators on prey and those of prey on predators, combined with a high frequency of weak interactions, stabilize food web dynamics relative to the random expectation. We conclude that empirical food webs have several non-random properties contributing to the absence of a complexity–stability relationship.
+
+\subsection*{Measures of Complexity}
+Our systems are clearly not simple with many variables, components and dependencies. However, using system  size as a measure of complexity is potentially misleading. We plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the number of intrinsic states that the system has for it to manifest the observed behavior.
+
+We plan to consider two measures: 1)  the number of non-trivial models we can infer given the data, normalized by the maximum number of possible models,   and 2) the average number of states in the set of inferred models.
+We call the first measure I-complexity, and the second Z-complexity.
+I-complexity  is the connectance that appears in May's formalism: what is the probability that two varaibles or entities interact. And Z-complexity captures the average complexity of the intervariable dependence. 
+
+
+
+\subsection*{Measures of Reslience}
+
+\subsection*{Frequency-domain (like)  Measures \& Analytics}
+\subsection*{Measures  of External Influence \& Closed vs Open Systems}
+
+
+\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer
+
 The goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals. Within these broad goals, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
 
 \subsection*{Innovation: From Socio-psychological Theory To Data-driven Inference}
@@ -260,6 +388,8 @@ survey questions from what is predicted by data-inferred models from the  respon
 Deliverables include validated software, to be deposited in open source repositories; results from validation experiments; reports as determined by DARPA; and published research articles.
 % \clearpage
 
+\bibliographystyle{naturemag}
+\bibliography{seed}
 \end{document}
 
 
