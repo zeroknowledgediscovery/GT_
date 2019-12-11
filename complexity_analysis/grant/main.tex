@@ -363,15 +363,15 @@ As shown in Fig~\ref{figzipf}, our preliminary studies corroborate this hypothes
 % Understanding the mechanisms responsible for stability and persistence of ecosystems is one of the greatest challenges in ecology. Robert May showed that, contrary to intuition, complex randomly built ecosystems are less likely to be stable than simpler ones. Few attempts have been tried to test May’s prediction empirically, and we still ignore what is the actual complexity–stability relationship in natural ecosystems. Here we perform a stability analysis of 116 quantitative food webs sampled worldwide. We find that classic descriptors of complexity (species richness, connectance and interaction strength) are not associated with stability in empirical food webs. Further analysis reveals that a correlation between the effects of predators on prey and those of prey on predators, combined with a high frequency of weak interactions, stabilize food web dynamics relative to the random expectation. We conclude that empirical food webs have several non-random properties contributing to the absence of a complexity–stability relationship.
 
 \subsection*{Quantifying Complexity of Complex Systems: Are Real-world Systems More Complex?}
-Using system  size as a measure of complexity is potentially misleading. We plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the intricacies of how the system is internally wired, and the number of intrinsic states that the system has for it to manifest the observed behavior. Furthermore, since for real-world systems the ground truth of internal structures may only be estimated, our complexity measures must always be calculated from structures inferred or estimated from observed data and event streams.
+The proactice of using various functions of  system  size as a measure of complexity is potentially misleading. In contrast, we plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the intricacies of how the system is internally wired, and the number of intrinsic states that the system has for it to manifest the observed behavior. Furthermore, since for real-world systems the ground truth of internal structures may only be estimated, our complexity measures must always be calculated from structures inferred or estimated from observed data and event streams.
 
-We plan to consider two broad compelxity measures: 1) \textit{I-complexity:} ($\mu_\C^1$)  the number of non-trivial models we can infer given the data and an upper bound on temporal memeory, normalized by the maximum number of possible models,   and 2) the \textit{Z-Complexity:}($\mu_\C^2$) which is the average number of states in the set of inferred models.
+We plan to consider two broad compelxity measures: 1) \textit{I-complexity} ($\mu_\C^I$):  the number of non-trivial models we can infer given the data and an upper bound on temporal memeory, normalized by the maximum number of possible models,   and 2) the \textit{Z-Complexity}($\mu_\C^Z$): which is the average number of states in the set of inferred models.
 I-complexity  is the connectance that appears in May's condition of stability of complex systems discussed before: what is the probability that two varaibles or entities interact. And Z-complexity captures the average complexity of the intervariable dependence. 
 
 Note that these measures are computable effectively only if we have an inference algorithm that models non-trivial dependence between observed data streams. Any such inference algorithm must return generative models capturing the complexity of signal tranduction across observables  only if there is actual dependence, and indicate  direction-specific independence otherwise. Thus, in the trivial case where  we are considering N independent coin tosses (implying no temporal memory, since outcomes are iid), we have $N$ trivial single state models. Thus, our complexity measures in this case: 
 \cgather{
-\mu_\C^1= N/(N^2) = 1/N \\
-\mu_\C^2  = 1
+\mu_\C^Z= N/(N^2) = 1/N \\
+\mu_\C^I  = 1
 }
 We plan to investigate if real-world systems are inherently more complex compared to simulated counterparts. In contrast to the stability measures, the complexity measures are easier to replicate, since we can always define in more dependencies in our simulation rules. Nevertheless, we find that for the systems we considered for our preliminary studies, real-world systems are indeed more complex when such complexity is measured through the lens of the above metrics  (See Table~\ref{tab1}).
 %
@@ -389,17 +389,24 @@ We plan to investigate if real-world systems are inherently more complex compare
 %######################
 %######################
 %######################
-\subsection*{Frequency-domain (like)  Measures \& Analytics}
-Frequency-domain analysis is a classical tool for linear time-inavraint systems, that has enabled deisgn of sophisticated engineering systems over the last century. Unfortunately, the elegant tools of the frequency domain do not easily generalize to non-linear, mixed variable, multi-scale complexities of social interactions. Leveraging our ability to quantify directional influence propagation between observables as a function of possible time delays, we aim to investigate one possible design of an analogous tool. We cal this the $\gamma(\Delta)$ plot, where $\gamma$ is an iinferred measure of predictive influence, and $\Delta$ is the tiem delay over which the influence transpires.
+\subsection*{Frequency-domain (like)  Measures \& Analytics: Exploring Temporally Non-localized Patterns}
+Frequency-domain analysis is a classical tool for linear time-invariant systems, that has enabled development of sophisticated engineering systems over the last century. Unfortunately,  frequency domain tools do not easily generalize to non-linear, mixed variable, multi-scale complexities of social interactions. Leveraging our ability to quantify directional influence propagation between observables as a function of possible time delays, we aim to investigate one possible design of an analogous tool. We call this the $\gamma(\Delta)$ plot, where $\gamma$ is an inferred measure of predictive influence, and $\Delta$ is the time delay over which the influence transpires.
 
-In our preliminary work, we evaluated the $\gamma(\Delta)$ analytic for a diversity of dyanmical systems, ranging from simple linear, to non-linear to chaotic to simuated and real-world complex systems (See Fig.~\ref{figgamma}).
-We concluded that in simple systems, the $\gamma(\Delta)$ plot reveals clear macro-scopic structure corresponding to periodic behaviors and/or near-exponential deacy. Similar behavior is observed in simulated complex systems. In the real-world systems, all obvious macroscopic  structure vanishes | suggesting the emergence of scale-free behavior (there are apparently no specific time or spatial scales that apply to the overall system).
+For simple systems, the $\gamma(\Delta)$ plot may be interpreted as a auto-correlation measure, depicting the decay of influence as we move away from the source. For complex systems, the variation of $\gamma$ with time delays may be used to illuminate key globally emergent properties such as scale invaraince, and process memory.
 
-These observations might not be typical, as not all complex systems will have this scale-free behavior. Some systems may have periodicity enforced by  the nature of the dynamics being analyzed. Nevertheless, we will investigate the applicability of the  $\gamma(\Delta)$ plot to analyze non-temporally localized dynamical chracteristics much in the same manner that the frequency domain is used for linear systems.
+In our preliminary work, we evaluated the $\gamma(\Delta)$ analytic for a diversity of dynamical systems, ranging from simple linear, to non-linear to chaotic to simuated and real-world complex systems (See Fig.~\ref{figgamma}).
+We concluded that in simple systems, the $\gamma(\Delta)$ plot reveals clear macroscopic structure corresponding to periodic behaviors and/or rapid decay of influence with increasing delay. Similar behavior is observed in simulated complex systems. In contrast, in the real-world systems, all obvious macroscopic  structure vanishes | suggesting the lack of any chracteristic  scales in  the dynamics. In line with our previousd observations, such scale-free behavior is associated with unbounded correlation lengths, and is consistent with the existence  of critical phenomena and self-organization.
 
-\subsection*{Measures  of External Influence \& Closed vs Open Systems}
-Apart from the question of designing tools to measure computable deviation of simulated systems from their real-world counterparts, we aim to develop tools that
-estimate the possibility of external drivers in a complex social system, $i.e.$, analyze if the system is open or closed.
+These observations might  be atypical, as not all complex systems will necessarily manifest similar scale-free behavior; Some systems may experience periodicity enforced by  the nature of the dynamics being analyzed. Nevertheless, one of our goals here is to investigate the applicability of the  $\gamma(\Delta)$ plot in  analyzing non-temporally localized dynamical chracteristics | much in the same manner that the frequency domain tools are used for linear systems.
+
+\subsection*{Exploiting Assymetry of Causality To Measure  of External Influence}
+Apart from the question of designing tools to measure  deviations of simulated systems from their real-world counterparts, we aim to develop tools that
+uncover the possible existence of external drivers in  complex social systems, $i.e.$, analyze if the system is open or closed.
+ 
+This is particularly challenging because no social system is truely isolated: cities rise and fall, technology advances, beliefs and opinions evolve | sometimes such changes are brought about by internal processes, but even then it is unlikely that the effect of external infusion of knowledge, ideas and information can be ignored. Thus, what we can meaningfully hope to identify here is large external or unmodeled  influences from empirical observations.
+
+A particualrly intriguing idea here is exploiting the assymtery of the fundamental notion of causal influence to design a computable measure of the possibility of existence of external drivers.
+
 
 \subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer
 
