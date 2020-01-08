@@ -25,14 +25,20 @@
     text width=\TextWDT, 
     yshift=\TextYSHIFT,
     %font=\fontsize{\TextFS}{\TextFS}\selectfont
-    ] (L.label) at (L.north west) {
-      {\Large a.} Linear System \\ \vspace{5pt} (Macro structure present)
+    ] (Llabel) at (L.north west) {
+      {\Large a.} Linear System \\ %\vspace{5pt} (Macro structure present)
       \vspace{5pt}
 
       \cgathers{2.5\dot{x} + x = 2.5\sin(\omega t)\\
       \omega =\begin{bmatrix} .5  &  1.0 &  1.5&  2.0.\end{bmatrix}}
     };
-    
+       \node[anchor=north west,draw=black,dashed,font=\bf\sffamily,
+    text=\COLORPhase,align=left] (L1) at ([yshift=0in]Llabel.south west) {
+      Periodic\\structure \\
+        in $\gamma(\Delta)$\\
+      shows up \\
+      in linear \\ systems
+      };
     % --------------------------------Duffing-------------------------------------
     \node[anchor=north west] (D) at ([yshift=\YST]L.south west) {\input{Figures/insert_duffing.tex}};
     \node[
@@ -41,19 +47,19 @@
     yshift=\TextYSHIFT,
     %font=\fontsize{\TextFS}{\TextFS}\selectfont
     ] (Dlabel) at (D.north west) {
-      { \Large b.} Duffing Oscillator \\ \vspace{5pt} (Macro structure present)
+      { \Large b.} Duffing Oscillator \\ %\vspace{5pt} (Macro structure present)
       \vspace{5pt}
 
       \cgathers{\ddot{x}+\delta\dot{x}+x+5x^3 = 8\cos(.5t)\\
         \delta = \begin{bmatrix}0.003 & 0.03&  0.3& 3.0.\end{bmatrix}}
     };
     \node[anchor=north west,draw=black,dashed,font=\bf\sffamily,
-    text=\COLORPhase,align=left] (L1) at ([yshift=-.2in]Dlabel.south west) {
+    text=\COLORPhase,align=left] (L1) at ([yshift=-.1in]Dlabel.south west) {
       Periodic\\structure \\
       or\\
       Decay  in $\gamma(\Delta)$\\
       shows up \\
-      in simple \\ systems
+      in non-linear \\ \& chaotic\\ systems
       };
 
 \node[anchor=north west] (V) at ([yshift=-.3in,xshift=0in]D.south west) {
@@ -84,9 +90,9 @@
     anchor=north east, 
     text width=\TextWDT,
     yshift=\TextYSHIFT,
-    %font=\fontsize{\TextFS}{\TextFS}\selectfont
+    font=\bf\sffamily\fontsize{9}{10}\selectfont
     ] (Vlabel) at (V.north west) {
-      {\Large c.} {\color{Red1}Real-world} \\ \& \\ {\color{DodgerBlue3}Simulated} \\ Complex Systems
+      {\Large c.} {\color{Red1}Real-world}  \& \\ {\color{DodgerBlue3}Simulated} \\ Complex Systems
     %
     };
         \node[anchor=north west,,draw=black,dashed,font=\bf\sffamily,

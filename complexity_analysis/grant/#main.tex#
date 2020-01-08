@@ -2,6 +2,11 @@
 \let\labelindent\relax
 \usepackage{enumitem}
 \input{preamble.tex} 
+\usepackage{pgfplotstable}
+\usetikzlibrary{math}
+\usetikzlibrary{matrix}
+\usetikzlibrary{arrows.meta}
+
 \usetikzlibrary{arrows}
 \usepackage{geometry}
 \geometry{a4paper, left=.7in,right=.75in,top=.8in,bottom=0.65in}
@@ -83,7 +88,6 @@
 \begin{document} 
 % 
 \lhead{DARPA Seedling}
-\setcounter{page}{4}
 
 \tableofcontents
 \clearpage
@@ -93,56 +97,56 @@
 
 \tikzexternaldisable
 
-\begin{tikzpicture}
-  \node[] (A) at (0,0) {};
-  \foreach\x in {2008,2009,...,2012}{%
-    \pgfmathtruncatemacro\y{\x + 4}
-    \def\name{TERROR\x}
-    \def\nameB{_\y}
-    \def\nameC{mean_gammascatter}
-    \def\nameD{mean_gammascatter2}
-    \node[anchor=north,label={[yshift=-.2in]90:\y}] (A) at (A.south) {\includegraphics[height=1.5in]{../TERRORcomp2/plots/\name\nameB\nameC}};
-    \node[anchor=west,label={[yshift=-.2in]90:\y}] (B) at (A.east) {\includegraphics[height=1.5in]{../TERRORcomp2/plots/\name\nameB\nameD}};
-  }% 
-\end{tikzpicture}
+% \begin{tikzpicture}
+%   \node[] (A) at (0,0) {};
+%   \foreach\x in {2008,2009,...,2012}{%
+%     \pgfmathtruncatemacro\y{\x + 4}
+%     \def\name{TERROR\x}
+%     \def\nameB{_\y}
+%     \def\nameC{mean_gammascatter}
+%     \def\nameD{mean_gammascatter2}
+%     \node[anchor=north,label={[yshift=-.2in]90:\y}] (A) at (A.south) {\includegraphics[height=1.5in]{../TERRORcomp2/plots/\name\nameB\nameC}};
+%     \node[anchor=west,label={[yshift=-.2in]90:\y}] (B) at (A.east) {\includegraphics[height=1.5in]{../TERRORcomp2/plots/\name\nameB\nameD}};
+%   }% 
+% \end{tikzpicture}
 
 
 
-\begin{tikzpicture}
-  \node[] (A) at (0,0) {};
-  \foreach\x in {2008,2009,...,2012}{%
-    \pgfmathtruncatemacro\y{\x + 4}
-    \def\name{TERROR\x}
-    \def\nameB{_\y}
-    \def\nameC{mean_gammahex}
-    \def\nameD{mean_gammahex2}
-    \node[anchor=north,label={[yshift=-.2in]90:\y}] (A) at (A.south) {\includegraphics[height=1.5in]{../TERRORcomp2/plots/\name\nameB\nameC}};
-    \node[anchor=west,label={[yshift=-.2in]90:\y}] (B) at (A.east) {\includegraphics[height=1.5in]{../TERRORcomp2/plots/\name\nameB\nameD}};
-  }% 
-\end{tikzpicture}
+% \begin{tikzpicture}
+%   \node[] (A) at (0,0) {};
+%   \foreach\x in {2008,2009,...,2012}{%
+%     \pgfmathtruncatemacro\y{\x + 4}
+%     \def\name{TERROR\x}
+%     \def\nameB{_\y}
+%     \def\nameC{mean_gammahex}
+%     \def\nameD{mean_gammahex2}
+%     \node[anchor=north,label={[yshift=-.2in]90:\y}] (A) at (A.south) {\includegraphics[height=1.5in]{../TERRORcomp2/plots/\name\nameB\nameC}};
+%     \node[anchor=west,label={[yshift=-.2in]90:\y}] (B) at (A.east) {\includegraphics[height=1.5in]{../TERRORcomp2/plots/\name\nameB\nameD}};
+%   }% 
+% \end{tikzpicture}
 
 
-\clearpage
+% \clearpage
 
-\begin{tikzpicture}
-  \node[] (A) at (0,0) {};
-    \def\name{CRIME}
-    \def\nameC{mean_gammahex}
-    \def\nameD{mean_gammahex2}
-    \node[anchor=north,label={[yshift=-.2in]90:CRIME}] (A) at (A.south) {\includegraphics[height=1.5in]{..//\name\nameC}};
-    \node[anchor=west,label={[yshift=-.2in]90:CRIME}] (B) at (A.east) {\includegraphics[height=1.5in]{..//\name\nameD}};
-  %}% 
-\end{tikzpicture}
+% \begin{tikzpicture}
+%   \node[] (A) at (0,0) {};
+%     \def\name{CRIME}
+%     \def\nameC{mean_gammahex}
+%     \def\nameD{mean_gammahex2}
+%     \node[anchor=north,label={[yshift=-.2in]90:CRIME}] (A) at (A.south) {\includegraphics[height=1.5in]{..//\name\nameC}};
+%     \node[anchor=west,label={[yshift=-.2in]90:CRIME}] (B) at (A.east) {\includegraphics[height=1.5in]{..//\name\nameD}};
+%   %}% 
+% \end{tikzpicture}
 
-\begin{tikzpicture}
-  \node[] (A) at (0,0) {};
-    \def\name{CRIME}
-    \def\nameC{mean_gammascatter}
-    \def\nameD{mean_gammascatter2}
-    \node[anchor=north,label={[yshift=-.2in]90:CRIME}] (A) at (A.south) {\includegraphics[height=1.5in]{..//\name\nameC}};
-    \node[anchor=west,label={[yshift=-.2in]90:CRIME}] (B) at (A.east) {\includegraphics[height=1.5in]{..//\name\nameD}};
-  %}% 
-\end{tikzpicture}
+% \begin{tikzpicture}
+%   \node[] (A) at (0,0) {};
+%     \def\name{CRIME}
+%     \def\nameC{mean_gammascatter}
+%     \def\nameD{mean_gammascatter2}
+%     \node[anchor=north,label={[yshift=-.2in]90:CRIME}] (A) at (A.south) {\includegraphics[height=1.5in]{..//\name\nameC}};
+%     \node[anchor=west,label={[yshift=-.2in]90:CRIME}] (B) at (A.east) {\includegraphics[height=1.5in]{..//\name\nameD}};
+%   %}% 
+% \end{tikzpicture}
 
 
 
@@ -157,6 +161,7 @@
 
 
 \clearpage
+\setcounter{page}{1}
 
 
 \section{Executive Summary}
@@ -166,26 +171,11 @@
 % How much will it cost, and how long will it take?
 
 % The summary should include a description of the key technical challenges, a concise review of the technologies proposed to overcome these challenges and achieve the project’s goal, and a clear statement of the novelty and uniqueness of the proposed work.
-We aim to detect, and quantify cognitive dissonance in individuals, communities, and sub-populations, and ultimately craft a general theory of belief shift over time driven by  the purported  human need of maintaining internal cognitive consistency. In addition to identifying dissonance,  we bring together psycho-social theory, stochastic processes, and large deviation theory to propose a theoretical framework to  predict likely choices of  response strategies invoked   to reduce cognitive conflict, and model the long-term stochastic dynamics of belief evolution. We aim to validate our proposed theory and tools  on publicly available large  social survey data sets, and in focused longitudinal experiments with human subjects.
-
-Cognitive dissonance~\cite{miller15} refers to  the psychological stress arising from holding two or more contradictory beliefs, ideas or values. Festinger in his \textit{A Theory of  Cognitive Dissonance}~\cite{festinger1962theory} posited that humans  have an intrinsic drive to hold all our beliefs in harmony. To maintain cognitive consistency, individuals might attempt to reduce the importance of the conflicting beliefs (trivialization), acquire new beliefs (rationalization), or alter  the conflicting attitude, opinion, belief or behavior. Thus, Festinger's thesis in effect postulates a mechanism of  belief shift over time, and suggests that such processes might be effectively modulated via interventions suitably  informed by  quantitative estimates of dissonance.
-
-Since Festinger's original formulation, researchers have theorized alternative mechanisms that maintain cognitive consistency~\cite{ARONSON19691,zanna74,COOPER1984229}. Notwithstanding the actual psychological processes in play, the central goal of this work is
-well defined: \textit{Can we quantify cognitive dissonance in individuals, or communities? And can we predict the routes they take to reduce conflicts in their cognitive processes?}
-
-This is a problem of crucial importance for DoD operations, especially in conflict countries. In the modern reality of asymmetric and urban combat operations often directed against  local insurgencies, a tool that recognizes cognitive dissonance in the populace, and can predict belief shifts over time, is vitally important for long term strategy. As an example, ability to shift away from  violent behaviors might negate the need of military action, saving considerable resources. In addition, the proposed work will establish a fundamentally novel approach to analyzing, and interpreting large scale survey data, thus advancing socio-psychological theory. At the same time, ability to predict belief shifts among the US population can inform key  policy decisions.
-
-The proposed set of measurable milestones will demonstrate verifiable progress within the first 6 months, with computation of dissonance vectors for the entire General Social Survey (GSS) dataset, with belief shifts modeled under simple scenarios. By the $10$th milestone, we aim to have  validated our belief shift models  in large scale longitudinal  databases, as well as
-in focused field experiments.
-
-Our technical challenges  arise  from the qualitative nature of the notion of dissonance. The  complexities of social structures, and the diversity of ideas and beliefs that the human mind processes,  makes it  problematic to objectively  quantify | or even reliably recognize |  the notion of cognitive conflict. Perhaps even more difficult is the detection of  such conflicts at scale, with realistic observational data.  Naive attempts at directly quantifying the role of  historical and societal  drivers behind  beliefs, opinions and values | and how those  evolve |  is an intractable proposition.
-
-Our approach simplifies the problem by formulating  a computable measure of cognitive dissonance as a measure of surprise: when asked a diversity of questions, dissonance with respect to a specific topic manifests as a deviation from a model estimate of the expected and the actual recorded response. Effectively modeling  expected responses with little or no prior knowledge of the emergent dependencies between the survey responses, is  non-trivial. We plan to develop a novel machine learning  framework called the recursive decision forests,  specifically designed to seek out dependency structures in response databases without resorting to brute force searches in exponential spaces, and ultimately obtain quantitative estimates of cognitive dissonance.
 
 
 
-The proposed work will be carried out over a period of 24 months in the base period, followed by 12 months in the option period, at a total cost of $1$M USD. 
-
+The proposed work will be carried out over a period of 24 months in the base period, followed by 12 months in the option period, at a total cost of XX USD. 
+\clearpage 
 
 \section{Goals and Impact}
 % {\color{gray} \footnotesize Describe what the proposed team is trying to achieve and the difference it will make (qualitatively and quantitatively) if successful.  Describe the innovative aspects of the project in the context of existing capabilities and approaches, clearly delineating the uniqueness and benefits in the context of the state of the art, alternative approaches, and other projects from the past and present.  Describe how the project is revolutionary and how it significantly rises above the current state of the art.  
@@ -211,7 +201,7 @@ Broadly our scheme is as follows: Given observation logs from a system (simulate
 
 Thus, the primary over-arching goal of this work is to investigate the missing elements that  leave such tell-tale signatures in high fidelity simulations, and ultimately move towards future design principles that better simulate reality.
 %
-We briefly enumerate the proposed characterizations (See Technical Plan for mathematical details).
+%We briefly enumerate the proposed characterizations (See Technical Plan for mathematical details).
 
 %####################################
 %####################################
@@ -230,23 +220,29 @@ We briefly enumerate the proposed characterizations (See Technical Plan for math
  \rowcolor{gray}  & \color{white}Measure & \color{white}Property Measured & \color{white}Description \\\hline \color{black}
 1. & \large $\mu_\C$ & \cellcolor{\COLA} Complexity & The level of complexity of multi-scale multi-variate spatially extended systems require new measures of compelxity that capture statistical compelxity, structure of connectedness, and cross-talk.\\\hline
 2. &\large$\mu_\S$ & \cellcolor{\COLB}Stability &  Stability in systems of interest might be finely poised between instability regimes, with the possibile manifestation of self-orgnized criticality.\\\hline
-3. &\large$\mu_\R$ & \cellcolor{\COLC} Resilience & Qunatify the ability of systems of interest to recover from directed and random perturbations, akin to homeostasis in living systems.  \\\hline
-4. &\large$\mu_\omega$ & \cellcolor{\COLD} Frequency-like & Generalization of frequecny domain tools and measures to non-linear multi-scale spatio-temporal system of systems with categorical and ordinal variables. \\\hline
-5. &\large$\mu_\E$ & \cellcolor{\COLE} External Influence & Estimate the pssibility having an  open vs a closed system.\\\hline
-6. &\mnp{.8in}{\centering \vskip .4em {\large$\partial \mu_i / \partial t$} \\ $ i= \C, \S, \R, \omega, \E$\vskip 1.5em } & \cellcolor{\COLF} Evolution \&  Influence & How the measures of dynamical properties  evolve in time characterizes the evolution of  emergent rules and drivers, indicative of the rate of information generation either within, or via influence import.\\\hline
+% 3. &\large$\mu_\R$ & \cellcolor{\COLC} Resilience & Qunatify the ability of systems of interest to recover from directed and random perturbations, akin to homeostasis in living systems.  \\\hline
+3. &\large$\mu_\omega$ & \cellcolor{\COLD} Frequency-like & Generalization of frequecny domain tools and measures to non-linear multi-scale spatio-temporal system of systems with categorical and ordinal variables. \\\hline
+4. &\large$\mu_\E$ & \cellcolor{\COLE} External Influence & Estimate the pssibility having an  open vs a closed system.\\\hline
+% 5. &\mnp{.8in}{\centering \vskip .4em {\large$\partial \mu_i / \partial t$} \\ $ i= \C, \S, \omega, \E$\vskip 1.5em } & \cellcolor{\COLF} Evolution \&  Influence & How the measures of dynamical properties  evolve in time characterizes the evolution of  emergent rules and drivers, indicative of the rate of information generation either within, or via influence import.\\\hline
 \end{tabular}
 \end{table}
 %####################################
 %####################################
 %####################################
+\section{Technical Approach}
 
-  
+
+We lay out our apprach which proceeds by conceiving, refining and validating computable measures that interrioghate key dynamical chracteritcs of compelx systems from empirical observations. The primary objective here is to explore iof high fidelity social simulations are recognizable as simulations from theur real world counetrparts. And then, develop tools thatnarrow this gap. Additionally, we plan to investigate measures that estimate the probabiloity of external influences or unmodelled effects in social systems, both simulated and real.
+
+\subsection*{Systems of Interest} Our real-world systems of interest are urban crime and global terrorism. Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer provide aditional examples.
+
 \subsection*{Measures of Stability: The May Constraint \& Self-organized Criticality In Real-World Systems}
-Stability is well-understood  in the study of dynamical systems. For our purpose, a stable system  is one that can carry on operating with low probability of generating event patterns or behaviors that threaten catastrophic failures, and cessation of operation; a stable system  is in no danger of dying suddenly. \textit{We hypothesize that explicit  measures of expected stability can be designed that potentially disambiguate real world complex systems of social interactions from simulated ones.} To see how such measures are  designed, we  briefly describe the seminal work of Robert May~\cite{may1972will,may2001stability} on  stability of complex systems.
+%Stability is well-understood  in the study of dynamical systems.
+ For our purpose, a stable system  is one that can carry on operating with low probability of generating event patterns or behaviors that threaten catastrophic failures, and cessation of operation; a stable system  is in no danger of dying suddenly. Stability criteria are well understood for systems with known structures. However, for real-world multi-component multi-scale complex  sytems revealed only  through finite set of empirical observations, it is less clear how to establish or analyze stability properties.  \textit{We hypothesize that explicit  measures of expected stability may be designed that potentially disambiguate real world complex systems of social interactions from simulated ones.} To see how such measures are  designed, we  briefly describe the seminal work of Robert May~\cite{may1972will,may2001stability} on  stability of complex systems.
 
 May's work on  large random systems  show  that  complex systems tend to be inherently unstable, implying that for  ecosystems with more species, more interspecific interactions per species (connectance), or stronger interactions are not as likely to  be as stable as systems with fewer of these attributes. However, these results are at odds with the empirical  observations  that large, highly complex ecosystems are  MORE stable NOT LESS~\cite{jacquet2016no}.
 
-In other words, May's work identifies a computable constraints on system parameters, violations of which  that are overwhelmingly likely to cause systemic instability in large random systems; nevertheless natural complex systems seem to be able to operate in those regimes with no sign of an unstable demise.
+In other words, May's work identifies  computable constraints on system parameters, violations of which  that are overwhelmingly likely to cause systemic instability in large random systems; nevertheless natural complex systems seem to be able to operate in those regimes with no sign of an unstable demise.
 %
 More specifically, May's theorem deals with  $S$ variables (species), where the $i$th species interacts with the $j$th one with a strength  drawn  from a normal distribution
  with probability $C$ and are $0$ otherwise.
@@ -278,23 +274,23 @@ Thus, we  define our first measure of stability as:
 }
  We hypothesize that simulated systems will typically have a significantly lower value of $\mu_\S$, while real world systems will often violate the apparent stability criterion ($\mu_\S < 1$), while continuing to be actually stable in practice.
 \end{quote}
-This notion of natural systems being poised at special miniscule ``critical'' regions   in  high-dimensional parameter spaces  is strongly indicative of the   intrguing phenomena  of \textit{self-organized criticality}~\cite{mora2011biological}.  Our preliminary studies | and  the discussion below | suggests that real-world complex systems tend to be \textit{poised at criticality}, operating at or near systemic phase transitions, while simulated systems often lack this behavior. We exploit these insights  for our second class of  stability-related characterization measures. First, we briefly dilineate this deep  connection, before charting our  application strategy.
+This notion of natural systems being poised at special miniscule ``critical'' regions   in  high-dimensional parameter spaces  is strongly indicative of \textit{self-organized criticality}~\cite{mora2011biological}.  Our preliminary studies | and  the discussion below | suggests that real-world complex systems tend to be \textit{poised at criticality}, operating at or near systemic phase transitions, while simulated systems often lack this behavior. We exploit these insights  for our second class of  stability-related characterization measures. First, we briefly dilineate this deep  connection, before charting our  application strategy.
 
 % For decades, physicists have hoped that the emergent, collective phenomena of life | both at the modelcular and social levels |   could be captured using ideas from statistical mechanics. For example, the stationary states of biological systems,   have a subtle structure, neither ``frozen'' into a well ordered crystal, nor chaotic and disordered like a gas.
 
-For decades, physicists have hoped that the emergent, collective phenomena of living systems, both at the moelcular and the social scales, could be captured using ideas from statistical mechanics. States of such  emergent systems are almost never at equilibrium, maintained by a flow of energy and material (in biology) or societal exchange of relevant entities (people, ideas, beliefs etc). We plan to investigate this intriguing idea at length, that such systems are poised near criticality | which we believe is the key to undertsanding the criteria that distinguish real-world systems from simulations.
+For decades, physicists have hoped that the emergent, collective phenomena of living systems, both at the moelcular and the social scales, could be captured using ideas from statistical mechanics. States of such  emergent systems are almost never at equilibrium, maintained by a flow of energy and material (in biology) or societal exchange of relevant entities (people, ideas, beliefs etc). At the same time, it seems impossible that such balance is attained via accidental choice of system parameters. We believe that recognizing the emergence of self-organized criticality across  scales is  key to  distinguishing real-world systems from existing simulation efforts.
 
 Classicially, critical plhenomena has to do with phase transitions, and discontinuities in relevant order parameters near such transitions. 
-Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Assume we are able to model the statistically stationary states of a complex system  with a many-parameter model. Clearly random choice of these parameters is not likely to redproduce meaningful function; and  if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Thus, for complex systems the parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated  by critical surfaces. \textit{We plan to investigate the  intriguing possibility  that most compelx systems in the real-world are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.} 
+Criticality, however, is a much more general concept than its instantiation by phase transitions in equilibrium systems. Assume that we are able to model the statistically stationary states of a complex system  with a many-parameter model. Clearly random choice of these parameters is not likely to redproduce meaningful function; and  if the system we are studying has many components, then any reasonable probabilistic model will break the parameter space into regions corresponding to different phases. Thus, for complex systems it is likely that the parameter space supports a phase diagram, in which regimes of qualitatively distinct behavior are separated  by critical surfaces. \textit{We plan to investigate the  intriguing possibility  that most complex systems in the real-world are not deep in one phase or another, but rather poised near a critical surface in the natural parameter space.} 
 
 \def\q{\sigma}
 
 Directly verifying this hypothesis is problematic. However, we can indeed validate if the systems carry signatures of critical organization, $e.g.$, the emergence of Zipf's Law in the distribution of
 strength of inferred predictive links between observables, or the in/out degree distribution of the inferred influence network.
-The justification of looking for such characterization in the distrbution of links strengths or degrees  arises from the idea that an enumeration of these properties may be seen as a specification of the state  the complex system, and it can be shown that existence of the Zipf's law amounts to the existence of critical temperature below which the system ``freezes'', and above which thermodynamic quantities diverge~\cite{mora2011biological}.
+The justification of looking for such characterization in the distrbution of links strengths or degrees  arises from the idea that an enumeration of these properties may be seen as a specification of the state  the complex system | and  existence of the Zipf's law amounts to the existence of a critical temperature below which the system ``freezes'', and above which thermodynamic quantities diverge~\cite{mora2011biological}.
 
 
-As shown in Fig~\ref{figzipf}, our preliminary studies corroborates this hypothesis, at least with the systems under consideration.
+As shown in Fig~\ref{figzipf}, our preliminary studies corroborate this hypothesis, at least with the systems under consideration.
 %This allows us to think about the probability $P(\q)$ of finding the system in that state, and use standard statistical mechanics to write down the   Boltzmann distribution:
 % \cgather{
 % P(\q) = \frac{1}{Z} e^{E(\q)/k_BT}
@@ -355,28 +351,106 @@ As shown in Fig~\ref{figzipf}, our preliminary studies corroborates this hypothe
 
 % Understanding the mechanisms responsible for stability and persistence of ecosystems is one of the greatest challenges in ecology. Robert May showed that, contrary to intuition, complex randomly built ecosystems are less likely to be stable than simpler ones. Few attempts have been tried to test May’s prediction empirically, and we still ignore what is the actual complexity–stability relationship in natural ecosystems. Here we perform a stability analysis of 116 quantitative food webs sampled worldwide. We find that classic descriptors of complexity (species richness, connectance and interaction strength) are not associated with stability in empirical food webs. Further analysis reveals that a correlation between the effects of predators on prey and those of prey on predators, combined with a high frequency of weak interactions, stabilize food web dynamics relative to the random expectation. We conclude that empirical food webs have several non-random properties contributing to the absence of a complexity–stability relationship.
 
-\subsection*{Measures of Complexity}
-Using system  size as a measure of complexity is potentially misleading. We plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the intricacies of how the system is internally wired, and the number of intrinsic states that the system has for it to manifest the observed behavior. Furthermore, since for real-world systems the ground truth of internal structures may only be estimated, our complexity measures must always be calculated from structures inferred or estimated from observed data and event streams.
+\subsection*{Quantifying Complexity of Complex Systems: Are Real-world Systems More Complex?}
+The proactice of using various functions of  system  size as a measure of complexity is potentially misleading. In contrast, we plan to develop measures that capture the complexity of information processing within the system, $e.g.$, the intricacies of how the system is internally wired, and the number of intrinsic states that the system has for it to manifest the observed behavior. Furthermore, since for real-world systems the ground truth of internal structures may only be estimated, our complexity measures must always be calculated from structures inferred or estimated from observed data and event streams.
 
-We plan to consider two broad compelxity measures: 1) \textit{I-complexity:}  the number of non-trivial models we can infer given the data and an upper bound on temporal memeory, normalized by the maximum number of possible models,   and 2) the \textit{Z-Complexity:} which is the average number of states in the set of inferred models.
+We plan to consider two broad compelxity measures: 1) \textit{I-complexity} ($\mu_\C^I$):  the number of non-trivial models we can infer given the data and an upper bound on temporal memeory, normalized by the maximum number of possible models,   and 2) the \textit{Z-Complexity}($\mu_\C^Z$): which is the average number of states in the set of inferred models.
 I-complexity  is the connectance that appears in May's condition of stability of complex systems discussed before: what is the probability that two varaibles or entities interact. And Z-complexity captures the average complexity of the intervariable dependence. 
 
-Note that these measures are computable effectively only if we have an inference algorithm that models non-trivial dependence between observed data streams, returning generative models capturing the complexity of signal tranduction across observables considered only if there is actual dependence, and indicating  direction-specific independence otherwise. Thus, if we are considering N independent coin tosses (implying no temporal memory, since outcomes are iid), we have $N$ trivial single state models. Thus, our complexity measures in this case will be: 
+Note that these measures are computable effectively only if we have an inference algorithm that models non-trivial dependence between observed data streams. Any such inference algorithm must return generative models capturing the complexity of signal tranduction across observables  only if there is actual dependence, and indicate  direction-specific independence otherwise. Thus, in the trivial case where  we are considering N independent coin tosses (implying no temporal memory, since outcomes are iid), we have $N$ trivial single state models. Thus, our complexity measures in this case: 
 \cgather{
-\textit{I-complexity: } N/(N^2) = 1/N \\
-\textit{Z-complexity: } 1  
+\mu_\C^Z= N/(N^2) = 1/N \\
+\mu_\C^I  = 1
 }
+We plan to investigate if real-world systems are inherently more complex compared to simulated counterparts. In contrast to the stability measures, the complexity measures are easier to replicate, since we can always define in more dependencies in our simulation rules. Nevertheless, we find that for the systems we considered for our preliminary studies, real-world systems are indeed more complex when such complexity is measured through the lens of the above metrics  (See Table~\ref{tab1}).
+%
+%######################
+%######################
+%######################
+\begin{figure}
+  \tikzexternalenable
+  
+  \input{Figures/figgamma}
+  \vspace{-25pt}
+  
+  \captionN{Learning Processes Cross-talk in Complex Phenomena. Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.Learning Processes Cross-talk in Complex Phenomena.}\label{figgamma}
+\end{figure}
+%######################
+%######################
+%######################
+\subsection*{Frequency-domain (like)  Measures \& Analytics: Exploring Temporally Non-localized Patterns}
+Frequency-domain analysis is a classical tool for linear time-invariant systems, that has enabled development of sophisticated engineering systems over the last century. Unfortunately, the concept of frequency does not easily generalize to non-linear, mixed variable, multi-scale complexities of social interactions. Leveraging our ability to quantify directional influence propagation between observables as a function of possible time delays, we aim to investigate one possible design of an analogous tool. We call this the $\gamma(\Delta)$ plot, where $\gamma$ is an inferred measure of predictive influence, and $\Delta$ is the time delay over which the influence transpires.
 
-We plan to investigate if real-world systems are inherently more complex compared to simulated counterparts. In contrast to the stability measures, the complexity measures are easier to replicate, since we can always define in more dependencies in our simulation rules.
+For simple systems, the $\gamma(\Delta)$ plot may be interpreted as a auto-correlation measure, depicting the decay of influence as we move away from the source. For complex systems, the variation of $\gamma$ with time delays may be used to illuminate key globally emergent properties such as scale invaraince, and process memory.
 
-% \subsection*{Measures of Reslience} In adition to stability which investigates the response of a system to input perturbations, we consider the resilience that refers to perturbations in system parameters.
-\subsection*{Frequency-domain (like)  Measures \& Analytics}
+In our preliminary work, we evaluated the $\gamma(\Delta)$ analytic for a diversity of dynamical systems, ranging from simple linear, to non-linear to chaotic to simuated and real-world complex systems (See Fig.~\ref{figgamma}).
+We concluded that in simple systems, the $\gamma(\Delta)$ plot reveals clear macroscopic structure corresponding to periodic behaviors and/or rapid decay of influence with increasing delay. Similar behavior is observed in simulated complex systems. In contrast, in the real-world systems, all obvious macroscopic  structure vanishes | suggesting the lack of any chracteristic  scales in  the dynamics. In line with our previousd observations, such scale-free behavior is associated with large to unbounded correlation lengths, and is consistent with the existence  of critical phenomena and self-organization.
+
+Thus, the proposed measure $\mu_\omega$ is defined to be a measure of dependence of the $\gamma(\Delta)$ on $\Delta$; if macro-structures are missing this measure will be small, implying that we expect this to be larger in simple  systems, and smaller with real-world complexity.
+
+These observations might  be atypical, as not all complex systems will necessarily manifest similar scale-free behavior; Some systems may experience periodicity enforced by  the nature of the dynamics being analyzed. Nevertheless, one of our goals here is to investigate the applicability of the  $\gamma(\Delta)$ plot in  analyzing non-temporally localized dynamical chracteristics | much in the same manner that the frequency domain tools are used for linear systems.
 
 
-\subsection*{Measures  of External Influence \& Closed vs Open Systems}
+\begin{figure}
+  \tikzexternalenable
+
+  \centering
+  \begin{tikzpicture}[font=\bf\sffamily\fontsize{8}{8}\selectfont]
+    \def\WDT{1.5in}
+    \def\XST{.1in}
+    \node[label={[align=left]{\Large a.} Middle-east Terrorism\\2016}] (A) at (0,0) {\includegraphics[width=\WDT]{Figures/terrorcls}};
+    \node[label={[align=left]{\Large b.} Middle-east Terrorism\\2015},anchor=west] (B) at ([xshift=\XST]A.east) {\includegraphics[width=\WDT]{Figures/terror2cls}};
+    \node[label={[align=left]{\Large c.} Chicago Crime\\2017},anchor=west] (C) at ([xshift=\XST]B.east) {\includegraphics[width=\WDT]{Figures/crimecls}};
+    \node[label={[align=left]{\Large d.} DARPA GT\\Urban World},anchor=west] (D) at ([xshift=\XST]C.east) {\includegraphics[width=\WDT]{Figures/ta1cls}};
+    
+  \end{tikzpicture}
+  \captionN{Estimating Effect of External/Unmodeled Drivers: Biclustering on the difference of influnece matrix and its transpose. {\color{Red1} More red} equates to more unmodeled effects. Terror event modeling restricted to the middle-east has the most unmodeled or external influences, while simulated DARPA urban world has the least, consistent with intuition. }\label{figcls}
+\end{figure}
+
+\subsection*{Exploiting Assymetry of Causality To Measure   External Influence \& Unmodeled Effects}
+Our second goal in this effort is  to  develop tools that
+uncover the possible existence of external drivers in  complex social systems, $i.e.$, analyze if the system is open or closed.
+ 
+This is particularly challenging as no social system is truely isolated: cities rise and fall, technology advances, beliefs and opinions evolve | sometimes such changes are brought about by internal processes, and even then it is unlikely that the effect of external infusion of knowledge, ideas and information can be ignored. Thus, what we can hope to meaningfully  identify here is the probability of large external or unmodeled  influences from empirical observations.
+
+A particularly intriguing idea here is that we can exploit the intrinsic assymtery in the intuitive  notion of causal influence to design a computable measure of the possibility of existence of external drivers. Note that if a variable $x$ is causally influencing $y$, then an inference algorithm that recovers directional cross-dependencies between varaibles will register a larger influence from $x$ to $y$, and a smaller influence in the reverse direction, $i.e.$, in other words the matrix of inferred influences will significantly deviate from symmetry. Similalrly if an unmodeled effect is driving both $x$ and $y$, then it might appear that there are strong influences operating in both directions, $i.e.$, the influence matrix will tend towards being more symmetric.
+
+More generally, we hypothesize that a closed system has \textit{relatively long causal chains}, which conduct influence reltively unidirectionally, whereas in an open system we have an \textit{over-abundance of short loops}. This idea is not categorically true for every situation, since one can easily fine-tune counter-examples in simple systems | but the question is if natural complex systems operate with  such fine-tuned structures, or if the above scheme does indeed hold true broadly.
+
+We plan to begin investigating this idea with two measures of isolation:
+\cgather{
+  \mu_\E^1 = \mathbf{E}_{i,j} \left ( \vert \gamma_i^j -\gamma_j^i \vert \right ) \\
+  \mu_\E^2 = \textrm{ average path length in the graph of inferred directional influences}  }
+where $\gamma^i_j$ is the influence from node or variable $i$ on variable $j$, and $\mathbf{E}(\cdot) $ is the expectation over all observed pairs in the system.
+
+In our preliminary investigations, we apply this notion to terror event dynamics in the middle-east, to urban crime in Chicago, and to the simulated urban world from the DARPA Ground Truth program. Consistent with intuition we find that terrorism in middle-east seems to have the most external or unmodeled influences, while the simulated world has the least.
+
+Importantly, this idea is not generative, in the sense that estimating the presence of unmodeled effects does not necessarily tell us how to correct our models or simulation to account for the possibly missing information. We will investigate the possibility of such corrections by evolving and perturbing the inferred models such that the above described measures iteratively improve.
+%
+\subsection*{Closing The Loop: Designing Better Simulations }
 
 
-\subsection*{Systems of Interest} Crime, Terrorism, Simualted worlds from current DARPA programs, Robo Soccer, Real-life Soccer
+\subsection*{Research Tasks}
+\begin{enumerate}
+  [label=\tball, leftmargin=0pt,
+  labelindent=0em, topsep=0.1em, labelsep=*, itemsep=.15em,itemindent=2em]\color{black} \sffamily\fontsize{11}{12}\selectfont
+\item  \textbf{Task 1. Definition of Complexity, Stability, Frequency-like Measures.}  The key ideas described in the technical approach will be implemented and validated in a diversity of simulated and real-world systems. We will rank order simulated systems by their inferred realism, as indicated by our measures, and investigate commonalities that drive real vs simulated distinctions.
+\item  \textbf{Task 2. Development of Measures of External Influence.}
+ Investigate the validity of the proposed notion of identifyiing the presence of external influence by expliting the assyemtry fo causal dependencies. In particular, we will carry out both theoretical investigations aiming to relate this idea to more mainstream notions unmodeled effects, and validate our approach extensively in real and simualetd systems.
+\item \textbf{Task 3. Refining Simualtions \& Engineering Better Systems. } We will leverage the work in tasks 1 and 2 to develop approaches that refine existting simulation environments, and eventually allow better designs that better mimic reality. 
+\end{enumerate}
+\section{Management Plan}
+
+\section{Capabilities}
+
+\section{Statement of Work}
+\subsection*{Schedule \& Milestones}
+
+
+\bibliographystyle{naturemag}
+\bibliography{seed}
+\end{document}
+
 
 The goals of this project are twofold: 1) detecting and quantifying cognitive dissonance in populations, communities and individuals, irrespective of geography, social and demographic context, and 2) develop data-validated theoretical models of belief shifts over time arising from the differential choice of dissonance reduction strategies employed by individuals. Within these broad goals, we aim to develop quantitative scalable  measures of cognitive dissonance, characterize uncertainty bounds on our predictions. We plan to extensively validate our findings on large scale social survey data sets spanning multiple decades of recorded responses on a vast diversity of contentious issues from tens of thousands individuals from diverse socio-economic and demographic backgrounds. 
 
@@ -393,10 +467,6 @@ survey questions from what is predicted by data-inferred models from the  respon
 \end{enumerate}
 Deliverables include validated software, to be deposited in open source repositories; results from validation experiments; reports as determined by DARPA; and published research articles.
 % \clearpage
-
-\bibliographystyle{naturemag}
-\bibliography{seed}
-\end{document}
 
 
 \section{Technical Plan}

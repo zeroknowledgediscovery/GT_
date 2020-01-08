@@ -1,3 +1,7 @@
 \contentsline {section}{\numberline {1}Executive Summary}{1}{section.1}
 \contentsline {section}{\numberline {2}Goals and Impact}{2}{section.2}
-\contentsline {section}{References}{8}{section*.12}
+\contentsline {section}{\numberline {3}Technical Approach}{3}{section.3}
+\contentsline {section}{\numberline {4}Management Plan}{9}{section.4}
+\contentsline {section}{\numberline {5}Capabilities}{9}{section.5}
+\contentsline {section}{\numberline {6}Statement of Work}{9}{section.6}
+\contentsline {section}{References}{9}{section*.14}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.9.11)  10 DEC 2019 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.9.11)  11 DEC 2019 11:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2049,25 +2049,25 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 )
 
-LaTeX Warning: Citation `mora2011biological' on page 3 undefined on input line 
-288.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.24948pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 289.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 285.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.62097> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 289.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 285.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <4.015> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 289.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 285.
 
 Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  [][] 
  []
+
+
+LaTeX Warning: Citation `mora2011biological' on page 4 undefined on input line 
+288.
 
 
 LaTeX Warning: Citation `mora2011biological' on page 4 undefined on input line 
@@ -2087,47 +2087,45 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  [][] 
  []
 
+
+LaTeX Warning: Reference `tab1' on page 5 undefined on input line 376.
+
 (./Figures/figgamma.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 )
+
+LaTeX Warning: Reference `figgamma' on page 5 undefined on input line 397.
+
 \openout4 = `./Figures/External/main-figure2.dpth'.
 
-<Figures/cr1.png, id=59, 216.81pt x 180.675pt>
-File: Figures/cr1.png Graphic file (type png)
-<use Figures/cr1.png>
-Package pdftex.def Info: Figures/cr1.png  used on input line 406.
-(pdftex.def)             Requested size: 97.56029pt x 72.26595pt.
-<Figures/cr2.png, id=60, 216.81pt x 180.675pt>
-File: Figures/cr2.png Graphic file (type png)
-<use Figures/cr2.png>
-Package pdftex.def Info: Figures/cr2.png  used on input line 408.
-(pdftex.def)             Requested size: 97.56029pt x 72.26595pt.
-<Figures/tr1.png, id=61, 216.81pt x 180.675pt>
-File: Figures/tr1.png Graphic file (type png)
-<use Figures/tr1.png>
-Package pdftex.def Info: Figures/tr1.png  used on input line 410.
-(pdftex.def)             Requested size: 97.56029pt x 72.2687pt.
-<Figures/tr2.png, id=62, 216.81pt x 180.675pt>
-File: Figures/tr2.png Graphic file (type png)
-<use Figures/tr2.png>
-Package pdftex.def Info: Figures/tr2.png  used on input line 412.
-(pdftex.def)             Requested size: 97.56029pt x 72.2687pt.
-<Figures/soc.png, id=63, 216.81pt x 180.675pt>
-File: Figures/soc.png Graphic file (type png)
-<use Figures/soc.png>
-Package pdftex.def Info: Figures/soc.png  used on input line 414.
-(pdftex.def)             Requested size: 97.56029pt x 72.2687pt.
-<Figures/ta1.png, id=64, 216.81pt x 180.675pt>
-File: Figures/ta1.png Graphic file (type png)
-<use Figures/ta1.png>
-Package pdftex.def Info: Figures/ta1.png  used on input line 416.
-(pdftex.def)             Requested size: 97.56358pt x 72.2632pt.
+<Figures/terrorcls.png, id=59, 375.5631pt x 375.5631pt>
+File: Figures/terrorcls.png Graphic file (type png)
+<use Figures/terrorcls.png>
+Package pdftex.def Info: Figures/terrorcls.png  used on input line 410.
+(pdftex.def)             Requested size: 108.405pt x 108.4062pt.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.05249> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 410.
+<Figures/terror2cls.png, id=60, 375.5631pt x 375.5631pt>
+File: Figures/terror2cls.png Graphic file (type png)
+<use Figures/terror2cls.png>
+Package pdftex.def Info: Figures/terror2cls.png  used on input line 411.
+(pdftex.def)             Requested size: 108.405pt x 108.4062pt.
+<Figures/crimecls.png, id=61, 375.5631pt x 375.5631pt>
+File: Figures/crimecls.png Graphic file (type png)
+<use Figures/crimecls.png>
+Package pdftex.def Info: Figures/crimecls.png  used on input line 412.
+(pdftex.def)             Requested size: 108.405pt x 108.4062pt.
+<Figures/ta1cls.png, id=62, 375.5631pt x 375.5631pt>
+File: Figures/ta1cls.png Graphic file (type png)
+<use Figures/ta1cls.png>
+Package pdftex.def Info: Figures/ta1cls.png  used on input line 413.
+(pdftex.def)             Requested size: 108.405pt x 108.4062pt.
 [5
 \providecommand \oddpage@label [2]{}
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./Figures/c
-r1.png> <./Figures/cr2.png> <./Figures/tr1.png> <./Figures/tr2.png> <./Figures/
-soc.png> <./Figures/ta1.png>]
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./Figures/t
+errorcls.png> <./Figures/terror2cls.png> <./Figures/crimecls.png> <./Figures/ta
+1cls.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.24948pt.
@@ -2140,82 +2138,93 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  []
 
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 462.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.24948pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 46
-2.
+
+Overfull \hbox (3.03047pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 445.
+
+LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 44
+5.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <14.05249> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 462.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <9.83669> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 462.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.02625> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 462.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <14.05249> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 462.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <9.83669> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 462.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.02625> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 462.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <14.05249> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 462.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <9.83669> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 462.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.02625> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 462.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 445.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <14.05249> on input line 462.
+(Font)              <14.05249> on input line 445.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <9.83669> on input line 462.
+(Font)              <9.83669> on input line 445.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7.02625> on input line 462.
+(Font)              <7.02625> on input line 445.
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <11.04124> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 462.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.72884> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 462.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <5.52061> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 462.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <11.04124> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 462.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.72884> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 462.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 445.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <5.52061> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 462.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 463.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 445.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 446.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <11> on input line 463.
+(Font)              <11> on input line 446.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7.69997> on input line 463.
+(Font)              <7.69997> on input line 446.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <5.5> on input line 463.
+(Font)              <5.5> on input line 446.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <11> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 463.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 446.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <7.69997> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 463.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 446.
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <5.5> not available
-(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 463.
+(Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 446.
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 463.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 446.
 
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <11> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 463.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 446.
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <7.69997> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 463.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 446.
 LaTeX Font Info:    Font shape `OML/ccm/b/it' in size <5.5> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 463.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 446.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <11> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 463.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 446.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <7.69997> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 463.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 446.
 LaTeX Font Info:    Font shape `OMS/ccsy/b/n' in size <5.5> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 463.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 446.
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 464.
-
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 465.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 447.
 
 
-Overfull \hbox (3.90651pt too wide) in paragraph at lines 465--466
+LaTeX Font Warning: Command \Large invalid in math mode on input line 448.
+
+
+Overfull \hbox (3.90651pt too wide) in paragraph at lines 448--449
 \OT1/phv/m/n/11 the anal-y-sis of large scale sur-vey data. The abil-ity to dis
 -till in-cip-i-ent micro-structural cross-dependencies
  []
@@ -2236,31 +2245,29 @@ Overfull \hbox (3.03047pt too wide) has occurred while \output is active
  [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 472.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 455.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 455.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 455.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 455.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 472.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 455.
  ) 
 Here is how much of TeX's memory you used:
- 39814 strings out of 492678
- 939808 string characters out of 6133535
- 1201419 words of memory out of 11000000
- 42875 multiletter control sequences out of 15000+600000
- 112494 words of font info for 320 fonts, out of 8000000 for 9000
+ 39436 strings out of 492678
+ 928862 string characters out of 6133535
+ 1174831 words of memory out of 11000000
+ 42498 multiletter control sequences out of 15000+600000
+ 112789 words of font info for 320 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 65i,16n,103p,1564b,2500s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/ishanu/.te
-xlive2018/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccmi8.600pk> </home/
-ishanu/.texlive2018/texmf-var/fonts/pk/ljfour/public/concrete/ccr8.600pk></usr/
-share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on ./Figures/External/main-figure2.pdf (1 page, 4334796 bytes).
+ 65i,16n,96p,1564b,851s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on ./Figures/External/main-figure2.pdf (1 page, 747495 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 261 words of extra memory for PDF output out of 10000 (max. 10000000)
 

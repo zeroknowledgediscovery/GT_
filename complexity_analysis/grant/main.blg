@@ -1,16 +1,11 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: naturemag.bst
 Database file #1: seed.bib
-Warning--I didn't find a database entry for "miller15"
-Warning--I didn't find a database entry for "festinger1962theory"
-Warning--I didn't find a database entry for "ARONSON19691"
-Warning--I didn't find a database entry for "zanna74"
-Warning--I didn't find a database entry for "COOPER1984229"
 You've used 4 entries,
             2348 wiz_defined-function locations,
-            1011 strings with 9421 characters,
+            1004 strings with 9337 characters,
 and the built_in function-call counts, 1429 in all, are:
 = -- 98
 > -- 24
@@ -49,4 +44,3 @@ warning$ -- 0
 while$ -- 9
 width$ -- 5
 write$ -- 49
-(There were 5 warnings)
