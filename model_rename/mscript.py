@@ -6,6 +6,7 @@ import numpy as np
 import json
 from tqdm import tqdm
 import glob
+import copy
 
 def getModelSet(FILES,UID,CORR,write=True,NUM_MODELS=20,
                 reverse=False,high=None,low=None,var='gamma',
@@ -41,10 +42,11 @@ def getModelSet(FILES,UID,CORR,write=True,NUM_MODELS=20,
             new_key='_'+corr_uid+'#'+srcvar+'_'+UID+'#'+tgtvar+str(count)\
             +'_'+srctgt[3]\
             +'_'+srctgt[4]
-            M.models[key]['src']=corr_uid+'#'+srcvar
-            M.models[key]['tgt']=UID+'#'+tgtvar
+            E=copy.deepcopy(M.models[key])
+            E['src']=corr_uid+'#'+srcvar
+            E['tgt']=UID+'#'+tgtvar
             #print new_key
-            D[new_key]=M.models[key]
+            D[new_key]=E
             count=count+1
 
 
@@ -74,7 +76,7 @@ def getModelSet(FILES,UID,CORR,write=True,NUM_MODELS=20,
 
 
 
-FILES=glob.glob('./fmodels/*model.json')
+FILES=glob.glob('./fmodels/9*model.json')
 CORR_UIDS=['x123','x125','x321','x456']
 UID='xxx12'
 
@@ -82,5 +84,5 @@ varlist=['meetingPairs','singles','MeetFrac']
 
 getModelSet(FILES=FILES,UID=UID,CORR=CORR_UIDS,
             reverse=True,high=0.95,
-            NUM_MODELS=300,
+            NUM_MODELS=30000000,
             VARLIST=varlist)
