@@ -8,7 +8,9 @@ from tqdm import tqdm
 import glob
 
 def getModelSet(FILES,UID,CORR,write=True,NUM_MODELS=20,
-                reverse=False,high=None,low=None,var='gamma'):
+                reverse=False,high=None,low=None,var='gamma',
+                VARLIST=['MeetFrac','singles'],
+                TGTLIST=['myFriends']):
     outFile='model'+UID+'.json'
     
     Ms=[models(f) for f in tqdm(FILES)]
@@ -20,26 +22,30 @@ def getModelSet(FILES,UID,CORR,write=True,NUM_MODELS=20,
     count=0
     for (key,value) in tqdm(M.models.iteritems()):
         srctgt=key.split("_")
-        
-        if srctgt[1]==srctgt[2]:
-            new_key='_'+UID+'_'+UID+str(count)\
+
+        src=srctgt[1]
+        tgt=srctgt[2]
+
+        srcvar=src.split('#')[4]
+        tgtvar=tgt.split('#')[4]
+
+        #print srcvar,tgtvar
+        if srcvar not in VARLIST:
+            continue
+        if tgtvar not in TGTLIST:
+            continue
+
+        #CORR=CORR+[UID]
+        for corr_uid in CORR:
+            print corr_uid
+            new_key='_'+corr_uid+'#'+srcvar+'_'+UID+'#'+tgtvar+str(count)\
             +'_'+srctgt[3]\
             +'_'+srctgt[4]
-            M.models[key]['src']=UID
-            M.models[key]['tgt']=UID
+            M.models[key]['src']=corr_uid+'#'+srcvar
+            M.models[key]['tgt']=UID+'#'+tgtvar
             #print new_key
             D[new_key]=M.models[key]
             count=count+1
-        else:
-            for corr_uid in CORR:
-                new_key='_'+corr_uid+'_'+UID+str(count)\
-                +'_'+srctgt[3]\
-                +'_'+srctgt[4]
-                M.models[key]['src']=corr_uid
-                M.models[key]['tgt']=UID
-                #print new_key
-                D[new_key]=M.models[key]
-                count=count+1
 
 
     n=NUM_MODELS
@@ -68,9 +74,13 @@ def getModelSet(FILES,UID,CORR,write=True,NUM_MODELS=20,
 
 
 
-FILES=glob.glob('./fmodels/*json')
+FILES=glob.glob('./fmodels/*model.json')
 CORR_UIDS=['x123','x125','x321','x456']
 UID='xxx12'
 
+varlist=['meetingPairs','singles','MeetFrac']
 
-getModelSet(FILES=FILES,UID=UID,CORR=CORR_UIDS,reverse=True,high=0.95,NUM_MODELS=90)
+getModelSet(FILES=FILES,UID=UID,CORR=CORR_UIDS,
+            reverse=True,high=0.95,
+            NUM_MODELS=300,
+            VARLIST=varlist)
